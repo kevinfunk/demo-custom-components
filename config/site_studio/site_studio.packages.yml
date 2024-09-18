@@ -1,0 +1,7 @@
+-
+  type: default_module_package
+  source:
+    module_name: demo_custom_components
+    path: /config/site_studio/package
+  options:
+    extra-validation: false

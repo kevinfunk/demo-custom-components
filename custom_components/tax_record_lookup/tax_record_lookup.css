@@ -1,0 +1,11 @@
+tax-record-lookup table {
+  width: 100%;
+  border-collapse: collapse;
+}
+tax-record-lookup th, tax-record-lookup td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+tax-record-lookup th {
+  background-color: #f2f2f2;
+}

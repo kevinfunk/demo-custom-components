@@ -1,0 +1,92 @@
+{
+    "canvas": [],
+    "disabledNodes": [],
+    "componentForm": [
+        {
+            "type": "form-container",
+            "uid": "form-tab-container",
+            "title": "Tab container",
+            "status": {
+                "collapsed": false
+            },
+            "options": {
+                "formBuilder": true
+            },
+            "iconColor": "formLayout",
+            "uuid": "df0d9c87-a9c2-49e2-a854-5b9cf626c8c1",
+            "parentUid": "root",
+            "children": [
+                {
+                    "type": "form-container",
+                    "uid": "form-tab-item",
+                    "title": "Tab item",
+                    "status": {
+                        "collapsed": false
+                    },
+                    "options": {
+                        "formBuilder": true
+                    },
+                    "iconColor": "formLayout",
+                    "uuid": "7efaaa21-f700-48eb-80c3-1a5799b3cec5",
+                    "parentUid": "form-tab-container",
+                    "children": [
+                        {
+                            "type": "form-field",
+                            "uid": "form-input",
+                            "title": "Input",
+                            "translate": true,
+                            "status": {
+                                "collapsed": false
+                            },
+                            "iconColor": "formField",
+                            "uuid": "67c9566e-2f4f-49ad-a180-07ac00b742b5",
+                            "parentUid": "form-tab-item",
+                            "children": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "model": {
+        "df0d9c87-a9c2-49e2-a854-5b9cf626c8c1": {
+            "settings": {
+                "type": "cohTabContainer",
+                "title": "Tab container",
+                "responsiveMode": true
+            }
+        },
+        "7efaaa21-f700-48eb-80c3-1a5799b3cec5": {
+            "settings": {
+                "type": "cohTabItem",
+                "title": "Content",
+                "breakpointIcon": ""
+            }
+        },
+        "67c9566e-2f4f-49ad-a180-07ac00b742b5": {
+            "settings": {
+                "type": "cohTextBox",
+                "title": "Endpoint",
+                "schema": {
+                    "type": "string",
+                    "escape": true
+                },
+                "machineName": "endpoint",
+                "tooltipPlacement": "auto right"
+            }
+        }
+    },
+    "mapper": {
+        "7efaaa21-f700-48eb-80c3-1a5799b3cec5": {},
+        "67c9566e-2f4f-49ad-a180-07ac00b742b5": {}
+    },
+    "previewModel": {
+        "7efaaa21-f700-48eb-80c3-1a5799b3cec5": {},
+        "67c9566e-2f4f-49ad-a180-07ac00b742b5": {}
+    },
+    "variableFields": {
+        "7efaaa21-f700-48eb-80c3-1a5799b3cec5": [],
+        "67c9566e-2f4f-49ad-a180-07ac00b742b5": []
+    },
+    "meta": {}
+}

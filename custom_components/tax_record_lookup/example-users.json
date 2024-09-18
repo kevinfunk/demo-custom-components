@@ -1,0 +1,114 @@
+{
+  "users": [
+    {
+      "fname": "James",
+      "lname": "Anderson",
+      "ssn": "588742559",
+      "creditscore": "712",
+      "tax_info": [
+        { "year": 2023, "annual_income": 95000, "tax_paid": 18500, "filing_status": "Married" },
+        { "year": 2022, "annual_income": 91000, "tax_paid": 17800, "filing_status": "Married" },
+        { "year": 2021, "annual_income": 87000, "tax_paid": 17000, "filing_status": "Single" }
+      ]
+    },
+    {
+      "fname": "Jacob",
+      "lname": "Stewart",
+      "ssn": "618492735",
+      "creditscore": "649",
+      "tax_info": [
+        { "year": 2023, "annual_income": 40000, "tax_paid": 6000, "filing_status": "Single" },
+        { "year": 2022, "annual_income": 38000, "tax_paid": 5700, "filing_status": "Single" },
+        { "year": 2021, "annual_income": 36000, "tax_paid": 5400, "filing_status": "Single" }
+      ]
+    },
+    {
+      "fname": "Emma",
+      "lname": "Johnson",
+      "ssn": "111223333",
+      "creditscore": "780",
+      "tax_info": [
+        { "year": 2023, "annual_income": 105000, "tax_paid": 21000, "filing_status": "Married" },
+        { "year": 2022, "annual_income": 101000, "tax_paid": 20200, "filing_status": "Married" },
+        { "year": 2021, "annual_income": 98000, "tax_paid": 19600, "filing_status": "Single" }
+      ]
+    },
+    {
+      "fname": "Sophia",
+      "lname": "Brown",
+      "ssn": "222334444",
+      "creditscore": "720",
+      "tax_info": [
+        { "year": 2023, "annual_income": 87000, "tax_paid": 17400, "filing_status": "Single" },
+        { "year": 2022, "annual_income": 85000, "tax_paid": 17000, "filing_status": "Single" },
+        { "year": 2021, "annual_income": 83000, "tax_paid": 16600, "filing_status": "Single" }
+      ]
+    },
+    {
+      "fname": "William",
+      "lname": "Davis",
+      "ssn": "333445555",
+      "creditscore": "690",
+      "tax_info": [
+        { "year": 2023, "annual_income": 55000, "tax_paid": 11000, "filing_status": "Single" },
+        { "year": 2022, "annual_income": 53000, "tax_paid": 10600, "filing_status": "Single" },
+        { "year": 2021, "annual_income": 51000, "tax_paid": 10200, "filing_status": "Single" }
+      ]
+    },
+    {
+      "fname": "Olivia",
+      "lname": "Miller",
+      "ssn": "444556666",
+      "creditscore": "765",
+      "tax_info": [
+        { "year": 2023, "annual_income": 120000, "tax_paid": 24000, "filing_status": "Married" },
+        { "year": 2022, "annual_income": 115000, "tax_paid": 23000, "filing_status": "Married" },
+        { "year": 2021, "annual_income": 110000, "tax_paid": 22000, "filing_status": "Single" }
+      ]
+    },
+    {
+      "fname": "Mason",
+      "lname": "Wilson",
+      "ssn": "555667777",
+      "creditscore": "670",
+      "tax_info": [
+        { "year": 2023, "annual_income": 63000, "tax_paid": 12600, "filing_status": "Single" },
+        { "year": 2022, "annual_income": 61000, "tax_paid": 12200, "filing_status": "Single" },
+        { "year": 2021, "annual_income": 59000, "tax_paid": 11800, "filing_status": "Single" }
+      ]
+    },
+    {
+      "fname": "Lucas",
+      "lname": "Moore",
+      "ssn": "666778888",
+      "creditscore": "710",
+      "tax_info": [
+        { "year": 2023, "annual_income": 98000, "tax_paid": 19600, "filing_status": "Married" },
+        { "year": 2022, "annual_income": 95000, "tax_paid": 19000, "filing_status": "Married" },
+        { "year": 2021, "annual_income": 92000, "tax_paid": 18400, "filing_status": "Single" }
+      ]
+    },
+    {
+      "fname": "Elijah",
+      "lname": "Taylor",
+      "ssn": "777889999",
+      "creditscore": "690",
+      "tax_info": [
+        { "year": 2023, "annual_income": 71000, "tax_paid": 14200, "filing_status": "Single" },
+        { "year": 2022, "annual_income": 68000, "tax_paid": 13600, "filing_status": "Single" },
+        { "year": 2021, "annual_income": 65000, "tax_paid": 13000, "filing_status": "Single" }
+      ]
+    },
+    {
+      "fname": "Ava",
+      "lname": "Clark",
+      "ssn": "888990000",
+      "creditscore": "740",
+      "tax_info": [
+        { "year": 2023, "annual_income": 86000, "tax_paid": 17200, "filing_status": "Married" },
+        { "year": 2022, "annual_income": 83000, "tax_paid": 16600, "filing_status": "Married" },
+        { "year": 2021, "annual_income": 80000, "tax_paid": 16000, "filing_status": "Single" }
+      ]
+    }
+  ]
+}

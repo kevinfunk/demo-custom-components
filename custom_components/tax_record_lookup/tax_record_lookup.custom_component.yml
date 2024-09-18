@@ -1,0 +1,9 @@
+name: Tax Record Lookup
+category: cpt_cat_demo_cc
+type: 'block'
+js:
+  'tax_record_lookup.js' : {}
+css:
+  'tax_record_lookup.css' : {}
+form: form.json
+html: tax_record_lookup.html

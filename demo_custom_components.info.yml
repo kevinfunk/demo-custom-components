@@ -1,0 +1,6 @@
+name: Demo Custom Components
+type: module
+description: 'Example custom components.'
+core_version_requirement: ^9 || ^10 || ^11
+dependencies:
+  - cohesion

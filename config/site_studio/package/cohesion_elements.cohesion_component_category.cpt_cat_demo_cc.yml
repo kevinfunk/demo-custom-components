@@ -1,0 +1,14 @@
+uuid: 7925a0fa-1aae-4b9b-a348-8c6e1222480b
+langcode: en
+status: true
+dependencies: {  }
+label: 'Demo Custom Components'
+id: cpt_cat_demo_cc
+json_values: '{}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0043
+locked: false
+modified: false
+selectable: true
+class: category-6
+weight: 1000

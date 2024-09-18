@@ -73,6 +73,9 @@
                 },
                 "machineName": "endpoint",
                 "tooltipPlacement": "auto right"
+            },
+            "model": {
+                "value": "https://raw.githubusercontent.com/kevinfunk/demo-custom-components/main/custom_components/tax_record_lookup/example-users.json"
             }
         }
     },

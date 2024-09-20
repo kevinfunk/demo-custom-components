@@ -15,112 +15,94 @@ class PersonList extends HTMLElement {
         <text x="50%" y="50%" alignment-baseline="middle" text-anchor="middle" fill="#888" font-size="16">No Image</text>
       </svg>
     `)}`;
+
+    this.imageCache = new Map();
   }
 
   connectedCallback() {
     this.render();
   }
 
+  async fetchData(url) {
+    const response = await fetch(url);
+    if (!response.ok) throw new Error(`Fetch error: ${response.status} ${response.statusText}`);
+    return await response.json();
+  }
+
+  async fetchById(type, id) {
+    const url = `${this.baseUrl}/jsonapi/${type}/${id}`;
+    if (this.imageCache.has(url)) {
+      return this.imageCache.get(url);
+    }
+    const data = await this.fetchData(url);
+    this.imageCache.set(url, data.data);
+    return data.data;
+  }
+
+  async getImageUrl(mediaId, mediaType) {
+    if (mediaType === 'media--acquia_dam_image_asset') {
+      const mediaAsset = await this.fetchById('media/acquia_dam_image_asset', mediaId);
+      return mediaAsset?.attributes?.acquia_dam_embed_codes?.original?.href || '';
+    } else {
+      const mediaImage = await this.fetchById('media/image', mediaId);
+      const fileId = mediaImage?.relationships?.image?.data?.id;
+      return fileId ? await this.getFileUrl(fileId) : '';
+    }
+  }
+
+  async getFileUrl(fileId) {
+    const file = await this.fetchById('file/file', fileId);
+    return file ? `${this.baseUrl}${file.attributes.uri.url}` : '';
+  }
+
   async render() {
     const resultDiv = document.createElement('div');
     resultDiv.id = 'result';
     this.appendChild(resultDiv);
-
-    // Clear previous result
     resultDiv.innerHTML = '';
 
-    // Check if base URL is set
     if (!this.baseUrl) {
       resultDiv.innerHTML = '<p>Base URL is not set. Please configure the base URL.</p>';
       return;
     }
 
     try {
-      const apiUrl = `${this.baseUrl}/jsonapi/node/person`;
+      const personData = await this.fetchData(`${this.baseUrl}/jsonapi/node/person`);
+      const people = personData.data || [];
 
-      // Fetch the JSON data from the person endpoint
-      const personResponse = await fetch(apiUrl);
-      if (!personResponse.ok) throw new Error(`Person API error: ${personResponse.status} ${personResponse.statusText}`);
+      // Filter and sort people
+      const filteredPeople = people
+        .filter(person => {
+          const name = person.attributes.title.toLowerCase();
+          return !this.filterName || name.includes(this.filterName.toLowerCase());
+        })
+        .sort((a, b) => a.attributes.title.localeCompare(b.attributes.title));
 
-      const personData = await personResponse.json();
-      if (!personData.data || !Array.isArray(personData.data)) {
-        throw new Error("Person API response is missing 'data' or it's not an array.");
-      }
+      const limitedPeople = this.filterNumber ? filteredPeople.slice(0, this.filterNumber) : filteredPeople;
 
-      // Function to fetch media or file by ID
-      const fetchById = async (type, id) => {
-        const response = await fetch(`${this.baseUrl}/jsonapi/${type}/${id}`);
-        if (!response.ok) {
-          console.warn(`${type.charAt(0).toUpperCase() + type.slice(1)} API error: ${response.status} ${response.statusText}`);
-          return null;
-        }
-        const data = await response.json();
-        return data.data;
-      };
-
-      // Function to get the image URL from file data
-      const getImageUrlFromFile = async (fileId) => {
-        const file = await fetchById('file/file', fileId);
-        return file && file.attributes && file.attributes.uri ? `${this.baseUrl}${file.attributes.uri.url}` : '';
-      };
-
-      // Function to find the image associated with a person
-      const findImageForPerson = async (person) => {
-        const personImageRelationship = person.relationships?.field_person_image?.data;
-        if (personImageRelationship) {
-          const mediaId = personImageRelationship.id;
-          const mediaType = personImageRelationship.type;
-
-          if (mediaType === 'media--acquia_dam_image_asset') {
-            const mediaAsset = await fetchById('media/acquia_dam_image_asset', mediaId);
-            if (mediaAsset) {
-              const embedCode = mediaAsset.attributes?.acquia_dam_embed_codes?.original?.href;
-              return embedCode || '';
-            }
-          } else {
-            const mediaImage = await fetchById('media/image', mediaId);
-            if (mediaImage && mediaImage.relationships?.image?.data) {
-              const fileId = mediaImage.relationships.image.data.id;
-              return getImageUrlFromFile(fileId);
-            }
-          }
-        }
-        return '';
-      };
-
-      // Filtering
-      const filterName = typeof this.filterName === 'string' ? this.filterName.toLowerCase() : '';
-      const filterNumber = typeof this.filterNumber === 'number' ? this.filterNumber : null;
-
-      // Filter by name if filterName is provided
-      const filteredPeople = filterName
-        ? personData.data.filter(person => person.attributes.title.toLowerCase().includes(filterName))
-        : personData.data;
-
-      // Limit results by filterNumber if it is set
-      const limitedPeople = filterNumber !== null ? filteredPeople.slice(0, filterNumber) : filteredPeople;
-
-      let resultsHtml = '';
-
-      if (limitedPeople.length > 0) {
-        for (const person of limitedPeople) {
-          const title = person.attributes.title;
-          const imageUrl = await findImageForPerson(person) || this.svgPlaceholderBase64;
-          resultsHtml += `
-            <div class="person-card">
-              <img src="${imageUrl}" alt="${title}">
-              <div class="title">${title}</div>
-            </div>
-          `;
-        }
-      } else {
+      if (limitedPeople.length === 0) {
         resultDiv.innerHTML = '<p>No results found.</p>';
         return;
       }
 
-      resultDiv.innerHTML = resultsHtml;
+      const resultsHtml = await Promise.all(limitedPeople.map(async person => {
+        const title = person.attributes.title;
+        const personImageRelationship = person.relationships?.field_person_image?.data;
+        const imageUrl = personImageRelationship
+          ? await this.getImageUrl(personImageRelationship.id, personImageRelationship.type)
+          : this.svgPlaceholderBase64;
+
+        return `
+          <div class="person-card">
+            <img src="${imageUrl || this.svgPlaceholderBase64}" alt="${title}">
+            <div class="title">${title}</div>
+          </div>
+        `;
+      }));
+
+      resultDiv.innerHTML = resultsHtml.join('');
     } catch (error) {
-      resultDiv.innerHTML = `<p>There was an error fetching the data: ${error.message}</p>`;
+      resultDiv.innerHTML = `<p>Error fetching data: ${error.message}</p>`;
     }
   }
 }

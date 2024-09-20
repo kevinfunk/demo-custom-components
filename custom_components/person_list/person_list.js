@@ -69,10 +69,20 @@ class PersonList extends HTMLElement {
         const personImageRelationship = person.relationships?.field_person_image?.data;
         if (personImageRelationship) {
           const mediaId = personImageRelationship.id;
-          const mediaImage = await fetchById('media/image', mediaId);
-          if (mediaImage && mediaImage.relationships?.image?.data) {
-            const fileId = mediaImage.relationships.image.data.id;
-            return getImageUrlFromFile(fileId);
+          const mediaType = personImageRelationship.type;
+
+          if (mediaType === 'media--acquia_dam_image_asset') {
+            const mediaAsset = await fetchById('media/acquia_dam_image_asset', mediaId);
+            if (mediaAsset) {
+              const embedCode = mediaAsset.attributes?.acquia_dam_embed_codes?.original?.href;
+              return embedCode || '';
+            }
+          } else {
+            const mediaImage = await fetchById('media/image', mediaId);
+            if (mediaImage && mediaImage.relationships?.image?.data) {
+              const fileId = mediaImage.relationships.image.data.id;
+              return getImageUrlFromFile(fileId);
+            }
           }
         }
         return '';

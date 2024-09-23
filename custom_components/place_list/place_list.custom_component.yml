@@ -1,0 +1,7 @@
+name: Place List
+category: cpt_cat_demo_cc
+type: 'block'
+js:
+  'place_list.js' : {}
+form: form.json
+html: place_list.html

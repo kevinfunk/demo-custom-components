@@ -5,3 +5,4 @@ js:
   'person_list.js' : {}
 form: form.json
 html: person_list.html
+preview_image: preview.png

@@ -97,7 +97,9 @@ class ArticleList extends HTMLElement {
         return `
           <div class="article-card">
             <a href="${this.baseUrl}${pathAlias}" target="_blank">
-              <img src="${imageUrl || this.svgPlaceholderBase64}" alt="${title}">
+              <div class="image-container">
+                <img src="${imageUrl || this.svgPlaceholderBase64}" alt="${title}">
+              </div>
               <div class="title">${title}</div>
             </a>
           </div>

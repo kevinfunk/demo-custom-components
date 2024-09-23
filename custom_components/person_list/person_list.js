@@ -92,10 +92,16 @@ class PersonList extends HTMLElement {
           ? await this.getImageUrl(personImageRelationship.id, personImageRelationship.type)
           : this.svgPlaceholderBase64;
 
+        const pathAlias = person.attributes.path?.alias || '#';
+
         return `
           <div class="person-card">
-            <img src="${imageUrl || this.svgPlaceholderBase64}" alt="${title}">
-            <div class="title">${title}</div>
+            <a href="${this.baseUrl}${pathAlias}" target="_blank">
+              <div class="image-container">
+                <img src="${imageUrl || this.svgPlaceholderBase64}" alt="${title}">
+              </div>
+              <div class="title">${title}</div>
+            </a>
           </div>
         `;
       }));

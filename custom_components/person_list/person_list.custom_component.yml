@@ -3,7 +3,5 @@ category: cpt_cat_demo_cc
 type: 'block'
 js:
   'person_list.js' : {}
-css:
-  'person_list.css' : {}
 form: form.json
 html: person_list.html

@@ -27,7 +27,10 @@ json_values: |
                       "padding-left": {},
                       "padding-right": {}
                   },
-                  "display": {}
+                  "display": {},
+                  "width": {
+                      "value": "100%"
+                  }
               }
           },
           "20f3afe2-78b2-46fd-84ad-57b73f8f29f0": {
@@ -356,7 +359,35 @@ json_mapper: |
       "styles": {
           "title": "Default",
           "selectorType": "topLevel",
-          "formDefinition": [],
+          "formDefinition": [
+              {
+                  "formKey": "layout",
+                  "children": [
+                      {
+                          "formKey": "width",
+                          "activeFields": [
+                              {
+                                  "name": "min-width",
+                                  "active": false
+                              },
+                              {
+                                  "name": "max-width",
+                                  "active": false
+                              },
+                              {
+                                  "name": "width",
+                                  "active": true
+                              }
+                          ],
+                          "breakpoints": [
+                              {
+                                  "name": "xl"
+                              }
+                          ]
+                      }
+                  ]
+              }
+          ],
           "items": [
               {
                   "title": "#result",

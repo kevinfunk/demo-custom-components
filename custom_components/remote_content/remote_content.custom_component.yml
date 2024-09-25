@@ -1,0 +1,10 @@
+name: Remote Content
+category: cpt_cat_demo_cc
+type: 'block'
+js:
+  'remote_content.js' : {}
+css:
+  'remote_content.css' : {}
+form: form.json
+html: remote_content.html
+preview_image: preview.png

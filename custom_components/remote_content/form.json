@@ -1,0 +1,1243 @@
+{
+    "canvas": [],
+    "disabledNodes": [],
+    "componentForm": [
+        {
+            "type": "form-container",
+            "uid": "form-tab-container",
+            "title": "Tab container",
+            "status": {
+                "collapsed": false
+            },
+            "options": {
+                "formBuilder": true
+            },
+            "iconColor": "formLayout",
+            "uuid": "df0d9c87-a9c2-49e2-a854-5b9cf626c8c1",
+            "parentUid": "root",
+            "children": [
+                {
+                    "type": "form-container",
+                    "uid": "form-tab-item",
+                    "title": "Tab item",
+                    "status": {
+                        "collapsed": false
+                    },
+                    "options": {
+                        "formBuilder": true
+                    },
+                    "iconColor": "formLayout",
+                    "uuid": "7efaaa21-f700-48eb-80c3-1a5799b3cec5",
+                    "parentUid": "form-tab-container",
+                    "children": [
+                        {
+                            "type": "form-container",
+                            "uid": "form-section",
+                            "title": "Field group",
+                            "status": {
+                                "collapsed": false
+                            },
+                            "options": {
+                                "formBuilder": true
+                            },
+                            "iconColor": "formLayoutAlt",
+                            "uuid": "06e5e318-fd38-459c-8afa-b327ffaed237",
+                            "parentUid": "form-tab-item",
+                            "children": [
+                                {
+                                    "type": "form-field",
+                                    "uid": "form-input",
+                                    "title": "Input",
+                                    "translate": true,
+                                    "status": {
+                                        "collapsed": false
+                                    },
+                                    "iconColor": "formField",
+                                    "uuid": "67c9566e-2f4f-49ad-a180-07ac00b742b5",
+                                    "parentUid": "form-section",
+                                    "children": []
+                                },
+                                {
+                                    "type": "form-field",
+                                    "uid": "form-select",
+                                    "title": "Select",
+                                    "translate": false,
+                                    "status": {
+                                        "collapsed": false
+                                    },
+                                    "iconColor": "formField",
+                                    "uuid": "9b447a9e-ad77-439f-8329-acd762b00737",
+                                    "parentUid": "form-section",
+                                    "children": []
+                                },
+                                {
+                                    "type": "form-container",
+                                    "uid": "form-section",
+                                    "title": "Field group",
+                                    "status": {
+                                        "collapsed": false
+                                    },
+                                    "options": {
+                                        "formBuilder": true
+                                    },
+                                    "iconColor": "formLayoutAlt",
+                                    "uuid": "db42380d-1832-4563-b26f-730c1a38896b",
+                                    "parentUid": "form-section",
+                                    "children": [
+                                        {
+                                            "type": "form-field",
+                                            "uid": "form-input",
+                                            "title": "Input",
+                                            "translate": true,
+                                            "status": {
+                                                "collapsed": false
+                                            },
+                                            "iconColor": "formField",
+                                            "uuid": "395566af-5f4e-4854-810e-9e7f85f003c0",
+                                            "parentUid": "form-section",
+                                            "children": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "form-container",
+                                    "uid": "form-section",
+                                    "title": "Field group",
+                                    "status": {
+                                        "collapsed": false
+                                    },
+                                    "options": {
+                                        "formBuilder": true
+                                    },
+                                    "iconColor": "formLayoutAlt",
+                                    "uuid": "48e713d3-7713-4442-b152-77532f9f620c",
+                                    "parentUid": "form-section",
+                                    "children": [
+                                        {
+                                            "type": "form-field",
+                                            "uid": "form-input",
+                                            "title": "Input",
+                                            "translate": true,
+                                            "status": {
+                                                "collapsed": false
+                                            },
+                                            "iconColor": "formField",
+                                            "uuid": "1bb1ba8f-685d-487b-a619-27949da07ed4",
+                                            "parentUid": "form-section",
+                                            "children": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "form-container",
+                                    "uid": "form-section",
+                                    "title": "Field group",
+                                    "status": {
+                                        "collapsed": false
+                                    },
+                                    "options": {
+                                        "formBuilder": true
+                                    },
+                                    "iconColor": "formLayoutAlt",
+                                    "uuid": "8dc455ae-ba39-4d19-8cfa-049536ac465a",
+                                    "parentUid": "form-section",
+                                    "children": [
+                                        {
+                                            "type": "form-field",
+                                            "uid": "form-input",
+                                            "title": "Input",
+                                            "translate": true,
+                                            "status": {
+                                                "collapsed": false
+                                            },
+                                            "iconColor": "formField",
+                                            "uuid": "3bc7b840-e621-4932-b25d-a48cc218a10e",
+                                            "parentUid": "form-section",
+                                            "children": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "form-container",
+                                    "uid": "form-section",
+                                    "title": "Field group",
+                                    "status": {
+                                        "collapsed": false
+                                    },
+                                    "options": {
+                                        "formBuilder": true
+                                    },
+                                    "iconColor": "formLayoutAlt",
+                                    "uuid": "9919878c-29ea-48b2-8a47-73c5d733cc06",
+                                    "parentUid": "form-section",
+                                    "children": [
+                                        {
+                                            "type": "form-field",
+                                            "uid": "form-input",
+                                            "title": "Input",
+                                            "translate": true,
+                                            "status": {
+                                                "collapsed": false
+                                            },
+                                            "iconColor": "formField",
+                                            "uuid": "7485085f-99dc-4d52-88b8-6f328061c9a6",
+                                            "parentUid": "form-section",
+                                            "children": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "form-container",
+                                    "uid": "form-section",
+                                    "title": "Field group",
+                                    "status": {
+                                        "collapsed": false
+                                    },
+                                    "options": {
+                                        "formBuilder": true
+                                    },
+                                    "iconColor": "formLayoutAlt",
+                                    "uuid": "6f1e5ed7-01e1-4738-afe2-a7bdb42d6313",
+                                    "parentUid": "form-section",
+                                    "children": [
+                                        {
+                                            "type": "form-field",
+                                            "uid": "form-input",
+                                            "title": "Input",
+                                            "translate": true,
+                                            "status": {
+                                                "collapsed": false
+                                            },
+                                            "iconColor": "formField",
+                                            "uuid": "2bafe46f-e667-4110-b3cd-7c8b012c37e1",
+                                            "parentUid": "form-section",
+                                            "children": []
+                                        },
+                                        {
+                                            "type": "form-field",
+                                            "uid": "form-input",
+                                            "title": "Input",
+                                            "translate": true,
+                                            "status": {
+                                                "collapsed": false
+                                            },
+                                            "iconColor": "formField",
+                                            "uuid": "297e78a9-209a-469a-8fef-fc192c6a790b",
+                                            "parentUid": "form-section",
+                                            "children": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "form-field",
+                                    "uid": "form-select",
+                                    "title": "Select",
+                                    "translate": false,
+                                    "status": {
+                                        "collapsed": false
+                                    },
+                                    "iconColor": "formField",
+                                    "uuid": "bd066498-0114-434d-90ac-202bb31d5538",
+                                    "parentUid": "form-section",
+                                    "children": []
+                                },
+                                {
+                                    "type": "form-field",
+                                    "uid": "form-select",
+                                    "title": "Select",
+                                    "translate": false,
+                                    "status": {
+                                        "collapsed": false
+                                    },
+                                    "iconColor": "formField",
+                                    "uuid": "9ec5fef5-5ec5-42ff-8831-c3f9ba8aa5a8",
+                                    "parentUid": "form-section",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "form-container",
+                    "uid": "form-tab-item",
+                    "title": "Tab item",
+                    "status": {
+                        "collapsed": false
+                    },
+                    "options": {
+                        "formBuilder": true
+                    },
+                    "iconColor": "formLayout",
+                    "uuid": "1f445318-7a63-4283-b34f-175b0f1888d3",
+                    "parentUid": "form-tab-container",
+                    "children": [
+                        {
+                            "type": "form-field",
+                            "uid": "form-checkbox-toggle",
+                            "title": "Toggle",
+                            "translate": true,
+                            "status": {
+                                "collapsed": false
+                            },
+                            "iconColor": "formField",
+                            "uuid": "4e22bfbe-84e6-4341-bb24-2a64d28fef84",
+                            "parentUid": "form-tab-item",
+                            "children": []
+                        },
+                        {
+                            "type": "form-container",
+                            "uid": "form-section",
+                            "title": "Field group",
+                            "status": {
+                                "collapsed": false
+                            },
+                            "options": {
+                                "formBuilder": true
+                            },
+                            "iconColor": "formLayoutAlt",
+                            "uuid": "0f9abc70-ec54-461e-9f45-604a9bd4f36c",
+                            "parentUid": "form-tab-item",
+                            "children": [
+                                {
+                                    "type": "form-field",
+                                    "uid": "form-input",
+                                    "title": "Input",
+                                    "translate": true,
+                                    "status": {
+                                        "collapsed": false
+                                    },
+                                    "iconColor": "formField",
+                                    "uuid": "9669ecbf-67e0-4e24-bb8c-ecb6f3ab6542",
+                                    "parentUid": "form-section",
+                                    "children": []
+                                },
+                                {
+                                    "type": "form-field",
+                                    "uid": "form-input",
+                                    "title": "Input",
+                                    "translate": true,
+                                    "status": {
+                                        "collapsed": false
+                                    },
+                                    "iconColor": "formField",
+                                    "uuid": "d332a245-f1f1-4991-99ce-9f99b34d7656",
+                                    "parentUid": "form-section",
+                                    "children": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "model": {
+        "df0d9c87-a9c2-49e2-a854-5b9cf626c8c1": {
+            "settings": {
+                "type": "cohTabContainer",
+                "title": "Tab container",
+                "responsiveMode": true
+            }
+        },
+        "7efaaa21-f700-48eb-80c3-1a5799b3cec5": {
+            "settings": {
+                "type": "cohTabItem",
+                "title": "Content",
+                "breakpointIcon": ""
+            }
+        },
+        "06e5e318-fd38-459c-8afa-b327ffaed237": {
+            "settings": {
+                "type": "cohSection",
+                "title": "Field group",
+                "hideRowHeading": 1,
+                "removePadding": 0,
+                "columnCount": "1",
+                "breakpointIcon": "",
+                "breakpoints": false,
+                "propertiesMenu": false,
+                "disableScrollbar": true,
+                "disableEllipsisMenu": true,
+                "isOpen": true
+            }
+        },
+        "67c9566e-2f4f-49ad-a180-07ac00b742b5": {
+            "settings": {
+                "type": "cohTextBox",
+                "title": "Base URL",
+                "schema": {
+                    "type": "string",
+                    "escape": true
+                },
+                "machineName": "baseurl",
+                "tooltipPlacement": "auto right",
+                "placeholder": "https://example.com"
+            },
+            "model": {
+                "value": ""
+            }
+        },
+        "9b447a9e-ad77-439f-8329-acd762b00737": {
+            "settings": {
+                "type": "cohSelect",
+                "title": "Remote type",
+                "selectType": "custom",
+                "machineName": "remotetype",
+                "options": [
+                    {
+                        "label": "Article",
+                        "value": "article"
+                    },
+                    {
+                        "label": "Event",
+                        "value": "event"
+                    },
+                    {
+                        "label": "Person",
+                        "value": "person"
+                    },
+                    {
+                        "label": "Place",
+                        "value": "place"
+                    },
+                    {
+                        "label": "Custom",
+                        "value": "custom"
+                    }
+                ],
+                "tooltipPlacement": "auto right"
+            },
+            "model": {
+                "value": "article"
+            }
+        },
+        "db42380d-1832-4563-b26f-730c1a38896b": {
+            "settings": {
+                "type": "cohSection",
+                "title": "Article",
+                "hideRowHeading": 1,
+                "removePadding": 0,
+                "columnCount": "2",
+                "breakpointIcon": "",
+                "breakpoints": false,
+                "propertiesMenu": false,
+                "disableScrollbar": true,
+                "disableEllipsisMenu": true,
+                "isOpen": true,
+                "showCondition": "[field.9b447a9e-ad77-439f-8329-acd762b00737] === 'article'"
+            }
+        },
+        "395566af-5f4e-4854-810e-9e7f85f003c0": {
+            "settings": {
+                "type": "cohTextBox",
+                "title": "Image",
+                "schema": {
+                    "type": "string",
+                    "escape": true
+                },
+                "machineName": "articleimage",
+                "tooltipPlacement": "auto right"
+            },
+            "model": {
+                "value": "field_article_image"
+            }
+        },
+        "48e713d3-7713-4442-b152-77532f9f620c": {
+            "settings": {
+                "type": "cohSection",
+                "title": "Event",
+                "hideRowHeading": 1,
+                "removePadding": 0,
+                "columnCount": "2",
+                "breakpointIcon": "",
+                "breakpoints": false,
+                "propertiesMenu": false,
+                "disableScrollbar": true,
+                "disableEllipsisMenu": true,
+                "isOpen": true,
+                "showCondition": "[field.9b447a9e-ad77-439f-8329-acd762b00737] === 'event'"
+            }
+        },
+        "1bb1ba8f-685d-487b-a619-27949da07ed4": {
+            "settings": {
+                "type": "cohTextBox",
+                "title": "Image",
+                "schema": {
+                    "type": "string",
+                    "escape": true
+                },
+                "machineName": "eventimage",
+                "tooltipPlacement": "auto right"
+            },
+            "model": {
+                "value": "field_event_image"
+            }
+        },
+        "8dc455ae-ba39-4d19-8cfa-049536ac465a": {
+            "settings": {
+                "type": "cohSection",
+                "title": "Person",
+                "hideRowHeading": 1,
+                "removePadding": 0,
+                "columnCount": "2",
+                "breakpointIcon": "",
+                "breakpoints": false,
+                "propertiesMenu": false,
+                "disableScrollbar": true,
+                "disableEllipsisMenu": true,
+                "isOpen": true,
+                "showCondition": "[field.9b447a9e-ad77-439f-8329-acd762b00737] === 'person'"
+            }
+        },
+        "3bc7b840-e621-4932-b25d-a48cc218a10e": {
+            "settings": {
+                "type": "cohTextBox",
+                "title": "Image",
+                "schema": {
+                    "type": "string",
+                    "escape": true
+                },
+                "machineName": "personimage",
+                "tooltipPlacement": "auto right"
+            },
+            "model": {
+                "value": "field_person_image"
+            }
+        },
+        "9919878c-29ea-48b2-8a47-73c5d733cc06": {
+            "settings": {
+                "type": "cohSection",
+                "title": "Place",
+                "hideRowHeading": 1,
+                "removePadding": 0,
+                "columnCount": "2",
+                "breakpointIcon": "",
+                "breakpoints": false,
+                "propertiesMenu": false,
+                "disableScrollbar": true,
+                "disableEllipsisMenu": true,
+                "isOpen": true,
+                "showCondition": "[field.9b447a9e-ad77-439f-8329-acd762b00737] === 'place'"
+            }
+        },
+        "7485085f-99dc-4d52-88b8-6f328061c9a6": {
+            "settings": {
+                "type": "cohTextBox",
+                "title": "Image",
+                "schema": {
+                    "type": "string",
+                    "escape": true
+                },
+                "machineName": "placeimage",
+                "tooltipPlacement": "auto right"
+            },
+            "model": {
+                "value": "field_place_image"
+            }
+        },
+        "bd066498-0114-434d-90ac-202bb31d5538": {
+            "settings": {
+                "type": "cohSelect",
+                "title": "Image style",
+                "selectType": "existing",
+                "machineName": "imagestyle",
+                "tooltipPlacement": "auto right",
+                "options": [
+                    {
+                        "label": "No image style",
+                        "value": ""
+                    },
+                    {
+                        "label": "Card narrow (612x336)",
+                        "value": "card_narrow"
+                    },
+                    {
+                        "label": "Card small (550x290)",
+                        "value": "card_small"
+                    },
+                    {
+                        "label": "Card tall (250x378)",
+                        "value": "card_tall"
+                    },
+                    {
+                        "label": "Large (W1024)",
+                        "value": "coh_large"
+                    },
+                    {
+                        "label": "Large landscape (1024x683)",
+                        "value": "coh_large_landscape"
+                    },
+                    {
+                        "label": "Large super landscape (1024x480)",
+                        "value": "coh_large_super_landscape"
+                    },
+                    {
+                        "label": "Medium (W768)",
+                        "value": "coh_medium"
+                    },
+                    {
+                        "label": "Medium landscape (768x512)",
+                        "value": "coh_medium_landscape"
+                    },
+                    {
+                        "label": "Medium super landscape (768x360)",
+                        "value": "coh_medium_super_landscape"
+                    },
+                    {
+                        "label": "Small (W568)",
+                        "value": "coh_small"
+                    },
+                    {
+                        "label": "Small landscape (568x352)",
+                        "value": "coh_small_landscape"
+                    },
+                    {
+                        "label": "Small square (568x568)",
+                        "value": "coh_small_square"
+                    },
+                    {
+                        "label": "X Large (1360)",
+                        "value": "coh_x_large"
+                    },
+                    {
+                        "label": "X Large landscape (1360x908)",
+                        "value": "coh_x_large_landscape"
+                    },
+                    {
+                        "label": "X Large super landscape (1360x640)",
+                        "value": "coh_x_large_super_landscape"
+                    },
+                    {
+                        "label": "X Small (W480)",
+                        "value": "coh_x_small"
+                    },
+                    {
+                        "label": "XX Large landscape (1600x1067)",
+                        "value": "coh_xx_large_landscape"
+                    },
+                    {
+                        "label": "XX Large super landscape (1600x753)",
+                        "value": "coh_xx_large_super_landscape"
+                    },
+                    {
+                        "label": "XX Small (160)",
+                        "value": "coh_xx_small"
+                    },
+                    {
+                        "label": "XX Small landscape (160x120)",
+                        "value": "coh_xx_small_landscape"
+                    },
+                    {
+                        "label": "Default (max-width)",
+                        "value": "default_max"
+                    },
+                    {
+                        "label": "Component preview",
+                        "value": "dx8_component_preview"
+                    },
+                    {
+                        "label": "Focal Point preview",
+                        "value": "focal_point_preview"
+                    },
+                    {
+                        "label": "Hero Image (1440x450)",
+                        "value": "hero_image"
+                    },
+                    {
+                        "label": "Hero mobile (600x700)",
+                        "value": "hero_mobile"
+                    },
+                    {
+                        "label": "Hero Square Half (700x400)",
+                        "value": "hero_square"
+                    },
+                    {
+                        "label": "Large (480×480)",
+                        "value": "large"
+                    },
+                    {
+                        "label": "Media Library thumbnail (220x220)",
+                        "value": "media_library"
+                    },
+                    {
+                        "label": "Medium (350x350)",
+                        "value": "medium"
+                    },
+                    {
+                        "label": "Slideshow Image (1400x400)",
+                        "value": "slideshow_image"
+                    },
+                    {
+                        "label": "Thumbnail (100×100)",
+                        "value": "thumbnail"
+                    },
+                    {
+                        "label": "Vertical Hero (540x600)",
+                        "value": "vertical_hero"
+                    },
+                    {
+                        "label": "Vertical Hero Small (270x300)",
+                        "value": "vertical_hero_small"
+                    },
+                    {
+                        "label": "Wide (1090)",
+                        "value": "wide"
+                    },
+                    {
+                        "label": "X Small landscape (480x298)",
+                        "value": "x_small_landscape"
+                    },
+                    {
+                        "label": "X Small square (480x480)",
+                        "value": "x_small_square"
+                    }
+                ],
+                "selectModel": [
+                    "settings",
+                    "image",
+                    "image-style",
+                    "imageStyle"
+                ]
+            },
+            "model": {}
+        },
+        "9ec5fef5-5ec5-42ff-8831-c3f9ba8aa5a8": {
+            "settings": {
+                "type": "cohSelect",
+                "title": "Layout style",
+                "selectType": "existing",
+                "machineName": "layoutstyle",
+                "tooltipPlacement": "auto right",
+                "options": [
+                    {
+                        "label": "Article list",
+                        "value": "coh-style-article-list",
+                        "id": "020a6848",
+                        "edit_form": "/admin/cohesion/styles/cohesion_custom_styles/020a6848/edit",
+                        "group": "Generic"
+                    },
+                    {
+                        "label": "Person list",
+                        "value": "coh-style-person-list",
+                        "id": "5c1a475b",
+                        "edit_form": "/admin/cohesion/styles/cohesion_custom_styles/5c1a475b/edit",
+                        "group": "Generic"
+                    },
+                    {
+                        "label": "Tax record lookup",
+                        "value": "coh-style-tax-record-lookup",
+                        "id": "f3be021e",
+                        "edit_form": "/admin/cohesion/styles/cohesion_custom_styles/f3be021e/edit",
+                        "group": "Generic"
+                    },
+                    {
+                        "label": "Place list",
+                        "value": "coh-style-place-list",
+                        "id": "f1a2477c",
+                        "edit_form": "/admin/cohesion/styles/cohesion_custom_styles/f1a2477c/edit",
+                        "group": "Generic"
+                    },
+                    {
+                        "label": "Tag",
+                        "value": "coh-style-tag",
+                        "id": "65dc3072",
+                        "edit_form": "/admin/cohesion/styles/cohesion_custom_styles/65dc3072/edit",
+                        "group": "Generic"
+                    },
+                    {
+                        "label": "Fill space",
+                        "value": "coh-style-fill-space",
+                        "id": "7f93b7a9",
+                        "edit_form": "/admin/cohesion/styles/cohesion_custom_styles/7f93b7a9/edit"
+                    },
+                    {
+                        "label": "Focusable content",
+                        "value": "coh-style-focusable-content",
+                        "id": "e749d6f0",
+                        "edit_form": "/admin/cohesion/styles/cohesion_custom_styles/e749d6f0/edit",
+                        "group": "Generic"
+                    },
+                    {
+                        "label": "Event list",
+                        "value": "coh-style-event-list",
+                        "id": "e1da46d0",
+                        "edit_form": "/admin/cohesion/styles/cohesion_custom_styles/e1da46d0/edit",
+                        "group": "Generic"
+                    },
+                    {
+                        "label": "Slider flex layout",
+                        "value": "coh-style-slider-flex-layout",
+                        "id": "da5b98c3",
+                        "edit_form": "/admin/cohesion/styles/cohesion_custom_styles/da5b98c3/edit"
+                    },
+                    {
+                        "label": "Facet accordion",
+                        "value": "coh-style-facet-accordion",
+                        "id": "b2c36087",
+                        "edit_form": "/admin/cohesion/styles/cohesion_custom_styles/b2c36087/edit",
+                        "group": "Generic"
+                    },
+                    {
+                        "label": "Search result container",
+                        "value": "coh-style-search-result-container",
+                        "id": "2b79314d",
+                        "edit_form": "/admin/cohesion/styles/cohesion_custom_styles/2b79314d/edit"
+                    },
+                    {
+                        "label": "Date with icon",
+                        "value": "coh-style-date-with-icon",
+                        "id": "ed4b7a3d",
+                        "edit_form": "/admin/cohesion/styles/cohesion_custom_styles/ed4b7a3d/edit",
+                        "group": "Generic"
+                    },
+                    {
+                        "label": "Date with hyphen",
+                        "value": "coh-style-date-with-hyphen",
+                        "id": "96e94044",
+                        "edit_form": "/admin/cohesion/styles/cohesion_custom_styles/96e94044/edit",
+                        "group": "Generic"
+                    },
+                    {
+                        "label": "Location with icon",
+                        "value": "coh-style-location-with-icon",
+                        "id": "0f2c7187",
+                        "edit_form": "/admin/cohesion/styles/cohesion_custom_styles/0f2c7187/edit",
+                        "group": "Generic"
+                    },
+                    {
+                        "label": "Search block",
+                        "value": "coh-style-search-block",
+                        "id": "e95bd02c",
+                        "edit_form": "/admin/cohesion/styles/cohesion_custom_styles/e95bd02c/edit",
+                        "group": "Generic"
+                    },
+                    {
+                        "label": "Hide default listing view",
+                        "value": "coh-style-hide-default-listing-view",
+                        "id": "e01b8004",
+                        "edit_form": "/admin/cohesion/styles/cohesion_custom_styles/e01b8004/edit",
+                        "group": "Generic"
+                    },
+                    {
+                        "label": "Clear facets block",
+                        "value": "coh-style-clear-facets-block",
+                        "id": "255e3017",
+                        "edit_form": "/admin/cohesion/styles/cohesion_custom_styles/255e3017/edit",
+                        "group": "Generic"
+                    },
+                    {
+                        "label": "Map info window",
+                        "value": "coh-style-map-info-window",
+                        "id": "9fa81753",
+                        "edit_form": "/admin/cohesion/styles/cohesion_custom_styles/9fa81753/edit"
+                    },
+                    {
+                        "label": "Header light theme",
+                        "value": "coh-style-header-light-theme",
+                        "id": "138358a4",
+                        "edit_form": "/admin/cohesion/styles/cohesion_custom_styles/138358a4/edit",
+                        "group": "Generic"
+                    },
+                    {
+                        "label": "Header dark theme",
+                        "value": "coh-style-header-dark-theme",
+                        "id": "f13af119",
+                        "edit_form": "/admin/cohesion/styles/cohesion_custom_styles/f13af119/edit",
+                        "group": "Generic"
+                    },
+                    {
+                        "label": "Header colored theme",
+                        "value": "coh-style-header-colored-theme",
+                        "id": "b4d87dc9",
+                        "edit_form": "/admin/cohesion/styles/cohesion_custom_styles/b4d87dc9/edit",
+                        "group": "Generic"
+                    },
+                    {
+                        "label": "Footer light theme",
+                        "value": "coh-style-footer-light-theme",
+                        "id": "3452905e",
+                        "edit_form": "/admin/cohesion/styles/cohesion_custom_styles/3452905e/edit",
+                        "group": "Generic"
+                    },
+                    {
+                        "label": "Footer colored theme",
+                        "value": "coh-style-footer-colored-theme",
+                        "id": "83e6af4a",
+                        "edit_form": "/admin/cohesion/styles/cohesion_custom_styles/83e6af4a/edit",
+                        "group": "Generic"
+                    },
+                    {
+                        "label": "Footer dark theme",
+                        "value": "coh-style-footer-dark-theme",
+                        "id": "d0ab20dd",
+                        "edit_form": "/admin/cohesion/styles/cohesion_custom_styles/d0ab20dd/edit",
+                        "group": "Generic"
+                    },
+                    {
+                        "label": "Text color light background",
+                        "value": "coh-style-text-color-light-background",
+                        "id": "b03f97e5",
+                        "edit_form": "/admin/cohesion/styles/cohesion_custom_styles/b03f97e5/edit",
+                        "group": "Generic"
+                    },
+                    {
+                        "label": "Text color colored background",
+                        "value": "coh-style-text-color-colored-background",
+                        "id": "46d78cbf",
+                        "edit_form": "/admin/cohesion/styles/cohesion_custom_styles/46d78cbf/edit",
+                        "group": "Generic"
+                    },
+                    {
+                        "label": "Text color dark background",
+                        "value": "coh-style-text-color-dark-background",
+                        "id": "7f4f36dd",
+                        "edit_form": "/admin/cohesion/styles/cohesion_custom_styles/7f4f36dd/edit",
+                        "group": "Generic"
+                    },
+                    {
+                        "label": "Card fake link with icon",
+                        "value": "coh-style-fake-link-with-icon",
+                        "id": "027d4396",
+                        "edit_form": "/admin/cohesion/styles/cohesion_custom_styles/027d4396/edit",
+                        "group": "Generic"
+                    },
+                    {
+                        "label": "Card fake button",
+                        "value": "coh-style-fake-button",
+                        "id": "f7991bb2",
+                        "edit_form": "/admin/cohesion/styles/cohesion_custom_styles/f7991bb2/edit",
+                        "group": "Generic"
+                    },
+                    {
+                        "label": "Card text dark background",
+                        "value": "coh-style-card-text-dark-background",
+                        "id": "da806fdd",
+                        "edit_form": "/admin/cohesion/styles/cohesion_custom_styles/da806fdd/edit",
+                        "group": "Generic"
+                    },
+                    {
+                        "label": "Card text light background",
+                        "value": "coh-style-card-text-light-background",
+                        "id": "f3dc1bea",
+                        "edit_form": "/admin/cohesion/styles/cohesion_custom_styles/f3dc1bea/edit",
+                        "group": "Generic"
+                    },
+                    {
+                        "label": "Card text colored background",
+                        "value": "coh-style-card-text-colored-background",
+                        "id": "67d78f85",
+                        "edit_form": "/admin/cohesion/styles/cohesion_custom_styles/67d78f85/edit",
+                        "group": "Generic"
+                    },
+                    {
+                        "label": "Accordion tabs keyline light text",
+                        "value": "coh-style-accordion-tabs-keyline-light-text",
+                        "id": "a5bad395",
+                        "edit_form": "/admin/cohesion/styles/cohesion_custom_styles/a5bad395/edit",
+                        "group": "Generic"
+                    },
+                    {
+                        "label": "Accordion tabs keyline dark text",
+                        "value": "coh-style-accordion-tabs-keyline-dark-text",
+                        "id": "77af1043",
+                        "edit_form": "/admin/cohesion/styles/cohesion_custom_styles/77af1043/edit",
+                        "group": "Generic"
+                    },
+                    {
+                        "label": "Accordion tabs solid",
+                        "value": "coh-style-accordion-tabs-solid",
+                        "id": "59942bd8",
+                        "edit_form": "/admin/cohesion/styles/cohesion_custom_styles/59942bd8/edit",
+                        "group": "Generic"
+                    },
+                    {
+                        "label": "Multi column two column",
+                        "value": "coh-style-multi-column-two-column",
+                        "id": "bc331715",
+                        "edit_form": "/admin/cohesion/styles/cohesion_custom_styles/bc331715/edit"
+                    },
+                    {
+                        "label": "Multi column three column",
+                        "value": "coh-style-multi-column-three-column",
+                        "id": "a0b51e88",
+                        "edit_form": "/admin/cohesion/styles/cohesion_custom_styles/a0b51e88/edit"
+                    },
+                    {
+                        "label": "Margin top small",
+                        "value": "coh-style-margin-top-small",
+                        "id": "53366192",
+                        "edit_form": "/admin/cohesion/styles/cohesion_custom_styles/53366192/edit"
+                    },
+                    {
+                        "label": "Margin bottom small",
+                        "value": "coh-style-margin-bottom-small",
+                        "id": "63181883",
+                        "edit_form": "/admin/cohesion/styles/cohesion_custom_styles/63181883/edit"
+                    },
+                    {
+                        "label": "Padding top bottom large",
+                        "value": "coh-style-padding-top-bottom-large",
+                        "id": "fd99703e",
+                        "edit_form": "/admin/cohesion/styles/cohesion_custom_styles/fd99703e/edit"
+                    },
+                    {
+                        "label": "Padding top bottom medium",
+                        "value": "coh-style-padding-top-bottom-medium",
+                        "id": "6f04ac8e",
+                        "edit_form": "/admin/cohesion/styles/cohesion_custom_styles/6f04ac8e/edit"
+                    },
+                    {
+                        "label": "Padding top bottom small",
+                        "value": "coh-style-padding-top-bottom-small",
+                        "id": "a56b4c76",
+                        "edit_form": "/admin/cohesion/styles/cohesion_custom_styles/a56b4c76/edit"
+                    },
+                    {
+                        "label": "Padding top large",
+                        "value": "coh-style-padding-top-large",
+                        "id": "a59e0629",
+                        "edit_form": "/admin/cohesion/styles/cohesion_custom_styles/a59e0629/edit"
+                    },
+                    {
+                        "label": "Padding top medium",
+                        "value": "coh-style-padding-top-medium",
+                        "id": "58a35e7a",
+                        "edit_form": "/admin/cohesion/styles/cohesion_custom_styles/58a35e7a/edit"
+                    },
+                    {
+                        "label": "Padding top small",
+                        "value": "coh-style-padding-top-small",
+                        "id": "e5a59a9d",
+                        "edit_form": "/admin/cohesion/styles/cohesion_custom_styles/e5a59a9d/edit"
+                    },
+                    {
+                        "label": "Padding bottom large",
+                        "value": "coh-style-padding-bottom-large",
+                        "id": "7ef725fd",
+                        "edit_form": "/admin/cohesion/styles/cohesion_custom_styles/7ef725fd/edit"
+                    },
+                    {
+                        "label": "Padding bottom medium",
+                        "value": "coh-style-padding-bottom-medium",
+                        "id": "69e9d234",
+                        "edit_form": "/admin/cohesion/styles/cohesion_custom_styles/69e9d234/edit"
+                    },
+                    {
+                        "label": "Padding bottom small",
+                        "value": "coh-style-padding-bottom-small",
+                        "id": "ee93d997",
+                        "edit_form": "/admin/cohesion/styles/cohesion_custom_styles/ee93d997/edit"
+                    },
+                    {
+                        "label": "Padding left right large",
+                        "value": "coh-style-padding-left-right-large",
+                        "id": "c896ce1a",
+                        "edit_form": "/admin/cohesion/styles/cohesion_custom_styles/c896ce1a/edit"
+                    },
+                    {
+                        "label": "Padding left right small",
+                        "value": "coh-style-padding-left-right-small",
+                        "id": "9e935e29",
+                        "edit_form": "/admin/cohesion/styles/cohesion_custom_styles/9e935e29/edit"
+                    },
+                    {
+                        "label": "Padding small",
+                        "value": "coh-style-padding-small",
+                        "id": "097f31b2",
+                        "edit_form": "/admin/cohesion/styles/cohesion_custom_styles/097f31b2/edit"
+                    }
+                ],
+                "selectModel": [
+                    "settings",
+                    "container-options",
+                    "container-style",
+                    "customStyle"
+                ]
+            },
+            "model": {}
+        },
+        "1f445318-7a63-4283-b34f-175b0f1888d3": {
+            "settings": {
+                "type": "cohTabItem",
+                "title": "Content Filter",
+                "breakpointIcon": ""
+            }
+        },
+        "4e22bfbe-84e6-4341-bb24-2a64d28fef84": {
+            "settings": {
+                "type": "checkboxToggle",
+                "title": "Filter results",
+                "schema": {
+                    "type": "string"
+                },
+                "machineName": "filterResults",
+                "toggleType": "boolean",
+                "tooltipPlacement": "auto right"
+            },
+            "model": {
+                "value": false
+            }
+        },
+        "0f9abc70-ec54-461e-9f45-604a9bd4f36c": {
+            "settings": {
+                "type": "cohSection",
+                "title": "Field group",
+                "hideRowHeading": 1,
+                "removePadding": 0,
+                "columnCount": "2",
+                "breakpointIcon": "",
+                "breakpoints": false,
+                "propertiesMenu": false,
+                "disableScrollbar": true,
+                "disableEllipsisMenu": true,
+                "isOpen": true,
+                "showCondition": "[field.4e22bfbe-84e6-4341-bb24-2a64d28fef84]"
+            }
+        },
+        "9669ecbf-67e0-4e24-bb8c-ecb6f3ab6542": {
+            "settings": {
+                "type": "cohTextBox",
+                "title": "Filter by Title",
+                "schema": {
+                    "type": "string",
+                    "escape": true
+                },
+                "machineName": "filtertitle",
+                "tooltipPlacement": "auto right",
+                "showCondition": ""
+            }
+        },
+        "d332a245-f1f1-4991-99ce-9f99b34d7656": {
+            "settings": {
+                "type": "cohTextBox",
+                "title": "Filter number of results",
+                "schema": {
+                    "type": "string",
+                    "escape": true
+                },
+                "machineName": "filternumber",
+                "tooltipPlacement": "auto right"
+            }
+        },
+        "297e78a9-209a-469a-8fef-fc192c6a790b": {
+            "settings": {
+                "type": "cohTextBox",
+                "title": "Image",
+                "schema": {
+                    "type": "string",
+                    "escape": true
+                },
+                "machineName": "customimage",
+                "tooltipPlacement": "auto right"
+            },
+            "model": {
+                "value": "field_custom_image"
+            }
+        },
+        "6f1e5ed7-01e1-4738-afe2-a7bdb42d6313": {
+            "settings": {
+                "type": "cohSection",
+                "title": "Custom",
+                "hideRowHeading": 1,
+                "removePadding": 0,
+                "columnCount": "2",
+                "breakpointIcon": "",
+                "breakpoints": false,
+                "propertiesMenu": false,
+                "disableScrollbar": true,
+                "disableEllipsisMenu": true,
+                "isOpen": true,
+                "showCondition": "[field.9b447a9e-ad77-439f-8329-acd762b00737] === 'custom'"
+            }
+        },
+        "2bafe46f-e667-4110-b3cd-7c8b012c37e1": {
+            "settings": {
+                "type": "cohTextBox",
+                "title": "Content Type",
+                "schema": {
+                    "type": "string",
+                    "escape": true
+                },
+                "machineName": "customtype",
+                "tooltipPlacement": "auto right"
+            },
+            "model": {
+                "value": "content_type"
+            }
+        }
+    },
+    "mapper": {
+        "7efaaa21-f700-48eb-80c3-1a5799b3cec5": {},
+        "67c9566e-2f4f-49ad-a180-07ac00b742b5": {},
+        "4e22bfbe-84e6-4341-bb24-2a64d28fef84": {},
+        "06e5e318-fd38-459c-8afa-b327ffaed237": {},
+        "9669ecbf-67e0-4e24-bb8c-ecb6f3ab6542": {},
+        "0f9abc70-ec54-461e-9f45-604a9bd4f36c": {},
+        "d332a245-f1f1-4991-99ce-9f99b34d7656": {},
+        "bd066498-0114-434d-90ac-202bb31d5538": {},
+        "1f445318-7a63-4283-b34f-175b0f1888d3": {},
+        "9ec5fef5-5ec5-42ff-8831-c3f9ba8aa5a8": {},
+        "9b447a9e-ad77-439f-8329-acd762b00737": {},
+        "db42380d-1832-4563-b26f-730c1a38896b": {},
+        "395566af-5f4e-4854-810e-9e7f85f003c0": {},
+        "1bb1ba8f-685d-487b-a619-27949da07ed4": {},
+        "48e713d3-7713-4442-b152-77532f9f620c": {},
+        "3bc7b840-e621-4932-b25d-a48cc218a10e": {},
+        "8dc455ae-ba39-4d19-8cfa-049536ac465a": {},
+        "7485085f-99dc-4d52-88b8-6f328061c9a6": {},
+        "9919878c-29ea-48b2-8a47-73c5d733cc06": {},
+        "297e78a9-209a-469a-8fef-fc192c6a790b": {},
+        "6f1e5ed7-01e1-4738-afe2-a7bdb42d6313": {},
+        "2bafe46f-e667-4110-b3cd-7c8b012c37e1": {}
+    },
+    "previewModel": {
+        "7efaaa21-f700-48eb-80c3-1a5799b3cec5": {},
+        "67c9566e-2f4f-49ad-a180-07ac00b742b5": {},
+        "4e22bfbe-84e6-4341-bb24-2a64d28fef84": {},
+        "06e5e318-fd38-459c-8afa-b327ffaed237": {},
+        "9669ecbf-67e0-4e24-bb8c-ecb6f3ab6542": {},
+        "0f9abc70-ec54-461e-9f45-604a9bd4f36c": {},
+        "d332a245-f1f1-4991-99ce-9f99b34d7656": {},
+        "bd066498-0114-434d-90ac-202bb31d5538": {},
+        "1f445318-7a63-4283-b34f-175b0f1888d3": {},
+        "9ec5fef5-5ec5-42ff-8831-c3f9ba8aa5a8": {},
+        "9b447a9e-ad77-439f-8329-acd762b00737": {},
+        "db42380d-1832-4563-b26f-730c1a38896b": {},
+        "395566af-5f4e-4854-810e-9e7f85f003c0": {},
+        "1bb1ba8f-685d-487b-a619-27949da07ed4": {},
+        "48e713d3-7713-4442-b152-77532f9f620c": {},
+        "3bc7b840-e621-4932-b25d-a48cc218a10e": {},
+        "8dc455ae-ba39-4d19-8cfa-049536ac465a": {},
+        "7485085f-99dc-4d52-88b8-6f328061c9a6": {},
+        "9919878c-29ea-48b2-8a47-73c5d733cc06": {},
+        "297e78a9-209a-469a-8fef-fc192c6a790b": {},
+        "6f1e5ed7-01e1-4738-afe2-a7bdb42d6313": {},
+        "2bafe46f-e667-4110-b3cd-7c8b012c37e1": {}
+    },
+    "variableFields": {
+        "7efaaa21-f700-48eb-80c3-1a5799b3cec5": [],
+        "67c9566e-2f4f-49ad-a180-07ac00b742b5": [],
+        "4e22bfbe-84e6-4341-bb24-2a64d28fef84": [],
+        "06e5e318-fd38-459c-8afa-b327ffaed237": [],
+        "9669ecbf-67e0-4e24-bb8c-ecb6f3ab6542": [],
+        "0f9abc70-ec54-461e-9f45-604a9bd4f36c": [],
+        "d332a245-f1f1-4991-99ce-9f99b34d7656": [],
+        "bd066498-0114-434d-90ac-202bb31d5538": [],
+        "1f445318-7a63-4283-b34f-175b0f1888d3": [],
+        "9ec5fef5-5ec5-42ff-8831-c3f9ba8aa5a8": [],
+        "9b447a9e-ad77-439f-8329-acd762b00737": [],
+        "db42380d-1832-4563-b26f-730c1a38896b": [],
+        "395566af-5f4e-4854-810e-9e7f85f003c0": [],
+        "1bb1ba8f-685d-487b-a619-27949da07ed4": [],
+        "48e713d3-7713-4442-b152-77532f9f620c": [],
+        "3bc7b840-e621-4932-b25d-a48cc218a10e": [],
+        "8dc455ae-ba39-4d19-8cfa-049536ac465a": [],
+        "7485085f-99dc-4d52-88b8-6f328061c9a6": [],
+        "9919878c-29ea-48b2-8a47-73c5d733cc06": [],
+        "297e78a9-209a-469a-8fef-fc192c6a790b": [],
+        "6f1e5ed7-01e1-4738-afe2-a7bdb42d6313": [],
+        "2bafe46f-e667-4110-b3cd-7c8b012c37e1": []
+    },
+    "meta": {}
+}

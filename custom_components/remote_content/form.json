@@ -536,6 +536,52 @@
                 "value": "field_place_image"
             }
         },
+        "6f1e5ed7-01e1-4738-afe2-a7bdb42d6313": {
+            "settings": {
+                "type": "cohSection",
+                "title": "Custom",
+                "hideRowHeading": 1,
+                "removePadding": 0,
+                "columnCount": "2",
+                "breakpointIcon": "",
+                "breakpoints": false,
+                "propertiesMenu": false,
+                "disableScrollbar": true,
+                "disableEllipsisMenu": true,
+                "isOpen": true,
+                "showCondition": "[field.9b447a9e-ad77-439f-8329-acd762b00737] === 'custom'"
+            }
+        },
+        "2bafe46f-e667-4110-b3cd-7c8b012c37e1": {
+            "settings": {
+                "type": "cohTextBox",
+                "title": "Content Type",
+                "schema": {
+                    "type": "string",
+                    "escape": true
+                },
+                "machineName": "customtype",
+                "tooltipPlacement": "auto right"
+            },
+            "model": {
+                "value": "content_type"
+            }
+        },
+        "297e78a9-209a-469a-8fef-fc192c6a790b": {
+            "settings": {
+                "type": "cohTextBox",
+                "title": "Image",
+                "schema": {
+                    "type": "string",
+                    "escape": true
+                },
+                "machineName": "customimage",
+                "tooltipPlacement": "auto right"
+            },
+            "model": {
+                "value": "field_custom_image"
+            }
+        },
         "bd066498-0114-434d-90ac-202bb31d5538": {
             "settings": {
                 "type": "cohSelect",
@@ -718,24 +764,10 @@
                         "group": "Generic"
                     },
                     {
-                        "label": "Person list",
-                        "value": "coh-style-person-list",
-                        "id": "5c1a475b",
-                        "edit_form": "/admin/cohesion/styles/cohesion_custom_styles/5c1a475b/edit",
-                        "group": "Generic"
-                    },
-                    {
-                        "label": "Tax record lookup",
-                        "value": "coh-style-tax-record-lookup",
-                        "id": "f3be021e",
-                        "edit_form": "/admin/cohesion/styles/cohesion_custom_styles/f3be021e/edit",
-                        "group": "Generic"
-                    },
-                    {
-                        "label": "Place list",
-                        "value": "coh-style-place-list",
-                        "id": "f1a2477c",
-                        "edit_form": "/admin/cohesion/styles/cohesion_custom_styles/f1a2477c/edit",
+                        "label": "Remote content - default",
+                        "value": "coh-style-remote-content",
+                        "id": "71e082bf",
+                        "edit_form": "/admin/cohesion/styles/cohesion_custom_styles/71e082bf/edit",
                         "group": "Generic"
                     },
                     {
@@ -746,16 +778,16 @@
                         "group": "Generic"
                     },
                     {
-                        "label": "Fill space",
-                        "value": "coh-style-fill-space",
-                        "id": "7f93b7a9",
-                        "edit_form": "/admin/cohesion/styles/cohesion_custom_styles/7f93b7a9/edit"
+                        "label": "Slider flex layout",
+                        "value": "coh-style-slider-flex-layout",
+                        "id": "da5b98c3",
+                        "edit_form": "/admin/cohesion/styles/cohesion_custom_styles/da5b98c3/edit"
                     },
                     {
-                        "label": "Focusable content",
-                        "value": "coh-style-focusable-content",
-                        "id": "e749d6f0",
-                        "edit_form": "/admin/cohesion/styles/cohesion_custom_styles/e749d6f0/edit",
+                        "label": "Person list",
+                        "value": "coh-style-person-list",
+                        "id": "5c1a475b",
+                        "edit_form": "/admin/cohesion/styles/cohesion_custom_styles/5c1a475b/edit",
                         "group": "Generic"
                     },
                     {
@@ -766,10 +798,31 @@
                         "group": "Generic"
                     },
                     {
-                        "label": "Slider flex layout",
-                        "value": "coh-style-slider-flex-layout",
-                        "id": "da5b98c3",
-                        "edit_form": "/admin/cohesion/styles/cohesion_custom_styles/da5b98c3/edit"
+                        "label": "Focusable content",
+                        "value": "coh-style-focusable-content",
+                        "id": "e749d6f0",
+                        "edit_form": "/admin/cohesion/styles/cohesion_custom_styles/e749d6f0/edit",
+                        "group": "Generic"
+                    },
+                    {
+                        "label": "Place list",
+                        "value": "coh-style-place-list",
+                        "id": "f1a2477c",
+                        "edit_form": "/admin/cohesion/styles/cohesion_custom_styles/f1a2477c/edit",
+                        "group": "Generic"
+                    },
+                    {
+                        "label": "Tax record lookup",
+                        "value": "coh-style-tax-record-lookup",
+                        "id": "f3be021e",
+                        "edit_form": "/admin/cohesion/styles/cohesion_custom_styles/f3be021e/edit",
+                        "group": "Generic"
+                    },
+                    {
+                        "label": "Fill space",
+                        "value": "coh-style-fill-space",
+                        "id": "7f93b7a9",
+                        "edit_form": "/admin/cohesion/styles/cohesion_custom_styles/7f93b7a9/edit"
                     },
                     {
                         "label": "Facet accordion",
@@ -1055,7 +1108,9 @@
                     "customStyle"
                 ]
             },
-            "model": {}
+            "model": {
+                "value": "coh-style-remote-content"
+            }
         },
         "1f445318-7a63-4283-b34f-175b0f1888d3": {
             "settings": {
@@ -1071,12 +1126,12 @@
                 "schema": {
                     "type": "string"
                 },
-                "machineName": "filterResults",
+                "machineName": "filterresults",
                 "toggleType": "boolean",
                 "tooltipPlacement": "auto right"
             },
             "model": {
-                "value": false
+                "value": true
             }
         },
         "0f9abc70-ec54-461e-9f45-604a9bd4f36c": {
@@ -1118,52 +1173,9 @@
                 },
                 "machineName": "filternumber",
                 "tooltipPlacement": "auto right"
-            }
-        },
-        "297e78a9-209a-469a-8fef-fc192c6a790b": {
-            "settings": {
-                "type": "cohTextBox",
-                "title": "Image",
-                "schema": {
-                    "type": "string",
-                    "escape": true
-                },
-                "machineName": "customimage",
-                "tooltipPlacement": "auto right"
             },
             "model": {
-                "value": "field_custom_image"
-            }
-        },
-        "6f1e5ed7-01e1-4738-afe2-a7bdb42d6313": {
-            "settings": {
-                "type": "cohSection",
-                "title": "Custom",
-                "hideRowHeading": 1,
-                "removePadding": 0,
-                "columnCount": "2",
-                "breakpointIcon": "",
-                "breakpoints": false,
-                "propertiesMenu": false,
-                "disableScrollbar": true,
-                "disableEllipsisMenu": true,
-                "isOpen": true,
-                "showCondition": "[field.9b447a9e-ad77-439f-8329-acd762b00737] === 'custom'"
-            }
-        },
-        "2bafe46f-e667-4110-b3cd-7c8b012c37e1": {
-            "settings": {
-                "type": "cohTextBox",
-                "title": "Content Type",
-                "schema": {
-                    "type": "string",
-                    "escape": true
-                },
-                "machineName": "customtype",
-                "tooltipPlacement": "auto right"
-            },
-            "model": {
-                "value": "content_type"
+                "value": "4"
             }
         }
     },

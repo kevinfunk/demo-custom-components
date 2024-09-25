@@ -7,6 +7,7 @@ class ArticleList extends HTMLElement {
     this.baseUrl = this.config.baseurl.replace(/\/+$/, '');
     this.filterTitle = this.config.filtertitle;
     this.filterNumber = this.config.filternumber;
+    this.imageStyle = this.config.imagestyle;
 
     // Define the SVG placeholder (Base64 encoded)
     this.svgPlaceholderBase64 = `data:image/svg+xml;base64,${btoa(`
@@ -39,10 +40,47 @@ class ArticleList extends HTMLElement {
     return data.data;
   }
 
+  getImageStyleUrl(file) {
+    const imageStyle = this.imageStyle;
+    const filePath = file.attributes.uri.value.split('public://')[1];
+    const basePath = file.attributes.uri.url.replace('/' + filePath, '');
+    const imageUrl = `${this.baseUrl}${basePath}/styles/${imageStyle}/public/${filePath}`;
+
+    // Return a promise to handle image load asynchronously
+    return new Promise((resolve, reject) => {
+      // Create an image element
+      const img = new Image();
+
+      // Check if image loads successfully
+      img.onload = () => {
+        resolve(imageUrl); // Return the styled image URL if the image loads successfully
+      };
+
+      // Handle image loading error
+      img.onerror = () => {
+        const fallbackUrl = file ? `${this.baseUrl}${file.attributes.uri.url}` : '';
+        resolve(fallbackUrl); // Return the fallback URL if the image fails to load
+      };
+
+      // Set the image source
+      img.src = imageUrl;
+    });
+  }
+
+
+  async getFileUrl(fileId) {
+    const file = await this.fetchById('file/file', fileId);
+    return this.getImageStyleUrl(file);
+  }
+
   async getImageUrl(mediaId, mediaType) {
     if (mediaType === 'media--acquia_dam_image_asset') {
       const mediaAsset = await this.fetchById('media/acquia_dam_image_asset', mediaId);
-      return mediaAsset?.attributes?.acquia_dam_embed_codes?.original?.href || '';
+      if (this.imageStyle) {
+        return mediaAsset?.attributes?.acquia_dam_embed_codes?.[this.imageStyle]?.href || '';
+      } else {
+        return mediaAsset?.attributes?.acquia_dam_embed_codes?.original?.href || '';
+      }
     } else {
       const mediaImage = await this.fetchById('media/image', mediaId);
       const fileId = mediaImage?.relationships?.image?.data?.id;
@@ -50,10 +88,6 @@ class ArticleList extends HTMLElement {
     }
   }
 
-  async getFileUrl(fileId) {
-    const file = await this.fetchById('file/file', fileId);
-    return file ? `${this.baseUrl}${file.attributes.uri.url}` : '';
-  }
 
   async render() {
     const resultDiv = document.createElement('div');
@@ -67,7 +101,7 @@ class ArticleList extends HTMLElement {
     }
 
     try {
-      const articleData = await this.fetchData(`${this.baseUrl}/jsonapi/node/article`); // Updated for articles
+      const articleData = await this.fetchData(`${this.baseUrl}/jsonapi/node/article`);
       const articles = articleData.data || [];
 
       // Filter and sort articles
@@ -87,7 +121,7 @@ class ArticleList extends HTMLElement {
 
       const resultsHtml = await Promise.all(limitedArticles.map(async article => {
         const title = article.attributes.title;
-        const articleImageRelationship = article.relationships?.field_article_image?.data; // Assuming a field for article image
+        const articleImageRelationship = article.relationships?.field_article_image?.data;
         const imageUrl = articleImageRelationship
           ? await this.getImageUrl(articleImageRelationship.id, articleImageRelationship.type)
           : this.svgPlaceholderBase64;

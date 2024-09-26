@@ -2,7 +2,7 @@ uuid: 6651489e-ebcb-48ed-b0f8-dcd9945839c3
 langcode: en
 status: true
 dependencies: {  }
-label: 'Remote content - default'
+label: 'Remote content - 4 column'
 id: 71e082bf
 json_values: |
   {
@@ -39,9 +39,7 @@ json_values: |
                       "flex-wrap": {
                           "value": "wrap"
                       },
-                      "justify-content": {
-                          "value": "space-between"
-                      }
+                      "justify-content": {}
                   },
                   "flex-item": {
                       "flex-basis": {},
@@ -427,7 +425,7 @@ json_mapper: |
                               },
                               {
                                   "name": "justify-content",
-                                  "active": true
+                                  "active": false
                               },
                               {
                                   "name": "justify-content-safety",

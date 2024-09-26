@@ -58,6 +58,46 @@
                                     "children": []
                                 },
                                 {
+                                    "type": "form-container",
+                                    "uid": "form-section",
+                                    "title": "Field group",
+                                    "status": {
+                                        "collapsed": false
+                                    },
+                                    "options": {
+                                        "formBuilder": true
+                                    },
+                                    "children": [
+                                        {
+                                            "type": "form-field",
+                                            "uid": "form-select",
+                                            "title": "Select",
+                                            "translate": false,
+                                            "status": {
+                                                "collapsed": false
+                                            },
+                                            "iconColor": "formField",
+                                            "uuid": "dad96b67-059d-4da9-b30c-fdc4883fef04",
+                                            "parentUid": "form-section"
+                                        },
+                                        {
+                                            "type": "form-field",
+                                            "uid": "form-input",
+                                            "title": "Input",
+                                            "translate": true,
+                                            "status": {
+                                                "collapsed": false
+                                            },
+                                            "iconColor": "formField",
+                                            "uuid": "25d726a6-a4c6-45ed-822b-38e7367a2ecc",
+                                            "parentUid": "form-section"
+                                        }
+                                    ],
+                                    "iconColor": "formLayoutAlt",
+                                    "uuid": "75908255-5da9-47d0-9e6c-fddbc91dffdb",
+                                    "parentUid": "form-section"
+                                },
+                                {
                                     "type": "form-field",
                                     "uid": "form-select",
                                     "title": "Select",
@@ -94,6 +134,9 @@
                                             "options": {
                                                 "formBuilder": true
                                             },
+                                            "iconColor": "formLayoutAlt",
+                                            "uuid": "70fd79cd-db63-464b-9f09-2dfbd349b01f",
+                                            "parentUid": "form-section",
                                             "children": [
                                                 {
                                                     "type": "form-field",
@@ -108,10 +151,7 @@
                                                     "parentUid": "form-section",
                                                     "children": []
                                                 }
-                                            ],
-                                            "iconColor": "formLayoutAlt",
-                                            "uuid": "70fd79cd-db63-464b-9f09-2dfbd349b01f",
-                                            "parentUid": "form-section"
+                                            ]
                                         },
                                         {
                                             "type": "form-field",
@@ -123,7 +163,8 @@
                                             },
                                             "iconColor": "formField",
                                             "uuid": "caf4603c-1068-409b-a627-4fe58fd872c8",
-                                            "parentUid": "form-section"
+                                            "parentUid": "form-section",
+                                            "children": []
                                         },
                                         {
                                             "type": "form-container",
@@ -135,6 +176,9 @@
                                             "options": {
                                                 "formBuilder": true
                                             },
+                                            "iconColor": "formLayoutAlt",
+                                            "uuid": "3209021a-1fc7-4991-92ee-cc04ce8714ac",
+                                            "parentUid": "form-section",
                                             "children": [
                                                 {
                                                     "type": "form-container",
@@ -146,6 +190,9 @@
                                                     "options": {
                                                         "formBuilder": true
                                                     },
+                                                    "iconColor": "formLayoutAlt",
+                                                    "uuid": "c8d8d114-22d6-48db-92af-fb194e4e11c0",
+                                                    "parentUid": "form-section",
                                                     "children": [
                                                         {
                                                             "type": "form-field",
@@ -157,7 +204,8 @@
                                                             },
                                                             "iconColor": "formField",
                                                             "uuid": "37328705-9b2f-4f8e-85a9-badbd3b4f9df",
-                                                            "parentUid": "form-section"
+                                                            "parentUid": "form-section",
+                                                            "children": []
                                                         },
                                                         {
                                                             "type": "form-field",
@@ -169,7 +217,8 @@
                                                             },
                                                             "iconColor": "formField",
                                                             "uuid": "85b81111-ecec-4979-b55c-e206eef77080",
-                                                            "parentUid": "form-section"
+                                                            "parentUid": "form-section",
+                                                            "children": []
                                                         },
                                                         {
                                                             "type": "form-container",
@@ -181,6 +230,9 @@
                                                             "options": {
                                                                 "formBuilder": true
                                                             },
+                                                            "iconColor": "formLayoutAlt",
+                                                            "uuid": "2235652a-0cec-4d80-9454-e7cd5078a5f0",
+                                                            "parentUid": "form-section",
                                                             "children": [
                                                                 {
                                                                     "type": "form-field",
@@ -192,7 +244,8 @@
                                                                     },
                                                                     "iconColor": "formField",
                                                                     "uuid": "40ce4bdd-d878-429e-8877-5cf5a718da7e",
-                                                                    "parentUid": "form-section"
+                                                                    "parentUid": "form-section",
+                                                                    "children": []
                                                                 },
                                                                 {
                                                                     "type": "form-field",
@@ -204,22 +257,14 @@
                                                                     },
                                                                     "iconColor": "formField",
                                                                     "uuid": "df1e5783-603a-405c-b027-723fb06c684a",
-                                                                    "parentUid": "form-section"
+                                                                    "parentUid": "form-section",
+                                                                    "children": []
                                                                 }
-                                                            ],
-                                                            "iconColor": "formLayoutAlt",
-                                                            "uuid": "2235652a-0cec-4d80-9454-e7cd5078a5f0",
-                                                            "parentUid": "form-section"
+                                                            ]
                                                         }
-                                                    ],
-                                                    "iconColor": "formLayoutAlt",
-                                                    "uuid": "c8d8d114-22d6-48db-92af-fb194e4e11c0",
-                                                    "parentUid": "form-section"
+                                                    ]
                                                 }
-                                            ],
-                                            "iconColor": "formLayoutAlt",
-                                            "uuid": "3209021a-1fc7-4991-92ee-cc04ce8714ac",
-                                            "parentUid": "form-section"
+                                            ]
                                         }
                                     ]
                                 },
@@ -247,6 +292,9 @@
                                             "options": {
                                                 "formBuilder": true
                                             },
+                                            "iconColor": "formLayoutAlt",
+                                            "uuid": "a95dc140-053a-4067-9357-09efbde300d4",
+                                            "parentUid": "form-section",
                                             "children": [
                                                 {
                                                     "type": "form-field",
@@ -261,10 +309,7 @@
                                                     "parentUid": "form-section",
                                                     "children": []
                                                 }
-                                            ],
-                                            "iconColor": "formLayoutAlt",
-                                            "uuid": "a95dc140-053a-4067-9357-09efbde300d4",
-                                            "parentUid": "form-section"
+                                            ]
                                         },
                                         {
                                             "type": "form-field",
@@ -276,7 +321,8 @@
                                             },
                                             "iconColor": "formField",
                                             "uuid": "c1168dad-7f55-4c90-828b-a969adb46592",
-                                            "parentUid": "form-section"
+                                            "parentUid": "form-section",
+                                            "children": []
                                         },
                                         {
                                             "type": "form-container",
@@ -288,6 +334,9 @@
                                             "options": {
                                                 "formBuilder": true
                                             },
+                                            "iconColor": "formLayoutAlt",
+                                            "uuid": "259d38a6-f50b-4a06-80d5-543718f5025c",
+                                            "parentUid": "form-section",
                                             "children": [
                                                 {
                                                     "type": "form-container",
@@ -299,6 +348,9 @@
                                                     "options": {
                                                         "formBuilder": true
                                                     },
+                                                    "iconColor": "formLayoutAlt",
+                                                    "uuid": "ec539356-565b-4502-bcf3-325518e3adfe",
+                                                    "parentUid": "form-section",
                                                     "children": [
                                                         {
                                                             "type": "form-field",
@@ -310,7 +362,8 @@
                                                             },
                                                             "iconColor": "formField",
                                                             "uuid": "5c56a203-5bda-473e-bb39-8e33af7e8ef6",
-                                                            "parentUid": "form-section"
+                                                            "parentUid": "form-section",
+                                                            "children": []
                                                         },
                                                         {
                                                             "type": "form-field",
@@ -322,7 +375,8 @@
                                                             },
                                                             "iconColor": "formField",
                                                             "uuid": "3919d345-266b-4e23-ae5a-953693883ba1",
-                                                            "parentUid": "form-section"
+                                                            "parentUid": "form-section",
+                                                            "children": []
                                                         },
                                                         {
                                                             "type": "form-container",
@@ -334,6 +388,9 @@
                                                             "options": {
                                                                 "formBuilder": true
                                                             },
+                                                            "iconColor": "formLayoutAlt",
+                                                            "uuid": "ad856941-32b0-4b77-bd11-54fae15b492f",
+                                                            "parentUid": "form-section",
                                                             "children": [
                                                                 {
                                                                     "type": "form-field",
@@ -345,7 +402,8 @@
                                                                     },
                                                                     "iconColor": "formField",
                                                                     "uuid": "407809a9-1d9a-4a53-bd84-cff4e66bf1fb",
-                                                                    "parentUid": "form-section"
+                                                                    "parentUid": "form-section",
+                                                                    "children": []
                                                                 },
                                                                 {
                                                                     "type": "form-field",
@@ -357,22 +415,14 @@
                                                                     },
                                                                     "iconColor": "formField",
                                                                     "uuid": "14799f05-f671-4338-a7cc-5c412b4f82b2",
-                                                                    "parentUid": "form-section"
+                                                                    "parentUid": "form-section",
+                                                                    "children": []
                                                                 }
-                                                            ],
-                                                            "iconColor": "formLayoutAlt",
-                                                            "uuid": "ad856941-32b0-4b77-bd11-54fae15b492f",
-                                                            "parentUid": "form-section"
+                                                            ]
                                                         }
-                                                    ],
-                                                    "iconColor": "formLayoutAlt",
-                                                    "uuid": "ec539356-565b-4502-bcf3-325518e3adfe",
-                                                    "parentUid": "form-section"
+                                                    ]
                                                 }
-                                            ],
-                                            "iconColor": "formLayoutAlt",
-                                            "uuid": "259d38a6-f50b-4a06-80d5-543718f5025c",
-                                            "parentUid": "form-section"
+                                            ]
                                         }
                                     ]
                                 },
@@ -400,6 +450,9 @@
                                             "options": {
                                                 "formBuilder": true
                                             },
+                                            "iconColor": "formLayoutAlt",
+                                            "uuid": "d1f2a3f2-b6c1-4ee8-b4bb-495477b8c39d",
+                                            "parentUid": "form-section",
                                             "children": [
                                                 {
                                                     "type": "form-field",
@@ -414,10 +467,7 @@
                                                     "parentUid": "form-section",
                                                     "children": []
                                                 }
-                                            ],
-                                            "iconColor": "formLayoutAlt",
-                                            "uuid": "d1f2a3f2-b6c1-4ee8-b4bb-495477b8c39d",
-                                            "parentUid": "form-section"
+                                            ]
                                         },
                                         {
                                             "type": "form-field",
@@ -429,7 +479,8 @@
                                             },
                                             "iconColor": "formField",
                                             "uuid": "417d1f20-39c2-4bc6-a3c7-9d04d82ef450",
-                                            "parentUid": "form-section"
+                                            "parentUid": "form-section",
+                                            "children": []
                                         },
                                         {
                                             "type": "form-container",
@@ -441,6 +492,9 @@
                                             "options": {
                                                 "formBuilder": true
                                             },
+                                            "iconColor": "formLayoutAlt",
+                                            "uuid": "861538eb-14f1-4065-a25f-e68d9431286f",
+                                            "parentUid": "form-section",
                                             "children": [
                                                 {
                                                     "type": "form-field",
@@ -452,7 +506,8 @@
                                                     },
                                                     "iconColor": "formField",
                                                     "uuid": "d4db1c8a-215f-4102-8a34-584f9bddd7fe",
-                                                    "parentUid": "form-section"
+                                                    "parentUid": "form-section",
+                                                    "children": []
                                                 },
                                                 {
                                                     "type": "form-field",
@@ -464,7 +519,8 @@
                                                     },
                                                     "iconColor": "formField",
                                                     "uuid": "959b414d-32bf-4ad4-91e5-1a90915b9ed9",
-                                                    "parentUid": "form-section"
+                                                    "parentUid": "form-section",
+                                                    "children": []
                                                 },
                                                 {
                                                     "type": "form-container",
@@ -476,6 +532,9 @@
                                                     "options": {
                                                         "formBuilder": true
                                                     },
+                                                    "iconColor": "formLayoutAlt",
+                                                    "uuid": "b406c30f-3be9-4dbe-b383-55eb3313f764",
+                                                    "parentUid": "form-section",
                                                     "children": [
                                                         {
                                                             "type": "form-field",
@@ -487,7 +546,8 @@
                                                             },
                                                             "iconColor": "formField",
                                                             "uuid": "11a624a3-1cf4-42be-84ce-07d68c04ee05",
-                                                            "parentUid": "form-section"
+                                                            "parentUid": "form-section",
+                                                            "children": []
                                                         },
                                                         {
                                                             "type": "form-field",
@@ -499,17 +559,12 @@
                                                             },
                                                             "iconColor": "formField",
                                                             "uuid": "a8f50d59-d460-4704-82f0-1308b0b2c375",
-                                                            "parentUid": "form-section"
+                                                            "parentUid": "form-section",
+                                                            "children": []
                                                         }
-                                                    ],
-                                                    "iconColor": "formLayoutAlt",
-                                                    "uuid": "b406c30f-3be9-4dbe-b383-55eb3313f764",
-                                                    "parentUid": "form-section"
+                                                    ]
                                                 }
-                                            ],
-                                            "iconColor": "formLayoutAlt",
-                                            "uuid": "861538eb-14f1-4065-a25f-e68d9431286f",
-                                            "parentUid": "form-section"
+                                            ]
                                         }
                                     ]
                                 },
@@ -537,6 +592,9 @@
                                             "options": {
                                                 "formBuilder": true
                                             },
+                                            "iconColor": "formLayoutAlt",
+                                            "uuid": "bd608290-7289-4731-86f7-1388f8f98fec",
+                                            "parentUid": "form-section",
                                             "children": [
                                                 {
                                                     "type": "form-field",
@@ -551,10 +609,7 @@
                                                     "parentUid": "form-section",
                                                     "children": []
                                                 }
-                                            ],
-                                            "iconColor": "formLayoutAlt",
-                                            "uuid": "bd608290-7289-4731-86f7-1388f8f98fec",
-                                            "parentUid": "form-section"
+                                            ]
                                         },
                                         {
                                             "type": "form-field",
@@ -566,7 +621,8 @@
                                             },
                                             "iconColor": "formField",
                                             "uuid": "c02dcfd1-027e-481f-9ded-f2ce54c5efbe",
-                                            "parentUid": "form-section"
+                                            "parentUid": "form-section",
+                                            "children": []
                                         },
                                         {
                                             "type": "form-container",
@@ -578,6 +634,9 @@
                                             "options": {
                                                 "formBuilder": true
                                             },
+                                            "iconColor": "formLayoutAlt",
+                                            "uuid": "d0cb1b21-0e66-4f5f-918d-0b299fbd4ef5",
+                                            "parentUid": "form-section",
                                             "children": [
                                                 {
                                                     "type": "form-field",
@@ -589,7 +648,8 @@
                                                     },
                                                     "iconColor": "formField",
                                                     "uuid": "b3f68f14-f349-4f77-914b-ebfa0c482f60",
-                                                    "parentUid": "form-section"
+                                                    "parentUid": "form-section",
+                                                    "children": []
                                                 },
                                                 {
                                                     "type": "form-field",
@@ -601,7 +661,8 @@
                                                     },
                                                     "iconColor": "formField",
                                                     "uuid": "9e3f8651-8c18-45bb-b7a0-1dc7fee1f2f5",
-                                                    "parentUid": "form-section"
+                                                    "parentUid": "form-section",
+                                                    "children": []
                                                 },
                                                 {
                                                     "type": "form-container",
@@ -613,6 +674,9 @@
                                                     "options": {
                                                         "formBuilder": true
                                                     },
+                                                    "iconColor": "formLayoutAlt",
+                                                    "uuid": "41827903-2f6f-46a7-a125-c49035253555",
+                                                    "parentUid": "form-section",
                                                     "children": [
                                                         {
                                                             "type": "form-field",
@@ -624,7 +688,8 @@
                                                             },
                                                             "iconColor": "formField",
                                                             "uuid": "dbd53624-d85a-4af1-8834-611f935fc840",
-                                                            "parentUid": "form-section"
+                                                            "parentUid": "form-section",
+                                                            "children": []
                                                         },
                                                         {
                                                             "type": "form-field",
@@ -636,17 +701,12 @@
                                                             },
                                                             "iconColor": "formField",
                                                             "uuid": "df834c95-19b1-4127-8734-d5ec1052d413",
-                                                            "parentUid": "form-section"
+                                                            "parentUid": "form-section",
+                                                            "children": []
                                                         }
-                                                    ],
-                                                    "iconColor": "formLayoutAlt",
-                                                    "uuid": "41827903-2f6f-46a7-a125-c49035253555",
-                                                    "parentUid": "form-section"
+                                                    ]
                                                 }
-                                            ],
-                                            "iconColor": "formLayoutAlt",
-                                            "uuid": "d0cb1b21-0e66-4f5f-918d-0b299fbd4ef5",
-                                            "parentUid": "form-section"
+                                            ]
                                         }
                                     ]
                                 },
@@ -674,6 +734,9 @@
                                             "options": {
                                                 "formBuilder": true
                                             },
+                                            "iconColor": "formLayoutAlt",
+                                            "uuid": "013f35fe-dd80-45a2-8ab0-09121395111d",
+                                            "parentUid": "form-section",
                                             "children": [
                                                 {
                                                     "type": "form-field",
@@ -688,10 +751,7 @@
                                                     "parentUid": "form-section",
                                                     "children": []
                                                 }
-                                            ],
-                                            "iconColor": "formLayoutAlt",
-                                            "uuid": "013f35fe-dd80-45a2-8ab0-09121395111d",
-                                            "parentUid": "form-section"
+                                            ]
                                         },
                                         {
                                             "type": "form-field",
@@ -703,7 +763,8 @@
                                             },
                                             "iconColor": "formField",
                                             "uuid": "d8a8f469-5b12-441f-b8bd-0de95b306ba1",
-                                            "parentUid": "form-section"
+                                            "parentUid": "form-section",
+                                            "children": []
                                         },
                                         {
                                             "type": "form-container",
@@ -715,6 +776,9 @@
                                             "options": {
                                                 "formBuilder": true
                                             },
+                                            "iconColor": "formLayoutAlt",
+                                            "uuid": "17e8679d-493a-428b-a294-4eb07a4e5764",
+                                            "parentUid": "form-section",
                                             "children": [
                                                 {
                                                     "type": "form-field",
@@ -726,7 +790,8 @@
                                                     },
                                                     "iconColor": "formField",
                                                     "uuid": "f3946779-56af-4168-bcfe-e916e6d7d6c7",
-                                                    "parentUid": "form-section"
+                                                    "parentUid": "form-section",
+                                                    "children": []
                                                 },
                                                 {
                                                     "type": "form-field",
@@ -738,7 +803,8 @@
                                                     },
                                                     "iconColor": "formField",
                                                     "uuid": "62626e1e-a80f-4aaf-9771-37616e324eb0",
-                                                    "parentUid": "form-section"
+                                                    "parentUid": "form-section",
+                                                    "children": []
                                                 },
                                                 {
                                                     "type": "form-container",
@@ -750,6 +816,9 @@
                                                     "options": {
                                                         "formBuilder": true
                                                     },
+                                                    "iconColor": "formLayoutAlt",
+                                                    "uuid": "f4856ca9-53e4-4d52-8392-a1fe81a67896",
+                                                    "parentUid": "form-section",
                                                     "children": [
                                                         {
                                                             "type": "form-field",
@@ -761,7 +830,8 @@
                                                             },
                                                             "iconColor": "formField",
                                                             "uuid": "f0b6c92b-9ad0-4d84-b9bd-f6c53e68d61f",
-                                                            "parentUid": "form-section"
+                                                            "parentUid": "form-section",
+                                                            "children": []
                                                         },
                                                         {
                                                             "type": "form-field",
@@ -773,17 +843,12 @@
                                                             },
                                                             "iconColor": "formField",
                                                             "uuid": "4907a7e0-ce97-48c6-b24c-cf231d3f7dc5",
-                                                            "parentUid": "form-section"
+                                                            "parentUid": "form-section",
+                                                            "children": []
                                                         }
-                                                    ],
-                                                    "iconColor": "formLayoutAlt",
-                                                    "uuid": "f4856ca9-53e4-4d52-8392-a1fe81a67896",
-                                                    "parentUid": "form-section"
+                                                    ]
                                                 }
-                                            ],
-                                            "iconColor": "formLayoutAlt",
-                                            "uuid": "17e8679d-493a-428b-a294-4eb07a4e5764",
-                                            "parentUid": "form-section"
+                                            ]
                                         }
                                     ]
                                 },
@@ -811,6 +876,9 @@
                                             "options": {
                                                 "formBuilder": true
                                             },
+                                            "iconColor": "formLayoutAlt",
+                                            "uuid": "ea2e17f9-1ca8-41c8-a092-26f1b9e45c6c",
+                                            "parentUid": "form-section",
                                             "children": [
                                                 {
                                                     "type": "form-field",
@@ -838,10 +906,7 @@
                                                     "parentUid": "form-section",
                                                     "children": []
                                                 }
-                                            ],
-                                            "iconColor": "formLayoutAlt",
-                                            "uuid": "ea2e17f9-1ca8-41c8-a092-26f1b9e45c6c",
-                                            "parentUid": "form-section"
+                                            ]
                                         },
                                         {
                                             "type": "form-field",
@@ -853,7 +918,8 @@
                                             },
                                             "iconColor": "formField",
                                             "uuid": "03fd2732-4628-489b-9eb8-a619d2a88262",
-                                            "parentUid": "form-section"
+                                            "parentUid": "form-section",
+                                            "children": []
                                         },
                                         {
                                             "type": "form-container",
@@ -865,6 +931,9 @@
                                             "options": {
                                                 "formBuilder": true
                                             },
+                                            "iconColor": "formLayoutAlt",
+                                            "uuid": "a2580eed-a71d-4369-8796-7d69d473ff83",
+                                            "parentUid": "form-section",
                                             "children": [
                                                 {
                                                     "type": "form-field",
@@ -876,7 +945,8 @@
                                                     },
                                                     "iconColor": "formField",
                                                     "uuid": "3d0d7e9e-60b8-499e-bf85-f9f69f79ee48",
-                                                    "parentUid": "form-section"
+                                                    "parentUid": "form-section",
+                                                    "children": []
                                                 },
                                                 {
                                                     "type": "form-field",
@@ -888,7 +958,8 @@
                                                     },
                                                     "iconColor": "formField",
                                                     "uuid": "7351407b-c518-4164-90dc-e78809ab0e76",
-                                                    "parentUid": "form-section"
+                                                    "parentUid": "form-section",
+                                                    "children": []
                                                 },
                                                 {
                                                     "type": "form-container",
@@ -900,6 +971,9 @@
                                                     "options": {
                                                         "formBuilder": true
                                                     },
+                                                    "iconColor": "formLayoutAlt",
+                                                    "uuid": "183c4740-d686-4d02-9b64-8a3653043d01",
+                                                    "parentUid": "form-section",
                                                     "children": [
                                                         {
                                                             "type": "form-field",
@@ -911,7 +985,8 @@
                                                             },
                                                             "iconColor": "formField",
                                                             "uuid": "3ea2d88c-c371-4dbb-97a7-6b1c2172166d",
-                                                            "parentUid": "form-section"
+                                                            "parentUid": "form-section",
+                                                            "children": []
                                                         },
                                                         {
                                                             "type": "form-field",
@@ -923,17 +998,12 @@
                                                             },
                                                             "iconColor": "formField",
                                                             "uuid": "fa8f0f89-c011-4ff8-86db-1afe2bacadd2",
-                                                            "parentUid": "form-section"
+                                                            "parentUid": "form-section",
+                                                            "children": []
                                                         }
-                                                    ],
-                                                    "iconColor": "formLayoutAlt",
-                                                    "uuid": "183c4740-d686-4d02-9b64-8a3653043d01",
-                                                    "parentUid": "form-section"
+                                                    ]
                                                 }
-                                            ],
-                                            "iconColor": "formLayoutAlt",
-                                            "uuid": "a2580eed-a71d-4369-8796-7d69d473ff83",
-                                            "parentUid": "form-section"
+                                            ]
                                         }
                                     ]
                                 },
@@ -1070,6 +1140,21 @@
                 "showCondition": "[field.9b447a9e-ad77-439f-8329-acd762b00737] === 'article'"
             }
         },
+        "70fd79cd-db63-464b-9f09-2dfbd349b01f": {
+            "settings": {
+                "type": "cohSection",
+                "title": "Field group",
+                "hideRowHeading": 1,
+                "removePadding": 1,
+                "columnCount": "2",
+                "breakpointIcon": "",
+                "breakpoints": false,
+                "propertiesMenu": false,
+                "disableScrollbar": true,
+                "disableEllipsisMenu": true,
+                "isOpen": true
+            }
+        },
         "395566af-5f4e-4854-810e-9e7f85f003c0": {
             "settings": {
                 "type": "cohTextBox",
@@ -1083,6 +1168,128 @@
             },
             "model": {
                 "value": "field_article_image"
+            }
+        },
+        "caf4603c-1068-409b-a627-4fe58fd872c8": {
+            "settings": {
+                "type": "checkboxToggle",
+                "title": "Filter Results",
+                "schema": {
+                    "type": "string"
+                },
+                "machineName": "filterresultsarticle",
+                "toggleType": "boolean",
+                "tooltipPlacement": "auto right"
+            },
+            "model": {
+                "value": true
+            }
+        },
+        "3209021a-1fc7-4991-92ee-cc04ce8714ac": {
+            "settings": {
+                "type": "cohSection",
+                "title": "Filter",
+                "hideRowHeading": 0,
+                "removePadding": 0,
+                "columnCount": "1",
+                "breakpointIcon": "",
+                "breakpoints": false,
+                "propertiesMenu": false,
+                "disableScrollbar": true,
+                "disableEllipsisMenu": true,
+                "isOpen": true,
+                "showCondition": "[field.caf4603c-1068-409b-a627-4fe58fd872c8]"
+            }
+        },
+        "c8d8d114-22d6-48db-92af-fb194e4e11c0": {
+            "settings": {
+                "type": "cohSection",
+                "title": "Field group",
+                "hideRowHeading": 1,
+                "removePadding": 1,
+                "columnCount": "1",
+                "breakpointIcon": "",
+                "breakpoints": false,
+                "propertiesMenu": false,
+                "disableScrollbar": true,
+                "disableEllipsisMenu": true,
+                "isOpen": true
+            }
+        },
+        "37328705-9b2f-4f8e-85a9-badbd3b4f9df": {
+            "settings": {
+                "type": "cohTextBox",
+                "title": "Number of results",
+                "schema": {
+                    "type": "string",
+                    "escape": true
+                },
+                "machineName": "filternumberarticle",
+                "tooltipPlacement": "auto right"
+            },
+            "model": {
+                "value": "4"
+            }
+        },
+        "85b81111-ecec-4979-b55c-e206eef77080": {
+            "settings": {
+                "type": "cohTextBox",
+                "title": "Taxonomy field",
+                "schema": {
+                    "type": "string",
+                    "escape": true
+                },
+                "machineName": "taxonomyfieldarticle",
+                "tooltipPlacement": "auto right"
+            },
+            "model": {
+                "value": "field_article_type"
+            }
+        },
+        "2235652a-0cec-4d80-9454-e7cd5078a5f0": {
+            "settings": {
+                "type": "cohSection",
+                "title": "Taxonomy",
+                "hideRowHeading": 0,
+                "removePadding": 0,
+                "columnCount": "2",
+                "breakpointIcon": "",
+                "breakpoints": false,
+                "propertiesMenu": false,
+                "disableScrollbar": true,
+                "disableEllipsisMenu": true,
+                "isOpen": true,
+                "showCondition": "[field.85b81111-ecec-4979-b55c-e206eef77080]"
+            }
+        },
+        "40ce4bdd-d878-429e-8877-5cf5a718da7e": {
+            "settings": {
+                "type": "cohTextBox",
+                "title": "Taxonomy Type (Vocabulary name)",
+                "schema": {
+                    "type": "string",
+                    "escape": true
+                },
+                "machineName": "taxonomytypearticle",
+                "tooltipPlacement": "auto right"
+            },
+            "model": {
+                "value": "article_type"
+            }
+        },
+        "df1e5783-603a-405c-b027-723fb06c684a": {
+            "settings": {
+                "type": "cohTextBox",
+                "title": "Taxonomy Term",
+                "schema": {
+                    "type": "string",
+                    "escape": true
+                },
+                "machineName": "taxonomytermarticle",
+                "tooltipPlacement": "auto right"
+            },
+            "model": {
+                "value": "News"
             }
         },
         "48e713d3-7713-4442-b152-77532f9f620c": {
@@ -1101,6 +1308,21 @@
                 "showCondition": "[field.9b447a9e-ad77-439f-8329-acd762b00737] === 'event'"
             }
         },
+        "a95dc140-053a-4067-9357-09efbde300d4": {
+            "settings": {
+                "type": "cohSection",
+                "title": "Field group",
+                "hideRowHeading": 1,
+                "removePadding": 1,
+                "columnCount": "2",
+                "breakpointIcon": "",
+                "breakpoints": false,
+                "propertiesMenu": false,
+                "disableScrollbar": true,
+                "disableEllipsisMenu": true,
+                "isOpen": true
+            }
+        },
         "1bb1ba8f-685d-487b-a619-27949da07ed4": {
             "settings": {
                 "type": "cohTextBox",
@@ -1114,6 +1336,128 @@
             },
             "model": {
                 "value": "field_event_image"
+            }
+        },
+        "c1168dad-7f55-4c90-828b-a969adb46592": {
+            "settings": {
+                "type": "checkboxToggle",
+                "title": "Filter Results",
+                "schema": {
+                    "type": "string"
+                },
+                "machineName": "filterresultsevent",
+                "toggleType": "boolean",
+                "tooltipPlacement": "auto right"
+            },
+            "model": {
+                "value": true
+            }
+        },
+        "259d38a6-f50b-4a06-80d5-543718f5025c": {
+            "settings": {
+                "type": "cohSection",
+                "title": "Filter",
+                "hideRowHeading": 0,
+                "removePadding": 0,
+                "columnCount": "1",
+                "breakpointIcon": "",
+                "breakpoints": false,
+                "propertiesMenu": false,
+                "disableScrollbar": true,
+                "disableEllipsisMenu": true,
+                "isOpen": true,
+                "showCondition": "[field.c1168dad-7f55-4c90-828b-a969adb46592]"
+            }
+        },
+        "ec539356-565b-4502-bcf3-325518e3adfe": {
+            "settings": {
+                "type": "cohSection",
+                "title": "Field group",
+                "hideRowHeading": 1,
+                "removePadding": 1,
+                "columnCount": "1",
+                "breakpointIcon": "",
+                "breakpoints": false,
+                "propertiesMenu": false,
+                "disableScrollbar": true,
+                "disableEllipsisMenu": true,
+                "isOpen": true
+            }
+        },
+        "5c56a203-5bda-473e-bb39-8e33af7e8ef6": {
+            "settings": {
+                "type": "cohTextBox",
+                "title": "Number of results",
+                "schema": {
+                    "type": "string",
+                    "escape": true
+                },
+                "machineName": "filternumberevent",
+                "tooltipPlacement": "auto right"
+            },
+            "model": {
+                "value": "4"
+            }
+        },
+        "3919d345-266b-4e23-ae5a-953693883ba1": {
+            "settings": {
+                "type": "cohTextBox",
+                "title": "Taxonomy field",
+                "schema": {
+                    "type": "string",
+                    "escape": true
+                },
+                "machineName": "taxonomyfieldevent",
+                "tooltipPlacement": "auto right"
+            },
+            "model": {
+                "value": "field_event_type"
+            }
+        },
+        "ad856941-32b0-4b77-bd11-54fae15b492f": {
+            "settings": {
+                "type": "cohSection",
+                "title": "Taxonomy",
+                "hideRowHeading": 0,
+                "removePadding": 0,
+                "columnCount": "2",
+                "breakpointIcon": "",
+                "breakpoints": false,
+                "propertiesMenu": false,
+                "disableScrollbar": true,
+                "disableEllipsisMenu": true,
+                "isOpen": true,
+                "showCondition": "[field.3919d345-266b-4e23-ae5a-953693883ba1]"
+            }
+        },
+        "407809a9-1d9a-4a53-bd84-cff4e66bf1fb": {
+            "settings": {
+                "type": "cohTextBox",
+                "title": "Taxonomy Type (Vocabulary name)",
+                "schema": {
+                    "type": "string",
+                    "escape": true
+                },
+                "machineName": "taxonomytypeevent",
+                "tooltipPlacement": "auto right"
+            },
+            "model": {
+                "value": "event_type"
+            }
+        },
+        "14799f05-f671-4338-a7cc-5c412b4f82b2": {
+            "settings": {
+                "type": "cohTextBox",
+                "title": "Taxonomy Term",
+                "schema": {
+                    "type": "string",
+                    "escape": true
+                },
+                "machineName": "taxonomytermevent",
+                "tooltipPlacement": "auto right"
+            },
+            "model": {
+                "value": "Meet-up"
             }
         },
         "8dc455ae-ba39-4d19-8cfa-049536ac465a": {
@@ -1132,6 +1476,21 @@
                 "showCondition": "[field.9b447a9e-ad77-439f-8329-acd762b00737] === 'person'"
             }
         },
+        "d1f2a3f2-b6c1-4ee8-b4bb-495477b8c39d": {
+            "settings": {
+                "type": "cohSection",
+                "title": "Field group",
+                "hideRowHeading": 1,
+                "removePadding": 1,
+                "columnCount": "2",
+                "breakpointIcon": "",
+                "breakpoints": false,
+                "propertiesMenu": false,
+                "disableScrollbar": true,
+                "disableEllipsisMenu": true,
+                "isOpen": true
+            }
+        },
         "3bc7b840-e621-4932-b25d-a48cc218a10e": {
             "settings": {
                 "type": "cohTextBox",
@@ -1145,6 +1504,450 @@
             },
             "model": {
                 "value": "field_person_image"
+            }
+        },
+        "417d1f20-39c2-4bc6-a3c7-9d04d82ef450": {
+            "settings": {
+                "type": "checkboxToggle",
+                "title": "Filter Results",
+                "schema": {
+                    "type": "string"
+                },
+                "machineName": "filterresultsperson",
+                "toggleType": "boolean",
+                "tooltipPlacement": "auto right"
+            },
+            "model": {
+                "value": true
+            }
+        },
+        "861538eb-14f1-4065-a25f-e68d9431286f": {
+            "settings": {
+                "type": "cohSection",
+                "title": "Filter",
+                "hideRowHeading": 0,
+                "removePadding": 0,
+                "columnCount": "1",
+                "breakpointIcon": "",
+                "breakpoints": false,
+                "propertiesMenu": false,
+                "disableScrollbar": true,
+                "disableEllipsisMenu": true,
+                "isOpen": true,
+                "showCondition": "[field.417d1f20-39c2-4bc6-a3c7-9d04d82ef450]"
+            }
+        },
+        "d4db1c8a-215f-4102-8a34-584f9bddd7fe": {
+            "settings": {
+                "type": "cohTextBox",
+                "title": "Number of results",
+                "schema": {
+                    "type": "string",
+                    "escape": true
+                },
+                "machineName": "filternumberperson",
+                "tooltipPlacement": "auto right"
+            },
+            "model": {
+                "value": "4"
+            }
+        },
+        "959b414d-32bf-4ad4-91e5-1a90915b9ed9": {
+            "settings": {
+                "type": "cohTextBox",
+                "title": "Taxonomy field",
+                "schema": {
+                    "type": "string",
+                    "escape": true
+                },
+                "machineName": "taxonomyfieldperson",
+                "tooltipPlacement": "auto right"
+            },
+            "model": {
+                "value": "field_person_type"
+            }
+        },
+        "b406c30f-3be9-4dbe-b383-55eb3313f764": {
+            "settings": {
+                "type": "cohSection",
+                "title": "Taxonomy",
+                "hideRowHeading": 0,
+                "removePadding": 0,
+                "columnCount": "2",
+                "breakpointIcon": "",
+                "breakpoints": false,
+                "propertiesMenu": false,
+                "disableScrollbar": true,
+                "disableEllipsisMenu": true,
+                "isOpen": true,
+                "showCondition": "[field.959b414d-32bf-4ad4-91e5-1a90915b9ed9]"
+            }
+        },
+        "11a624a3-1cf4-42be-84ce-07d68c04ee05": {
+            "settings": {
+                "type": "cohTextBox",
+                "title": "Taxonomy Type (Vocabulary name)",
+                "schema": {
+                    "type": "string",
+                    "escape": true
+                },
+                "machineName": "taxonomytypeperson",
+                "tooltipPlacement": "auto right"
+            },
+            "model": {
+                "value": "person_type"
+            }
+        },
+        "a8f50d59-d460-4704-82f0-1308b0b2c375": {
+            "settings": {
+                "type": "cohTextBox",
+                "title": "Taxonomy Term",
+                "schema": {
+                    "type": "string",
+                    "escape": true
+                },
+                "machineName": "taxonomytermperson",
+                "tooltipPlacement": "auto right"
+            },
+            "model": {
+                "value": "Sales"
+            }
+        },
+        "e614ee0b-0bb7-4389-abd6-aba805d661b7": {
+            "settings": {
+                "type": "cohSection",
+                "title": "Place",
+                "hideRowHeading": 1,
+                "removePadding": 0,
+                "columnCount": "1",
+                "breakpointIcon": "",
+                "breakpoints": false,
+                "propertiesMenu": false,
+                "disableScrollbar": true,
+                "disableEllipsisMenu": true,
+                "isOpen": true,
+                "showCondition": "[field.9b447a9e-ad77-439f-8329-acd762b00737] === 'place'"
+            }
+        },
+        "bd608290-7289-4731-86f7-1388f8f98fec": {
+            "settings": {
+                "type": "cohSection",
+                "title": "Field group",
+                "hideRowHeading": 1,
+                "removePadding": 1,
+                "columnCount": "2",
+                "breakpointIcon": "",
+                "breakpoints": false,
+                "propertiesMenu": false,
+                "disableScrollbar": true,
+                "disableEllipsisMenu": true,
+                "isOpen": true
+            }
+        },
+        "d45390f2-5ad5-439b-9464-a1e006c2581e": {
+            "settings": {
+                "type": "cohTextBox",
+                "title": "Image field",
+                "schema": {
+                    "type": "string",
+                    "escape": true
+                },
+                "machineName": "placeimage",
+                "tooltipPlacement": "auto right"
+            },
+            "model": {
+                "value": "field_place_image"
+            }
+        },
+        "c02dcfd1-027e-481f-9ded-f2ce54c5efbe": {
+            "settings": {
+                "type": "checkboxToggle",
+                "title": "Filter Results",
+                "schema": {
+                    "type": "string"
+                },
+                "machineName": "filterresultsplace",
+                "toggleType": "boolean",
+                "tooltipPlacement": "auto right"
+            },
+            "model": {
+                "value": true
+            }
+        },
+        "d0cb1b21-0e66-4f5f-918d-0b299fbd4ef5": {
+            "settings": {
+                "type": "cohSection",
+                "title": "Filter",
+                "hideRowHeading": 0,
+                "removePadding": 0,
+                "columnCount": "1",
+                "breakpointIcon": "",
+                "breakpoints": false,
+                "propertiesMenu": false,
+                "disableScrollbar": true,
+                "disableEllipsisMenu": true,
+                "isOpen": true,
+                "showCondition": "[field.c02dcfd1-027e-481f-9ded-f2ce54c5efbe]"
+            }
+        },
+        "b3f68f14-f349-4f77-914b-ebfa0c482f60": {
+            "settings": {
+                "type": "cohTextBox",
+                "title": "Number of results",
+                "schema": {
+                    "type": "string",
+                    "escape": true
+                },
+                "machineName": "filternumberplace",
+                "tooltipPlacement": "auto right"
+            },
+            "model": {
+                "value": "4"
+            }
+        },
+        "9e3f8651-8c18-45bb-b7a0-1dc7fee1f2f5": {
+            "settings": {
+                "type": "cohTextBox",
+                "title": "Taxonomy field",
+                "schema": {
+                    "type": "string",
+                    "escape": true
+                },
+                "machineName": "taxonomyfieldplace",
+                "tooltipPlacement": "auto right"
+            },
+            "model": {
+                "value": "field_place_type"
+            }
+        },
+        "41827903-2f6f-46a7-a125-c49035253555": {
+            "settings": {
+                "type": "cohSection",
+                "title": "Taxonomy",
+                "hideRowHeading": 0,
+                "removePadding": 0,
+                "columnCount": "2",
+                "breakpointIcon": "",
+                "breakpoints": false,
+                "propertiesMenu": false,
+                "disableScrollbar": true,
+                "disableEllipsisMenu": true,
+                "isOpen": true,
+                "showCondition": "[field.9e3f8651-8c18-45bb-b7a0-1dc7fee1f2f5]"
+            }
+        },
+        "dbd53624-d85a-4af1-8834-611f935fc840": {
+            "settings": {
+                "type": "cohTextBox",
+                "title": "Taxonomy Type (Vocabulary name)",
+                "schema": {
+                    "type": "string",
+                    "escape": true
+                },
+                "machineName": "taxonomytypeplace",
+                "tooltipPlacement": "auto right"
+            },
+            "model": {
+                "value": "place_type"
+            }
+        },
+        "df834c95-19b1-4127-8734-d5ec1052d413": {
+            "settings": {
+                "type": "cohTextBox",
+                "title": "Taxonomy Term",
+                "schema": {
+                    "type": "string",
+                    "escape": true
+                },
+                "machineName": "taxonomytermplace",
+                "tooltipPlacement": "auto right"
+            },
+            "model": {
+                "value": "Bike Tours"
+            }
+        },
+        "d0b80cab-933c-4e48-87ff-8d982303d92a": {
+            "settings": {
+                "type": "cohSection",
+                "title": "Product",
+                "hideRowHeading": 1,
+                "removePadding": 0,
+                "columnCount": "1",
+                "breakpointIcon": "",
+                "breakpoints": false,
+                "propertiesMenu": false,
+                "disableScrollbar": true,
+                "disableEllipsisMenu": true,
+                "isOpen": true,
+                "showCondition": "[field.9b447a9e-ad77-439f-8329-acd762b00737] === 'product'"
+            }
+        },
+        "013f35fe-dd80-45a2-8ab0-09121395111d": {
+            "settings": {
+                "type": "cohSection",
+                "title": "Field group",
+                "hideRowHeading": 1,
+                "removePadding": 1,
+                "columnCount": "2",
+                "breakpointIcon": "",
+                "breakpoints": false,
+                "propertiesMenu": false,
+                "disableScrollbar": true,
+                "disableEllipsisMenu": true,
+                "isOpen": true
+            }
+        },
+        "a241994f-8c9b-4b7f-a378-f4af07070644": {
+            "settings": {
+                "type": "cohTextBox",
+                "title": "Image field",
+                "schema": {
+                    "type": "string",
+                    "escape": true
+                },
+                "machineName": "productimage",
+                "tooltipPlacement": "auto right"
+            },
+            "model": {
+                "value": "field_product_image"
+            }
+        },
+        "d8a8f469-5b12-441f-b8bd-0de95b306ba1": {
+            "settings": {
+                "type": "checkboxToggle",
+                "title": "Filter Results",
+                "schema": {
+                    "type": "string"
+                },
+                "machineName": "filterresultsproduct",
+                "toggleType": "boolean",
+                "tooltipPlacement": "auto right"
+            },
+            "model": {
+                "value": true
+            }
+        },
+        "17e8679d-493a-428b-a294-4eb07a4e5764": {
+            "settings": {
+                "type": "cohSection",
+                "title": "Filter",
+                "hideRowHeading": 0,
+                "removePadding": 0,
+                "columnCount": "1",
+                "breakpointIcon": "",
+                "breakpoints": false,
+                "propertiesMenu": false,
+                "disableScrollbar": true,
+                "disableEllipsisMenu": true,
+                "isOpen": true,
+                "showCondition": "[field.d8a8f469-5b12-441f-b8bd-0de95b306ba1]"
+            }
+        },
+        "f3946779-56af-4168-bcfe-e916e6d7d6c7": {
+            "settings": {
+                "type": "cohTextBox",
+                "title": "Number of results",
+                "schema": {
+                    "type": "string",
+                    "escape": true
+                },
+                "machineName": "filternumberproduct",
+                "tooltipPlacement": "auto right"
+            },
+            "model": {
+                "value": "4"
+            }
+        },
+        "62626e1e-a80f-4aaf-9771-37616e324eb0": {
+            "settings": {
+                "type": "cohTextBox",
+                "title": "Taxonomy field",
+                "schema": {
+                    "type": "string",
+                    "escape": true
+                },
+                "machineName": "taxonomyfieldproduct",
+                "tooltipPlacement": "auto right"
+            },
+            "model": {
+                "value": "field_product_type"
+            }
+        },
+        "f4856ca9-53e4-4d52-8392-a1fe81a67896": {
+            "settings": {
+                "type": "cohSection",
+                "title": "Taxonomy",
+                "hideRowHeading": 0,
+                "removePadding": 0,
+                "columnCount": "2",
+                "breakpointIcon": "",
+                "breakpoints": false,
+                "propertiesMenu": false,
+                "disableScrollbar": true,
+                "disableEllipsisMenu": true,
+                "isOpen": true,
+                "showCondition": "[field.62626e1e-a80f-4aaf-9771-37616e324eb0]"
+            }
+        },
+        "f0b6c92b-9ad0-4d84-b9bd-f6c53e68d61f": {
+            "settings": {
+                "type": "cohTextBox",
+                "title": "Taxonomy Type (Vocabulary name)",
+                "schema": {
+                    "type": "string",
+                    "escape": true
+                },
+                "machineName": "taxonomytypeproduct",
+                "tooltipPlacement": "auto right"
+            },
+            "model": {
+                "value": "product_type"
+            }
+        },
+        "4907a7e0-ce97-48c6-b24c-cf231d3f7dc5": {
+            "settings": {
+                "type": "cohTextBox",
+                "title": "Taxonomy Term",
+                "schema": {
+                    "type": "string",
+                    "escape": true
+                },
+                "machineName": "taxonomytermproduct",
+                "tooltipPlacement": "auto right"
+            },
+            "model": {
+                "value": "Bikes"
+            }
+        },
+        "eaeb4419-0daf-4e7d-bcec-c129d81c62c2": {
+            "settings": {
+                "type": "cohSection",
+                "title": "Custom",
+                "hideRowHeading": 1,
+                "removePadding": 0,
+                "columnCount": "1",
+                "breakpointIcon": "",
+                "breakpoints": false,
+                "propertiesMenu": false,
+                "disableScrollbar": true,
+                "disableEllipsisMenu": true,
+                "isOpen": true,
+                "showCondition": "[field.9b447a9e-ad77-439f-8329-acd762b00737] === 'custom'"
+            }
+        },
+        "ea2e17f9-1ca8-41c8-a092-26f1b9e45c6c": {
+            "settings": {
+                "type": "cohSection",
+                "title": "Field group",
+                "hideRowHeading": 1,
+                "removePadding": 1,
+                "columnCount": "2",
+                "breakpointIcon": "",
+                "breakpoints": false,
+                "propertiesMenu": false,
+                "disableScrollbar": true,
+                "disableEllipsisMenu": true,
+                "isOpen": true
             }
         },
         "2bafe46f-e667-4110-b3cd-7c8b012c37e1": {
@@ -1175,6 +1978,113 @@
             },
             "model": {
                 "value": "field_custom_image"
+            }
+        },
+        "03fd2732-4628-489b-9eb8-a619d2a88262": {
+            "settings": {
+                "type": "checkboxToggle",
+                "title": "Filter Results",
+                "schema": {
+                    "type": "string"
+                },
+                "machineName": "filterresultscustom",
+                "toggleType": "boolean",
+                "tooltipPlacement": "auto right"
+            },
+            "model": {
+                "value": true
+            }
+        },
+        "a2580eed-a71d-4369-8796-7d69d473ff83": {
+            "settings": {
+                "type": "cohSection",
+                "title": "Filter",
+                "hideRowHeading": 0,
+                "removePadding": 0,
+                "columnCount": "1",
+                "breakpointIcon": "",
+                "breakpoints": false,
+                "propertiesMenu": false,
+                "disableScrollbar": true,
+                "disableEllipsisMenu": true,
+                "isOpen": true,
+                "showCondition": "[field.03fd2732-4628-489b-9eb8-a619d2a88262]"
+            }
+        },
+        "3d0d7e9e-60b8-499e-bf85-f9f69f79ee48": {
+            "settings": {
+                "type": "cohTextBox",
+                "title": "Number of results",
+                "schema": {
+                    "type": "string",
+                    "escape": true
+                },
+                "machineName": "filternumbercustom",
+                "tooltipPlacement": "auto right"
+            },
+            "model": {
+                "value": "4"
+            }
+        },
+        "7351407b-c518-4164-90dc-e78809ab0e76": {
+            "settings": {
+                "type": "cohTextBox",
+                "title": "Taxonomy field",
+                "schema": {
+                    "type": "string",
+                    "escape": true
+                },
+                "machineName": "taxonomyfieldcustom",
+                "tooltipPlacement": "auto right"
+            },
+            "model": {
+                "value": "field_custom_type"
+            }
+        },
+        "183c4740-d686-4d02-9b64-8a3653043d01": {
+            "settings": {
+                "type": "cohSection",
+                "title": "Taxonomy",
+                "hideRowHeading": 0,
+                "removePadding": 0,
+                "columnCount": "2",
+                "breakpointIcon": "",
+                "breakpoints": false,
+                "propertiesMenu": false,
+                "disableScrollbar": true,
+                "disableEllipsisMenu": true,
+                "isOpen": true,
+                "showCondition": "[field.7351407b-c518-4164-90dc-e78809ab0e76]"
+            }
+        },
+        "3ea2d88c-c371-4dbb-97a7-6b1c2172166d": {
+            "settings": {
+                "type": "cohTextBox",
+                "title": "Taxonomy Type (Vocabulary name)",
+                "schema": {
+                    "type": "string",
+                    "escape": true
+                },
+                "machineName": "taxonomytypecustom",
+                "tooltipPlacement": "auto right"
+            },
+            "model": {
+                "value": "custom_type"
+            }
+        },
+        "fa8f0f89-c011-4ff8-86db-1afe2bacadd2": {
+            "settings": {
+                "type": "cohTextBox",
+                "title": "Taxonomy Term",
+                "schema": {
+                    "type": "string",
+                    "escape": true
+                },
+                "machineName": "taxonomytermcustom",
+                "tooltipPlacement": "auto right"
+            },
+            "model": {
+                "value": "Custom Term"
             }
         },
         "bd066498-0114-434d-90ac-202bb31d5538": {
@@ -1707,22 +2617,58 @@
                 "value": "coh-style-remote-content"
             }
         },
-        "caf4603c-1068-409b-a627-4fe58fd872c8": {
+        "dad96b67-059d-4da9-b30c-fdc4883fef04": {
             "settings": {
-                "type": "checkboxToggle",
-                "title": "Filter Results",
-                "schema": {
-                    "type": "string"
-                },
-                "machineName": "filterresultsarticle",
-                "toggleType": "boolean",
+                "type": "cohSelect",
+                "title": "Language",
+                "selectType": "custom",
+                "machineName": "language",
+                "options": [
+                    {
+                        "label": "Site's default language",
+                        "value": ""
+                    },
+                    {
+                        "label": "English",
+                        "value": "en"
+                    },
+                    {
+                        "label": "French",
+                        "value": "fr"
+                    },
+                    {
+                        "label": "Spanish",
+                        "value": "es"
+                    },
+                    {
+                        "label": "Japanese",
+                        "value": "ja"
+                    },
+                    {
+                        "label": "Custom",
+                        "value": "custom"
+                    }
+                ],
                 "tooltipPlacement": "auto right"
             },
             "model": {
-                "value": true
+                "value": ""
             }
         },
-        "70fd79cd-db63-464b-9f09-2dfbd349b01f": {
+        "25d726a6-a4c6-45ed-822b-38e7367a2ecc": {
+            "settings": {
+                "type": "cohTextBox",
+                "title": "Language code",
+                "schema": {
+                    "type": "string",
+                    "escape": true
+                },
+                "machineName": "customlanguagecode",
+                "tooltipPlacement": "auto right",
+                "showCondition": "[field.dad96b67-059d-4da9-b30c-fdc4883fef04] == 'custom'"
+            }
+        },
+        "75908255-5da9-47d0-9e6c-fddbc91dffdb": {
             "settings": {
                 "type": "cohSection",
                 "title": "Field group",
@@ -1735,816 +2681,6 @@
                 "disableScrollbar": true,
                 "disableEllipsisMenu": true,
                 "isOpen": true
-            }
-        },
-        "2235652a-0cec-4d80-9454-e7cd5078a5f0": {
-            "settings": {
-                "type": "cohSection",
-                "title": "Taxonomy",
-                "hideRowHeading": 0,
-                "removePadding": 0,
-                "columnCount": "2",
-                "breakpointIcon": "",
-                "breakpoints": false,
-                "propertiesMenu": false,
-                "disableScrollbar": true,
-                "disableEllipsisMenu": true,
-                "isOpen": true,
-                "showCondition": "[field.85b81111-ecec-4979-b55c-e206eef77080]"
-            }
-        },
-        "40ce4bdd-d878-429e-8877-5cf5a718da7e": {
-            "settings": {
-                "type": "cohTextBox",
-                "title": "Taxonomy Type (Vocabulary name)",
-                "schema": {
-                    "type": "string",
-                    "escape": true
-                },
-                "machineName": "taxonomytypearticle",
-                "tooltipPlacement": "auto right"
-            },
-            "model": {
-                "value": "article_type"
-            }
-        },
-        "df1e5783-603a-405c-b027-723fb06c684a": {
-            "settings": {
-                "type": "cohTextBox",
-                "title": "Taxonomy Term",
-                "schema": {
-                    "type": "string",
-                    "escape": true
-                },
-                "machineName": "taxonomytermarticle",
-                "tooltipPlacement": "auto right"
-            },
-            "model": {
-                "value": "News"
-            }
-        },
-        "85b81111-ecec-4979-b55c-e206eef77080": {
-            "settings": {
-                "type": "cohTextBox",
-                "title": "Taxonomy field",
-                "schema": {
-                    "type": "string",
-                    "escape": true
-                },
-                "machineName": "taxonomyfieldarticle",
-                "tooltipPlacement": "auto right"
-            },
-            "model": {
-                "value": "field_article_type"
-            }
-        },
-        "c8d8d114-22d6-48db-92af-fb194e4e11c0": {
-            "settings": {
-                "type": "cohSection",
-                "title": "Field group",
-                "hideRowHeading": 1,
-                "removePadding": 1,
-                "columnCount": "1",
-                "breakpointIcon": "",
-                "breakpoints": false,
-                "propertiesMenu": false,
-                "disableScrollbar": true,
-                "disableEllipsisMenu": true,
-                "isOpen": true
-            }
-        },
-        "3209021a-1fc7-4991-92ee-cc04ce8714ac": {
-            "settings": {
-                "type": "cohSection",
-                "title": "Filter",
-                "hideRowHeading": 0,
-                "removePadding": 0,
-                "columnCount": "1",
-                "breakpointIcon": "",
-                "breakpoints": false,
-                "propertiesMenu": false,
-                "disableScrollbar": true,
-                "disableEllipsisMenu": true,
-                "isOpen": true,
-                "showCondition": "[field.caf4603c-1068-409b-a627-4fe58fd872c8]"
-            }
-        },
-        "37328705-9b2f-4f8e-85a9-badbd3b4f9df": {
-            "settings": {
-                "type": "cohTextBox",
-                "title": "Number of results",
-                "schema": {
-                    "type": "string",
-                    "escape": true
-                },
-                "machineName": "filternumberarticle",
-                "tooltipPlacement": "auto right"
-            },
-            "model": {
-                "value": "4"
-            }
-        },
-        "c1168dad-7f55-4c90-828b-a969adb46592": {
-            "settings": {
-                "type": "checkboxToggle",
-                "title": "Filter Results",
-                "schema": {
-                    "type": "string"
-                },
-                "machineName": "filterresultsevent",
-                "toggleType": "boolean",
-                "tooltipPlacement": "auto right"
-            },
-            "model": {
-                "value": true
-            }
-        },
-        "a95dc140-053a-4067-9357-09efbde300d4": {
-            "settings": {
-                "type": "cohSection",
-                "title": "Field group",
-                "hideRowHeading": 1,
-                "removePadding": 1,
-                "columnCount": "2",
-                "breakpointIcon": "",
-                "breakpoints": false,
-                "propertiesMenu": false,
-                "disableScrollbar": true,
-                "disableEllipsisMenu": true,
-                "isOpen": true
-            }
-        },
-        "5c56a203-5bda-473e-bb39-8e33af7e8ef6": {
-            "settings": {
-                "type": "cohTextBox",
-                "title": "Number of results",
-                "schema": {
-                    "type": "string",
-                    "escape": true
-                },
-                "machineName": "filternumberevent",
-                "tooltipPlacement": "auto right"
-            },
-            "model": {
-                "value": "4"
-            }
-        },
-        "3919d345-266b-4e23-ae5a-953693883ba1": {
-            "settings": {
-                "type": "cohTextBox",
-                "title": "Taxonomy field",
-                "schema": {
-                    "type": "string",
-                    "escape": true
-                },
-                "machineName": "taxonomyfieldevent",
-                "tooltipPlacement": "auto right"
-            },
-            "model": {
-                "value": "field_event_type"
-            }
-        },
-        "ec539356-565b-4502-bcf3-325518e3adfe": {
-            "settings": {
-                "type": "cohSection",
-                "title": "Field group",
-                "hideRowHeading": 1,
-                "removePadding": 1,
-                "columnCount": "1",
-                "breakpointIcon": "",
-                "breakpoints": false,
-                "propertiesMenu": false,
-                "disableScrollbar": true,
-                "disableEllipsisMenu": true,
-                "isOpen": true
-            }
-        },
-        "407809a9-1d9a-4a53-bd84-cff4e66bf1fb": {
-            "settings": {
-                "type": "cohTextBox",
-                "title": "Taxonomy Type (Vocabulary name)",
-                "schema": {
-                    "type": "string",
-                    "escape": true
-                },
-                "machineName": "taxonomytypeevent",
-                "tooltipPlacement": "auto right"
-            },
-            "model": {
-                "value": "event_type"
-            }
-        },
-        "14799f05-f671-4338-a7cc-5c412b4f82b2": {
-            "settings": {
-                "type": "cohTextBox",
-                "title": "Taxonomy Term",
-                "schema": {
-                    "type": "string",
-                    "escape": true
-                },
-                "machineName": "taxonomytermevent",
-                "tooltipPlacement": "auto right"
-            },
-            "model": {
-                "value": "Meet-up"
-            }
-        },
-        "ad856941-32b0-4b77-bd11-54fae15b492f": {
-            "settings": {
-                "type": "cohSection",
-                "title": "Taxonomy",
-                "hideRowHeading": 0,
-                "removePadding": 0,
-                "columnCount": "2",
-                "breakpointIcon": "",
-                "breakpoints": false,
-                "propertiesMenu": false,
-                "disableScrollbar": true,
-                "disableEllipsisMenu": true,
-                "isOpen": true,
-                "showCondition": "[field.3919d345-266b-4e23-ae5a-953693883ba1]"
-            }
-        },
-        "259d38a6-f50b-4a06-80d5-543718f5025c": {
-            "settings": {
-                "type": "cohSection",
-                "title": "Filter",
-                "hideRowHeading": 0,
-                "removePadding": 0,
-                "columnCount": "1",
-                "breakpointIcon": "",
-                "breakpoints": false,
-                "propertiesMenu": false,
-                "disableScrollbar": true,
-                "disableEllipsisMenu": true,
-                "isOpen": true,
-                "showCondition": "[field.c1168dad-7f55-4c90-828b-a969adb46592]"
-            }
-        },
-        "d1f2a3f2-b6c1-4ee8-b4bb-495477b8c39d": {
-            "settings": {
-                "type": "cohSection",
-                "title": "Field group",
-                "hideRowHeading": 1,
-                "removePadding": 1,
-                "columnCount": "2",
-                "breakpointIcon": "",
-                "breakpoints": false,
-                "propertiesMenu": false,
-                "disableScrollbar": true,
-                "disableEllipsisMenu": true,
-                "isOpen": true
-            }
-        },
-        "417d1f20-39c2-4bc6-a3c7-9d04d82ef450": {
-            "settings": {
-                "type": "checkboxToggle",
-                "title": "Filter Results",
-                "schema": {
-                    "type": "string"
-                },
-                "machineName": "filterresultsperson",
-                "toggleType": "boolean",
-                "tooltipPlacement": "auto right"
-            },
-            "model": {
-                "value": true
-            }
-        },
-        "d4db1c8a-215f-4102-8a34-584f9bddd7fe": {
-            "settings": {
-                "type": "cohTextBox",
-                "title": "Number of results",
-                "schema": {
-                    "type": "string",
-                    "escape": true
-                },
-                "machineName": "filternumberperson",
-                "tooltipPlacement": "auto right"
-            },
-            "model": {
-                "value": "4"
-            }
-        },
-        "959b414d-32bf-4ad4-91e5-1a90915b9ed9": {
-            "settings": {
-                "type": "cohTextBox",
-                "title": "Taxonomy field",
-                "schema": {
-                    "type": "string",
-                    "escape": true
-                },
-                "machineName": "taxonomyfieldperson",
-                "tooltipPlacement": "auto right"
-            },
-            "model": {
-                "value": "field_person_type"
-            }
-        },
-        "11a624a3-1cf4-42be-84ce-07d68c04ee05": {
-            "settings": {
-                "type": "cohTextBox",
-                "title": "Taxonomy Type (Vocabulary name)",
-                "schema": {
-                    "type": "string",
-                    "escape": true
-                },
-                "machineName": "taxonomytypeperson",
-                "tooltipPlacement": "auto right"
-            },
-            "model": {
-                "value": "person_type"
-            }
-        },
-        "a8f50d59-d460-4704-82f0-1308b0b2c375": {
-            "settings": {
-                "type": "cohTextBox",
-                "title": "Taxonomy Term",
-                "schema": {
-                    "type": "string",
-                    "escape": true
-                },
-                "machineName": "taxonomytermperson",
-                "tooltipPlacement": "auto right"
-            },
-            "model": {
-                "value": "Sales"
-            }
-        },
-        "b406c30f-3be9-4dbe-b383-55eb3313f764": {
-            "settings": {
-                "type": "cohSection",
-                "title": "Taxonomy",
-                "hideRowHeading": 0,
-                "removePadding": 0,
-                "columnCount": "2",
-                "breakpointIcon": "",
-                "breakpoints": false,
-                "propertiesMenu": false,
-                "disableScrollbar": true,
-                "disableEllipsisMenu": true,
-                "isOpen": true,
-                "showCondition": "[field.959b414d-32bf-4ad4-91e5-1a90915b9ed9]"
-            }
-        },
-        "861538eb-14f1-4065-a25f-e68d9431286f": {
-            "settings": {
-                "type": "cohSection",
-                "title": "Filter",
-                "hideRowHeading": 0,
-                "removePadding": 0,
-                "columnCount": "1",
-                "breakpointIcon": "",
-                "breakpoints": false,
-                "propertiesMenu": false,
-                "disableScrollbar": true,
-                "disableEllipsisMenu": true,
-                "isOpen": true,
-                "showCondition": "[field.417d1f20-39c2-4bc6-a3c7-9d04d82ef450]"
-            }
-        },
-        "d45390f2-5ad5-439b-9464-a1e006c2581e": {
-            "settings": {
-                "type": "cohTextBox",
-                "title": "Image field",
-                "schema": {
-                    "type": "string",
-                    "escape": true
-                },
-                "machineName": "placeimage",
-                "tooltipPlacement": "auto right"
-            },
-            "model": {
-                "value": "field_place_image"
-            }
-        },
-        "bd608290-7289-4731-86f7-1388f8f98fec": {
-            "settings": {
-                "type": "cohSection",
-                "title": "Field group",
-                "hideRowHeading": 1,
-                "removePadding": 1,
-                "columnCount": "2",
-                "breakpointIcon": "",
-                "breakpoints": false,
-                "propertiesMenu": false,
-                "disableScrollbar": true,
-                "disableEllipsisMenu": true,
-                "isOpen": true
-            }
-        },
-        "c02dcfd1-027e-481f-9ded-f2ce54c5efbe": {
-            "settings": {
-                "type": "checkboxToggle",
-                "title": "Filter Results",
-                "schema": {
-                    "type": "string"
-                },
-                "machineName": "filterresultsplace",
-                "toggleType": "boolean",
-                "tooltipPlacement": "auto right"
-            },
-            "model": {
-                "value": true
-            }
-        },
-        "b3f68f14-f349-4f77-914b-ebfa0c482f60": {
-            "settings": {
-                "type": "cohTextBox",
-                "title": "Number of results",
-                "schema": {
-                    "type": "string",
-                    "escape": true
-                },
-                "machineName": "filternumberplace",
-                "tooltipPlacement": "auto right"
-            },
-            "model": {
-                "value": "4"
-            }
-        },
-        "9e3f8651-8c18-45bb-b7a0-1dc7fee1f2f5": {
-            "settings": {
-                "type": "cohTextBox",
-                "title": "Taxonomy field",
-                "schema": {
-                    "type": "string",
-                    "escape": true
-                },
-                "machineName": "taxonomyfieldplace",
-                "tooltipPlacement": "auto right"
-            },
-            "model": {
-                "value": "field_place_type"
-            }
-        },
-        "dbd53624-d85a-4af1-8834-611f935fc840": {
-            "settings": {
-                "type": "cohTextBox",
-                "title": "Taxonomy Type (Vocabulary name)",
-                "schema": {
-                    "type": "string",
-                    "escape": true
-                },
-                "machineName": "taxonomytypeplace",
-                "tooltipPlacement": "auto right"
-            },
-            "model": {
-                "value": "place_type"
-            }
-        },
-        "df834c95-19b1-4127-8734-d5ec1052d413": {
-            "settings": {
-                "type": "cohTextBox",
-                "title": "Taxonomy Term",
-                "schema": {
-                    "type": "string",
-                    "escape": true
-                },
-                "machineName": "taxonomytermplace",
-                "tooltipPlacement": "auto right"
-            },
-            "model": {
-                "value": "Bike Tours"
-            }
-        },
-        "41827903-2f6f-46a7-a125-c49035253555": {
-            "settings": {
-                "type": "cohSection",
-                "title": "Taxonomy",
-                "hideRowHeading": 0,
-                "removePadding": 0,
-                "columnCount": "2",
-                "breakpointIcon": "",
-                "breakpoints": false,
-                "propertiesMenu": false,
-                "disableScrollbar": true,
-                "disableEllipsisMenu": true,
-                "isOpen": true,
-                "showCondition": "[field.9e3f8651-8c18-45bb-b7a0-1dc7fee1f2f5]"
-            }
-        },
-        "d0cb1b21-0e66-4f5f-918d-0b299fbd4ef5": {
-            "settings": {
-                "type": "cohSection",
-                "title": "Filter",
-                "hideRowHeading": 0,
-                "removePadding": 0,
-                "columnCount": "1",
-                "breakpointIcon": "",
-                "breakpoints": false,
-                "propertiesMenu": false,
-                "disableScrollbar": true,
-                "disableEllipsisMenu": true,
-                "isOpen": true,
-                "showCondition": "[field.c02dcfd1-027e-481f-9ded-f2ce54c5efbe]"
-            }
-        },
-        "e614ee0b-0bb7-4389-abd6-aba805d661b7": {
-            "settings": {
-                "type": "cohSection",
-                "title": "Place",
-                "hideRowHeading": 1,
-                "removePadding": 0,
-                "columnCount": "1",
-                "breakpointIcon": "",
-                "breakpoints": false,
-                "propertiesMenu": false,
-                "disableScrollbar": true,
-                "disableEllipsisMenu": true,
-                "isOpen": true,
-                "showCondition": "[field.9b447a9e-ad77-439f-8329-acd762b00737] === 'place'"
-            }
-        },
-        "ea2e17f9-1ca8-41c8-a092-26f1b9e45c6c": {
-            "settings": {
-                "type": "cohSection",
-                "title": "Field group",
-                "hideRowHeading": 1,
-                "removePadding": 1,
-                "columnCount": "2",
-                "breakpointIcon": "",
-                "breakpoints": false,
-                "propertiesMenu": false,
-                "disableScrollbar": true,
-                "disableEllipsisMenu": true,
-                "isOpen": true
-            }
-        },
-        "03fd2732-4628-489b-9eb8-a619d2a88262": {
-            "settings": {
-                "type": "checkboxToggle",
-                "title": "Filter Results",
-                "schema": {
-                    "type": "string"
-                },
-                "machineName": "filterresultscustom",
-                "toggleType": "boolean",
-                "tooltipPlacement": "auto right"
-            },
-            "model": {
-                "value": true
-            }
-        },
-        "3d0d7e9e-60b8-499e-bf85-f9f69f79ee48": {
-            "settings": {
-                "type": "cohTextBox",
-                "title": "Number of results",
-                "schema": {
-                    "type": "string",
-                    "escape": true
-                },
-                "machineName": "filternumbercustom",
-                "tooltipPlacement": "auto right"
-            },
-            "model": {
-                "value": "4"
-            }
-        },
-        "7351407b-c518-4164-90dc-e78809ab0e76": {
-            "settings": {
-                "type": "cohTextBox",
-                "title": "Taxonomy field",
-                "schema": {
-                    "type": "string",
-                    "escape": true
-                },
-                "machineName": "taxonomyfieldcustom",
-                "tooltipPlacement": "auto right"
-            },
-            "model": {
-                "value": "field_custom_type"
-            }
-        },
-        "3ea2d88c-c371-4dbb-97a7-6b1c2172166d": {
-            "settings": {
-                "type": "cohTextBox",
-                "title": "Taxonomy Type (Vocabulary name)",
-                "schema": {
-                    "type": "string",
-                    "escape": true
-                },
-                "machineName": "taxonomytypecustom",
-                "tooltipPlacement": "auto right"
-            },
-            "model": {
-                "value": "custom_type"
-            }
-        },
-        "fa8f0f89-c011-4ff8-86db-1afe2bacadd2": {
-            "settings": {
-                "type": "cohTextBox",
-                "title": "Taxonomy Term",
-                "schema": {
-                    "type": "string",
-                    "escape": true
-                },
-                "machineName": "taxonomytermcustom",
-                "tooltipPlacement": "auto right"
-            },
-            "model": {
-                "value": "Custom Term"
-            }
-        },
-        "183c4740-d686-4d02-9b64-8a3653043d01": {
-            "settings": {
-                "type": "cohSection",
-                "title": "Taxonomy",
-                "hideRowHeading": 0,
-                "removePadding": 0,
-                "columnCount": "2",
-                "breakpointIcon": "",
-                "breakpoints": false,
-                "propertiesMenu": false,
-                "disableScrollbar": true,
-                "disableEllipsisMenu": true,
-                "isOpen": true,
-                "showCondition": "[field.7351407b-c518-4164-90dc-e78809ab0e76]"
-            }
-        },
-        "a2580eed-a71d-4369-8796-7d69d473ff83": {
-            "settings": {
-                "type": "cohSection",
-                "title": "Filter",
-                "hideRowHeading": 0,
-                "removePadding": 0,
-                "columnCount": "1",
-                "breakpointIcon": "",
-                "breakpoints": false,
-                "propertiesMenu": false,
-                "disableScrollbar": true,
-                "disableEllipsisMenu": true,
-                "isOpen": true,
-                "showCondition": "[field.03fd2732-4628-489b-9eb8-a619d2a88262]"
-            }
-        },
-        "eaeb4419-0daf-4e7d-bcec-c129d81c62c2": {
-            "settings": {
-                "type": "cohSection",
-                "title": "Custom",
-                "hideRowHeading": 1,
-                "removePadding": 0,
-                "columnCount": "1",
-                "breakpointIcon": "",
-                "breakpoints": false,
-                "propertiesMenu": false,
-                "disableScrollbar": true,
-                "disableEllipsisMenu": true,
-                "isOpen": true,
-                "showCondition": "[field.9b447a9e-ad77-439f-8329-acd762b00737] === 'custom'"
-            }
-        },
-        "a241994f-8c9b-4b7f-a378-f4af07070644": {
-            "settings": {
-                "type": "cohTextBox",
-                "title": "Image field",
-                "schema": {
-                    "type": "string",
-                    "escape": true
-                },
-                "machineName": "productimage",
-                "tooltipPlacement": "auto right"
-            },
-            "model": {
-                "value": "field_product_image"
-            }
-        },
-        "013f35fe-dd80-45a2-8ab0-09121395111d": {
-            "settings": {
-                "type": "cohSection",
-                "title": "Field group",
-                "hideRowHeading": 1,
-                "removePadding": 1,
-                "columnCount": "2",
-                "breakpointIcon": "",
-                "breakpoints": false,
-                "propertiesMenu": false,
-                "disableScrollbar": true,
-                "disableEllipsisMenu": true,
-                "isOpen": true
-            }
-        },
-        "d8a8f469-5b12-441f-b8bd-0de95b306ba1": {
-            "settings": {
-                "type": "checkboxToggle",
-                "title": "Filter Results",
-                "schema": {
-                    "type": "string"
-                },
-                "machineName": "filterresultsproduct",
-                "toggleType": "boolean",
-                "tooltipPlacement": "auto right"
-            },
-            "model": {
-                "value": true
-            }
-        },
-        "f3946779-56af-4168-bcfe-e916e6d7d6c7": {
-            "settings": {
-                "type": "cohTextBox",
-                "title": "Number of results",
-                "schema": {
-                    "type": "string",
-                    "escape": true
-                },
-                "machineName": "filternumberproduct",
-                "tooltipPlacement": "auto right"
-            },
-            "model": {
-                "value": "4"
-            }
-        },
-        "62626e1e-a80f-4aaf-9771-37616e324eb0": {
-            "settings": {
-                "type": "cohTextBox",
-                "title": "Taxonomy field",
-                "schema": {
-                    "type": "string",
-                    "escape": true
-                },
-                "machineName": "taxonomyfieldproduct",
-                "tooltipPlacement": "auto right"
-            },
-            "model": {
-                "value": "field_product_type"
-            }
-        },
-        "f0b6c92b-9ad0-4d84-b9bd-f6c53e68d61f": {
-            "settings": {
-                "type": "cohTextBox",
-                "title": "Taxonomy Type (Vocabulary name)",
-                "schema": {
-                    "type": "string",
-                    "escape": true
-                },
-                "machineName": "taxonomytypeproduct",
-                "tooltipPlacement": "auto right"
-            },
-            "model": {
-                "value": "product_type"
-            }
-        },
-        "4907a7e0-ce97-48c6-b24c-cf231d3f7dc5": {
-            "settings": {
-                "type": "cohTextBox",
-                "title": "Taxonomy Term",
-                "schema": {
-                    "type": "string",
-                    "escape": true
-                },
-                "machineName": "taxonomytermproduct",
-                "tooltipPlacement": "auto right"
-            },
-            "model": {
-                "value": "Bikes"
-            }
-        },
-        "f4856ca9-53e4-4d52-8392-a1fe81a67896": {
-            "settings": {
-                "type": "cohSection",
-                "title": "Taxonomy",
-                "hideRowHeading": 0,
-                "removePadding": 0,
-                "columnCount": "2",
-                "breakpointIcon": "",
-                "breakpoints": false,
-                "propertiesMenu": false,
-                "disableScrollbar": true,
-                "disableEllipsisMenu": true,
-                "isOpen": true,
-                "showCondition": "[field.62626e1e-a80f-4aaf-9771-37616e324eb0]"
-            }
-        },
-        "17e8679d-493a-428b-a294-4eb07a4e5764": {
-            "settings": {
-                "type": "cohSection",
-                "title": "Filter",
-                "hideRowHeading": 0,
-                "removePadding": 0,
-                "columnCount": "1",
-                "breakpointIcon": "",
-                "breakpoints": false,
-                "propertiesMenu": false,
-                "disableScrollbar": true,
-                "disableEllipsisMenu": true,
-                "isOpen": true,
-                "showCondition": "[field.d8a8f469-5b12-441f-b8bd-0de95b306ba1]"
-            }
-        },
-        "d0b80cab-933c-4e48-87ff-8d982303d92a": {
-            "settings": {
-                "type": "cohSection",
-                "title": "Product",
-                "hideRowHeading": 1,
-                "removePadding": 0,
-                "columnCount": "1",
-                "breakpointIcon": "",
-                "breakpoints": false,
-                "propertiesMenu": false,
-                "disableScrollbar": true,
-                "disableEllipsisMenu": true,
-                "isOpen": true,
-                "showCondition": "[field.9b447a9e-ad77-439f-8329-acd762b00737] === 'product'"
             }
         }
     },
@@ -2617,7 +2753,10 @@
         "4907a7e0-ce97-48c6-b24c-cf231d3f7dc5": {},
         "f4856ca9-53e4-4d52-8392-a1fe81a67896": {},
         "17e8679d-493a-428b-a294-4eb07a4e5764": {},
-        "d0b80cab-933c-4e48-87ff-8d982303d92a": {}
+        "d0b80cab-933c-4e48-87ff-8d982303d92a": {},
+        "dad96b67-059d-4da9-b30c-fdc4883fef04": {},
+        "25d726a6-a4c6-45ed-822b-38e7367a2ecc": {},
+        "75908255-5da9-47d0-9e6c-fddbc91dffdb": {}
     },
     "previewModel": {
         "7efaaa21-f700-48eb-80c3-1a5799b3cec5": {},
@@ -2688,7 +2827,10 @@
         "4907a7e0-ce97-48c6-b24c-cf231d3f7dc5": {},
         "f4856ca9-53e4-4d52-8392-a1fe81a67896": {},
         "17e8679d-493a-428b-a294-4eb07a4e5764": {},
-        "d0b80cab-933c-4e48-87ff-8d982303d92a": {}
+        "d0b80cab-933c-4e48-87ff-8d982303d92a": {},
+        "dad96b67-059d-4da9-b30c-fdc4883fef04": {},
+        "25d726a6-a4c6-45ed-822b-38e7367a2ecc": {},
+        "75908255-5da9-47d0-9e6c-fddbc91dffdb": {}
     },
     "variableFields": {
         "7efaaa21-f700-48eb-80c3-1a5799b3cec5": [],
@@ -2759,7 +2901,10 @@
         "4907a7e0-ce97-48c6-b24c-cf231d3f7dc5": [],
         "f4856ca9-53e4-4d52-8392-a1fe81a67896": [],
         "17e8679d-493a-428b-a294-4eb07a4e5764": [],
-        "d0b80cab-933c-4e48-87ff-8d982303d92a": []
+        "d0b80cab-933c-4e48-87ff-8d982303d92a": [],
+        "dad96b67-059d-4da9-b30c-fdc4883fef04": [],
+        "25d726a6-a4c6-45ed-822b-38e7367a2ecc": [],
+        "75908255-5da9-47d0-9e6c-fddbc91dffdb": []
     },
     "meta": {}
 }

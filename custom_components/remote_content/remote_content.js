@@ -5,6 +5,16 @@ class RemoteContent extends HTMLElement {
         // Parse and initialize the configuration data
         this.config = JSON.parse(this.parentNode.getAttribute('data-ssa-custom-component'));
         this.baseUrl = this.config.baseurl.replace(/\/+$/, '');
+
+        this.language = this.config.language;
+        this.customlanguagecode = this.config.customlanguagecode;
+
+        if (this.language && this.language !== 'custom') {
+            this.language = '/' + this.language;
+        } else if (this.language === 'custom') {
+            this.language = '/' + this.customlanguagecode;
+        }
+
         this.imageStyle = this.config.imagestyle;
         this.layoutStyle = this.config.layoutstyle;
 
@@ -106,7 +116,7 @@ class RemoteContent extends HTMLElement {
 
     // Fetch resource by its type and ID with caching
     async fetchById(type, id) {
-        const url = `${this.baseUrl}/jsonapi/${type}/${id}`;
+        const url = `${this.baseUrl}${this.language}/jsonapi/${type}/${id}`;
         if (this.imageCache.has(url)) {
             return this.imageCache.get(url);
         }
@@ -135,22 +145,27 @@ class RemoteContent extends HTMLElement {
         return this.getImageStyleUrl(file);
     }
 
-    // Fetch image URL based on media type and ID
+    // Fetch image URL and alt text based on media type and ID
     async getImageUrl(mediaId, mediaType) {
         if (mediaType === 'media--acquia_dam_image_asset') {
             const mediaAsset = await this.fetchById('media/acquia_dam_image_asset', mediaId);
-            return mediaAsset?.attributes?.acquia_dam_embed_codes?.[this.imageStyle]?.href ||
-                   mediaAsset?.attributes?.acquia_dam_embed_codes?.original?.href || '';
+            const imageUrl = mediaAsset?.attributes?.acquia_dam_embed_codes?.[this.imageStyle]?.href ||
+                             mediaAsset?.attributes?.acquia_dam_embed_codes?.original?.href || '';
+            const altText = mediaAsset?.attributes?.acquia_dam_alt_text || mediaAsset?.attributes?.name;
+            return { imageUrl, altText };
         } else {
             const mediaImage = await this.fetchById('media/image', mediaId);
             const fileId = mediaImage?.relationships?.image?.data?.id;
-            return fileId ? await this.getFileUrl(fileId) : '';
+            const file = fileId ? await this.fetchById('file/file', fileId) : null;
+            const imageUrl = file ? await this.getFileUrl(fileId) : '';
+            const altText = mediaImage?.relationships?.image?.data?.meta?.alt || 'Image'; // Default alt text if none is provided
+            return { imageUrl, altText };
         }
     }
 
     // Fetch taxonomy terms for filtering
     async fetchTaxonomyTerms() {
-        const taxonomyTermsUrl = `${this.baseUrl}/jsonapi/taxonomy_term/${this.remoteTaxonomyType}`;
+        const taxonomyTermsUrl = `${this.baseUrl}${this.language}/jsonapi/taxonomy_term/${this.remoteTaxonomyType}`;
         const termsData = await this.fetchData(taxonomyTermsUrl);
         return termsData.data; // Return the array of terms
     }
@@ -172,7 +187,7 @@ class RemoteContent extends HTMLElement {
 
             // If taxonomy term is empty, fetch all content
             if (!this.remoteTaxonomyTerm) {
-                contentUrl = `${this.baseUrl}/jsonapi/node/${this.remoteType}`;
+                contentUrl = `${this.baseUrl}${this.language}/jsonapi/node/${this.remoteType}`;
             } else {
                 // Fetch and filter by taxonomy terms
                 const allTerms = await this.fetchTaxonomyTerms();
@@ -184,7 +199,7 @@ class RemoteContent extends HTMLElement {
                     return;
                 }
 
-                contentUrl = `${this.baseUrl}/jsonapi/node/${this.remoteType}?filter[${this.remoteTaxonomyField}.id]=${termId}`;
+                contentUrl = `${this.baseUrl}${this.language}/jsonapi/node/${this.remoteType}?filter[${this.remoteTaxonomyField}.id]=${termId}`;
             }
 
             const remoteContentData = await this.fetchData(contentUrl);
@@ -204,17 +219,18 @@ class RemoteContent extends HTMLElement {
             // Render each content item
             const resultsHtml = await Promise.all(limitedItems.map(async item => {
                 const title = item.attributes.title;
-                const imageUrl = item.relationships?.[this.remoteImage]?.data
+                const mediaData = item.relationships?.[this.remoteImage]?.data
                     ? await this.getImageUrl(item.relationships[this.remoteImage].data.id, item.relationships[this.remoteImage].data.type)
-                    : this.svgPlaceholderBase64;
+                    : { imageUrl: this.svgPlaceholderBase64, altText: 'No Image' };
 
+                const { imageUrl, altText } = mediaData;
                 const pathAlias = item.attributes.path?.alias || '#';
 
                 return `
                     <div class="remote-content-card">
-                        <a href="${this.baseUrl}${pathAlias}" target="_blank">
+                        <a href="${this.baseUrl}${this.language}${pathAlias}" target="_blank">
                             <div class="image-container">
-                                <img src="${imageUrl}" alt="${title}">
+                                <img src="${imageUrl}" alt="${altText}">
                             </div>
                             <div class="title">${title}</div>
                         </a>
@@ -223,8 +239,9 @@ class RemoteContent extends HTMLElement {
             }));
 
             resultDiv.innerHTML = resultsHtml.join('');
+
         } catch (error) {
-            resultDiv.innerHTML = `<p>Error fetching data: ${error.message}</p>`;
+            resultDiv.innerHTML = `<p>Error fetching content: ${error.message}</p>`;
         }
     }
 }

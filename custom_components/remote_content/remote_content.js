@@ -4,7 +4,10 @@ class RemoteContent extends HTMLElement {
 
         // Parse and initialize the configuration data
         this.config = JSON.parse(this.parentNode.getAttribute('data-ssa-custom-component'));
-        this.baseUrl = this.config.baseurl.replace(/\/+$/, '');
+
+        if (this.config.baseurl) {
+            this.baseUrl = this.config.baseurl.replace(/\/+$/, '');
+        }
 
         this.language = this.config.language;
         this.customlanguagecode = this.config.customlanguagecode;
@@ -167,7 +170,7 @@ class RemoteContent extends HTMLElement {
     async fetchTaxonomyTerms() {
         const taxonomyTermsUrl = `${this.baseUrl}${this.language}/jsonapi/taxonomy_term/${this.remoteTaxonomyType}`;
         const termsData = await this.fetchData(taxonomyTermsUrl);
-        return termsData.data; // Return the array of terms
+        return termsData.data;
     }
 
     // Main render function for fetching and displaying content
@@ -178,7 +181,7 @@ class RemoteContent extends HTMLElement {
         this.appendChild(resultDiv);
 
         if (!this.baseUrl) {
-            resultDiv.innerHTML = '<p>Base URL is not set. Please configure the base URL.</p>';
+            resultDiv.innerHTML = '<div class="notice">The website address is not set. Please add it to the component.</div>';
             return;
         }
 

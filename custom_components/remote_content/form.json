@@ -109,6 +109,9 @@
                                     "options": {
                                         "formBuilder": true
                                     },
+                                    "iconColor": "formLayoutAlt",
+                                    "uuid": "24388249-3d96-4374-8fa2-9b2c4521ecda",
+                                    "parentUid": "form-section",
                                     "children": [
                                         {
                                             "type": "form-field",
@@ -123,23 +126,20 @@
                                             "parentUid": "form-section",
                                             "children": []
                                         }
-                                    ],
-                                    "iconColor": "formLayoutAlt",
-                                    "uuid": "24388249-3d96-4374-8fa2-9b2c4521ecda",
-                                    "parentUid": "form-section"
+                                    ]
                                 },
                                 {
                                     "type": "form-container",
-                                    "uid": "form-section",
-                                    "title": "Field group",
+                                    "uid": "form-accordion",
+                                    "title": "Group accordion",
                                     "status": {
-                                        "collapsed": true
+                                        "collapsed": false
                                     },
                                     "options": {
                                         "formBuilder": true
                                     },
-                                    "iconColor": "formLayoutAlt",
-                                    "uuid": "db42380d-1832-4563-b26f-730c1a38896b",
+                                    "iconColor": "formLayout",
+                                    "uuid": "259d25af-aac3-4048-8a29-07df09e8f602",
                                     "parentUid": "form-section",
                                     "children": [
                                         {
@@ -154,7 +154,7 @@
                                             },
                                             "iconColor": "formLayoutAlt",
                                             "uuid": "70fd79cd-db63-464b-9f09-2dfbd349b01f",
-                                            "parentUid": "form-section",
+                                            "parentUid": "form-accordion",
                                             "children": [
                                                 {
                                                     "type": "form-field",
@@ -175,16 +175,16 @@
                                 },
                                 {
                                     "type": "form-container",
-                                    "uid": "form-section",
-                                    "title": "Field group",
+                                    "uid": "form-accordion",
+                                    "title": "Group accordion",
                                     "status": {
-                                        "collapsed": true
+                                        "collapsed": false
                                     },
                                     "options": {
                                         "formBuilder": true
                                     },
-                                    "iconColor": "formLayoutAlt",
-                                    "uuid": "48e713d3-7713-4442-b152-77532f9f620c",
+                                    "iconColor": "formLayout",
+                                    "uuid": "bca96e79-7e7d-4c21-a465-b1819a81ce15",
                                     "parentUid": "form-section",
                                     "children": [
                                         {
@@ -199,7 +199,7 @@
                                             },
                                             "iconColor": "formLayoutAlt",
                                             "uuid": "a95dc140-053a-4067-9357-09efbde300d4",
-                                            "parentUid": "form-section",
+                                            "parentUid": "form-accordion",
                                             "children": [
                                                 {
                                                     "type": "form-field",
@@ -220,16 +220,16 @@
                                 },
                                 {
                                     "type": "form-container",
-                                    "uid": "form-section",
-                                    "title": "Field group",
+                                    "uid": "form-accordion",
+                                    "title": "Group accordion",
                                     "status": {
-                                        "collapsed": true
+                                        "collapsed": false
                                     },
                                     "options": {
                                         "formBuilder": true
                                     },
-                                    "iconColor": "formLayoutAlt",
-                                    "uuid": "8dc455ae-ba39-4d19-8cfa-049536ac465a",
+                                    "iconColor": "formLayout",
+                                    "uuid": "58f23f9e-2712-47d2-a20e-a3f89c74f62f",
                                     "parentUid": "form-section",
                                     "children": [
                                         {
@@ -244,7 +244,7 @@
                                             },
                                             "iconColor": "formLayoutAlt",
                                             "uuid": "d1f2a3f2-b6c1-4ee8-b4bb-495477b8c39d",
-                                            "parentUid": "form-section",
+                                            "parentUid": "form-accordion",
                                             "children": [
                                                 {
                                                     "type": "form-field",
@@ -265,16 +265,16 @@
                                 },
                                 {
                                     "type": "form-container",
-                                    "uid": "form-section",
-                                    "title": "Field group",
+                                    "uid": "form-accordion",
+                                    "title": "Group accordion",
                                     "status": {
-                                        "collapsed": true
+                                        "collapsed": false
                                     },
                                     "options": {
                                         "formBuilder": true
                                     },
-                                    "iconColor": "formLayoutAlt",
-                                    "uuid": "e614ee0b-0bb7-4389-abd6-aba805d661b7",
+                                    "iconColor": "formLayout",
+                                    "uuid": "0ee3cf64-44ae-4534-bca6-9786a37408d7",
                                     "parentUid": "form-section",
                                     "children": [
                                         {
@@ -289,7 +289,7 @@
                                             },
                                             "iconColor": "formLayoutAlt",
                                             "uuid": "bd608290-7289-4731-86f7-1388f8f98fec",
-                                            "parentUid": "form-section",
+                                            "parentUid": "form-accordion",
                                             "children": [
                                                 {
                                                     "type": "form-field",
@@ -310,16 +310,16 @@
                                 },
                                 {
                                     "type": "form-container",
-                                    "uid": "form-section",
-                                    "title": "Field group",
+                                    "uid": "form-accordion",
+                                    "title": "Group accordion",
                                     "status": {
-                                        "collapsed": true
+                                        "collapsed": false
                                     },
                                     "options": {
                                         "formBuilder": true
                                     },
-                                    "iconColor": "formLayoutAlt",
-                                    "uuid": "d0b80cab-933c-4e48-87ff-8d982303d92a",
+                                    "iconColor": "formLayout",
+                                    "uuid": "876aef84-eef0-4893-a8d2-c645a6ef9183",
                                     "parentUid": "form-section",
                                     "children": [
                                         {
@@ -334,7 +334,7 @@
                                             },
                                             "iconColor": "formLayoutAlt",
                                             "uuid": "013f35fe-dd80-45a2-8ab0-09121395111d",
-                                            "parentUid": "form-section",
+                                            "parentUid": "form-accordion",
                                             "children": [
                                                 {
                                                     "type": "form-field",
@@ -355,16 +355,16 @@
                                 },
                                 {
                                     "type": "form-container",
-                                    "uid": "form-section",
-                                    "title": "Field group",
+                                    "uid": "form-accordion",
+                                    "title": "Group accordion",
                                     "status": {
-                                        "collapsed": true
+                                        "collapsed": false
                                     },
                                     "options": {
                                         "formBuilder": true
                                     },
-                                    "iconColor": "formLayoutAlt",
-                                    "uuid": "eaeb4419-0daf-4e7d-bcec-c129d81c62c2",
+                                    "iconColor": "formLayout",
+                                    "uuid": "d0398a2c-74a9-4660-b430-0bc8ab09db08",
                                     "parentUid": "form-section",
                                     "children": [
                                         {
@@ -372,14 +372,14 @@
                                             "uid": "form-section",
                                             "title": "Field group",
                                             "status": {
-                                                "collapsed": true
+                                                "collapsed": false
                                             },
                                             "options": {
                                                 "formBuilder": true
                                             },
                                             "iconColor": "formLayoutAlt",
                                             "uuid": "ea2e17f9-1ca8-41c8-a092-26f1b9e45c6c",
-                                            "parentUid": "form-section",
+                                            "parentUid": "form-accordion",
                                             "children": [
                                                 {
                                                     "type": "form-field",
@@ -425,6 +425,9 @@
                     "options": {
                         "formBuilder": true
                     },
+                    "iconColor": "formLayout",
+                    "uuid": "9d86f8c0-d573-44a1-a867-0dfc625f2b2c",
+                    "parentUid": "form-tab-container",
                     "children": [
                         {
                             "type": "form-container",
@@ -436,6 +439,9 @@
                             "options": {
                                 "formBuilder": true
                             },
+                            "iconColor": "formLayoutAlt",
+                            "uuid": "af67a912-c7e6-4f79-bc70-3fd37f85888e",
+                            "parentUid": "form-tab-item",
                             "children": [
                                 {
                                     "type": "form-field",
@@ -534,10 +540,7 @@
                                         }
                                     ]
                                 }
-                            ],
-                            "iconColor": "formLayoutAlt",
-                            "uuid": "af67a912-c7e6-4f79-bc70-3fd37f85888e",
-                            "parentUid": "form-tab-item"
+                            ]
                         },
                         {
                             "type": "form-container",
@@ -549,6 +552,9 @@
                             "options": {
                                 "formBuilder": true
                             },
+                            "iconColor": "formLayoutAlt",
+                            "uuid": "ee270d68-7017-4d9c-8f91-a33b78f30d32",
+                            "parentUid": "form-tab-item",
                             "children": [
                                 {
                                     "type": "form-field",
@@ -663,10 +669,7 @@
                                         }
                                     ]
                                 }
-                            ],
-                            "iconColor": "formLayoutAlt",
-                            "uuid": "ee270d68-7017-4d9c-8f91-a33b78f30d32",
-                            "parentUid": "form-tab-item"
+                            ]
                         },
                         {
                             "type": "form-container",
@@ -678,6 +681,9 @@
                             "options": {
                                 "formBuilder": true
                             },
+                            "iconColor": "formLayoutAlt",
+                            "uuid": "5ea11657-997e-4b91-af83-3afc319d26c0",
+                            "parentUid": "form-tab-item",
                             "children": [
                                 {
                                     "type": "form-field",
@@ -776,10 +782,7 @@
                                         }
                                     ]
                                 }
-                            ],
-                            "iconColor": "formLayoutAlt",
-                            "uuid": "5ea11657-997e-4b91-af83-3afc319d26c0",
-                            "parentUid": "form-tab-item"
+                            ]
                         },
                         {
                             "type": "form-container",
@@ -791,6 +794,9 @@
                             "options": {
                                 "formBuilder": true
                             },
+                            "iconColor": "formLayoutAlt",
+                            "uuid": "15604f9f-9e8e-4f28-b53d-dea7d1d0a400",
+                            "parentUid": "form-tab-item",
                             "children": [
                                 {
                                     "type": "form-field",
@@ -889,10 +895,7 @@
                                         }
                                     ]
                                 }
-                            ],
-                            "iconColor": "formLayoutAlt",
-                            "uuid": "15604f9f-9e8e-4f28-b53d-dea7d1d0a400",
-                            "parentUid": "form-tab-item"
+                            ]
                         },
                         {
                             "type": "form-container",
@@ -904,6 +907,9 @@
                             "options": {
                                 "formBuilder": true
                             },
+                            "iconColor": "formLayoutAlt",
+                            "uuid": "10c27932-6dad-4ab1-9502-4583b3eb4db3",
+                            "parentUid": "form-tab-item",
                             "children": [
                                 {
                                     "type": "form-field",
@@ -1002,10 +1008,7 @@
                                         }
                                     ]
                                 }
-                            ],
-                            "iconColor": "formLayoutAlt",
-                            "uuid": "10c27932-6dad-4ab1-9502-4583b3eb4db3",
-                            "parentUid": "form-tab-item"
+                            ]
                         },
                         {
                             "type": "form-container",
@@ -1017,6 +1020,9 @@
                             "options": {
                                 "formBuilder": true
                             },
+                            "iconColor": "formLayoutAlt",
+                            "uuid": "c894c309-b5b2-4b03-abaf-121d4088c83a",
+                            "parentUid": "form-tab-item",
                             "children": [
                                 {
                                     "type": "form-field",
@@ -1115,15 +1121,9 @@
                                         }
                                     ]
                                 }
-                            ],
-                            "iconColor": "formLayoutAlt",
-                            "uuid": "c894c309-b5b2-4b03-abaf-121d4088c83a",
-                            "parentUid": "form-tab-item"
+                            ]
                         }
-                    ],
-                    "iconColor": "formLayout",
-                    "uuid": "9d86f8c0-d573-44a1-a867-0dfc625f2b2c",
-                    "parentUid": "form-tab-container"
+                    ]
                 },
                 {
                     "type": "form-container",
@@ -1135,6 +1135,9 @@
                     "options": {
                         "formBuilder": true
                     },
+                    "iconColor": "formLayout",
+                    "uuid": "83e244cf-9e50-4e19-b606-84de4eb14d1f",
+                    "parentUid": "form-tab-container",
                     "children": [
                         {
                             "type": "form-container",
@@ -1146,6 +1149,9 @@
                             "options": {
                                 "formBuilder": true
                             },
+                            "iconColor": "formLayoutAlt",
+                            "uuid": "73a1b8b6-31cc-4a09-88ae-26b5785c821c",
+                            "parentUid": "form-tab-item",
                             "children": [
                                 {
                                     "type": "form-field",
@@ -1173,15 +1179,9 @@
                                     "parentUid": "form-section",
                                     "children": []
                                 }
-                            ],
-                            "iconColor": "formLayoutAlt",
-                            "uuid": "73a1b8b6-31cc-4a09-88ae-26b5785c821c",
-                            "parentUid": "form-tab-item"
+                            ]
                         }
-                    ],
-                    "iconColor": "formLayout",
-                    "uuid": "83e244cf-9e50-4e19-b606-84de4eb14d1f",
-                    "parentUid": "form-tab-container"
+                    ]
                 }
             ]
         }
@@ -1219,7 +1219,7 @@
         "67c9566e-2f4f-49ad-a180-07ac00b742b5": {
             "settings": {
                 "type": "cohTextBox",
-                "title": "Base URL",
+                "title": "Website Address",
                 "schema": {
                     "type": "string",
                     "escape": true
@@ -1298,6 +1298,21 @@
                 "showCondition": "[field.dad96b67-059d-4da9-b30c-fdc4883fef04] == 'custom'"
             }
         },
+        "24388249-3d96-4374-8fa2-9b2c4521ecda": {
+            "settings": {
+                "type": "cohSection",
+                "title": "Field group",
+                "hideRowHeading": 1,
+                "removePadding": 1,
+                "columnCount": "2",
+                "breakpointIcon": "",
+                "breakpoints": false,
+                "propertiesMenu": false,
+                "disableScrollbar": true,
+                "disableEllipsisMenu": true,
+                "isOpen": true
+            }
+        },
         "9b447a9e-ad77-439f-8329-acd762b00737": {
             "settings": {
                 "type": "cohSelect",
@@ -1336,19 +1351,12 @@
                 "value": "article"
             }
         },
-        "db42380d-1832-4563-b26f-730c1a38896b": {
+        "259d25af-aac3-4048-8a29-07df09e8f602": {
             "settings": {
-                "type": "cohSection",
-                "title": "Article",
-                "hideRowHeading": 1,
-                "removePadding": 0,
-                "columnCount": "1",
-                "breakpointIcon": "",
-                "breakpoints": false,
-                "propertiesMenu": false,
-                "disableScrollbar": true,
-                "disableEllipsisMenu": true,
-                "isOpen": true,
+                "type": "cohAccordion",
+                "title": "Fields",
+                "noBleed": true,
+                "isOpen": false,
                 "showCondition": "[field.9b447a9e-ad77-439f-8329-acd762b00737] === 'article'"
             }
         },
@@ -1380,6 +1388,239 @@
             },
             "model": {
                 "value": "field_article_image"
+            }
+        },
+        "bca96e79-7e7d-4c21-a465-b1819a81ce15": {
+            "settings": {
+                "type": "cohAccordion",
+                "title": "Fields",
+                "noBleed": true,
+                "isOpen": false,
+                "showCondition": "[field.9b447a9e-ad77-439f-8329-acd762b00737] === 'event'"
+            }
+        },
+        "a95dc140-053a-4067-9357-09efbde300d4": {
+            "settings": {
+                "type": "cohSection",
+                "title": "Field group",
+                "hideRowHeading": 1,
+                "removePadding": 1,
+                "columnCount": "2",
+                "breakpointIcon": "",
+                "breakpoints": false,
+                "propertiesMenu": false,
+                "disableScrollbar": true,
+                "disableEllipsisMenu": true,
+                "isOpen": true
+            }
+        },
+        "1bb1ba8f-685d-487b-a619-27949da07ed4": {
+            "settings": {
+                "type": "cohTextBox",
+                "title": "Image",
+                "schema": {
+                    "type": "string",
+                    "escape": true
+                },
+                "machineName": "eventimage",
+                "tooltipPlacement": "auto right"
+            },
+            "model": {
+                "value": "field_event_image"
+            }
+        },
+        "58f23f9e-2712-47d2-a20e-a3f89c74f62f": {
+            "settings": {
+                "type": "cohAccordion",
+                "title": "Fields",
+                "noBleed": true,
+                "isOpen": false,
+                "showCondition": "[field.9b447a9e-ad77-439f-8329-acd762b00737] === 'person'"
+            }
+        },
+        "d1f2a3f2-b6c1-4ee8-b4bb-495477b8c39d": {
+            "settings": {
+                "type": "cohSection",
+                "title": "Field group",
+                "hideRowHeading": 1,
+                "removePadding": 1,
+                "columnCount": "2",
+                "breakpointIcon": "",
+                "breakpoints": false,
+                "propertiesMenu": false,
+                "disableScrollbar": true,
+                "disableEllipsisMenu": true,
+                "isOpen": true
+            }
+        },
+        "3bc7b840-e621-4932-b25d-a48cc218a10e": {
+            "settings": {
+                "type": "cohTextBox",
+                "title": "Image",
+                "schema": {
+                    "type": "string",
+                    "escape": true
+                },
+                "machineName": "personimage",
+                "tooltipPlacement": "auto right"
+            },
+            "model": {
+                "value": "field_person_image"
+            }
+        },
+        "0ee3cf64-44ae-4534-bca6-9786a37408d7": {
+            "settings": {
+                "type": "cohAccordion",
+                "title": "Fields",
+                "noBleed": true,
+                "isOpen": false,
+                "showCondition": "[field.9b447a9e-ad77-439f-8329-acd762b00737] === 'place'"
+            }
+        },
+        "bd608290-7289-4731-86f7-1388f8f98fec": {
+            "settings": {
+                "type": "cohSection",
+                "title": "Field group",
+                "hideRowHeading": 1,
+                "removePadding": 1,
+                "columnCount": "2",
+                "breakpointIcon": "",
+                "breakpoints": false,
+                "propertiesMenu": false,
+                "disableScrollbar": true,
+                "disableEllipsisMenu": true,
+                "isOpen": true
+            }
+        },
+        "d45390f2-5ad5-439b-9464-a1e006c2581e": {
+            "settings": {
+                "type": "cohTextBox",
+                "title": "Image field",
+                "schema": {
+                    "type": "string",
+                    "escape": true
+                },
+                "machineName": "placeimage",
+                "tooltipPlacement": "auto right"
+            },
+            "model": {
+                "value": "field_place_image"
+            }
+        },
+        "876aef84-eef0-4893-a8d2-c645a6ef9183": {
+            "settings": {
+                "type": "cohAccordion",
+                "title": "Fields",
+                "noBleed": true,
+                "isOpen": false,
+                "showCondition": "[field.9b447a9e-ad77-439f-8329-acd762b00737] === 'product'"
+            }
+        },
+        "013f35fe-dd80-45a2-8ab0-09121395111d": {
+            "settings": {
+                "type": "cohSection",
+                "title": "Field group",
+                "hideRowHeading": 1,
+                "removePadding": 1,
+                "columnCount": "2",
+                "breakpointIcon": "",
+                "breakpoints": false,
+                "propertiesMenu": false,
+                "disableScrollbar": true,
+                "disableEllipsisMenu": true,
+                "isOpen": true
+            }
+        },
+        "a241994f-8c9b-4b7f-a378-f4af07070644": {
+            "settings": {
+                "type": "cohTextBox",
+                "title": "Image field",
+                "schema": {
+                    "type": "string",
+                    "escape": true
+                },
+                "machineName": "productimage",
+                "tooltipPlacement": "auto right"
+            },
+            "model": {
+                "value": "field_product_image"
+            }
+        },
+        "d0398a2c-74a9-4660-b430-0bc8ab09db08": {
+            "settings": {
+                "type": "cohAccordion",
+                "title": "Fields",
+                "noBleed": true,
+                "isOpen": true,
+                "showCondition": "[field.9b447a9e-ad77-439f-8329-acd762b00737] === 'custom'"
+            }
+        },
+        "ea2e17f9-1ca8-41c8-a092-26f1b9e45c6c": {
+            "settings": {
+                "type": "cohSection",
+                "title": "Field group",
+                "hideRowHeading": 1,
+                "removePadding": 1,
+                "columnCount": "2",
+                "breakpointIcon": "",
+                "breakpoints": false,
+                "propertiesMenu": false,
+                "disableScrollbar": true,
+                "disableEllipsisMenu": true,
+                "isOpen": true
+            }
+        },
+        "2bafe46f-e667-4110-b3cd-7c8b012c37e1": {
+            "settings": {
+                "type": "cohTextBox",
+                "title": "Content Type",
+                "schema": {
+                    "type": "string",
+                    "escape": true
+                },
+                "machineName": "customtype",
+                "tooltipPlacement": "auto right"
+            },
+            "model": {
+                "value": "content_type"
+            }
+        },
+        "297e78a9-209a-469a-8fef-fc192c6a790b": {
+            "settings": {
+                "type": "cohTextBox",
+                "title": "Image",
+                "schema": {
+                    "type": "string",
+                    "escape": true
+                },
+                "machineName": "customimage",
+                "tooltipPlacement": "auto right"
+            },
+            "model": {
+                "value": "field_custom_image"
+            }
+        },
+        "9d86f8c0-d573-44a1-a867-0dfc625f2b2c": {
+            "settings": {
+                "type": "cohTabItem",
+                "title": "Filter",
+                "breakpointIcon": ""
+            }
+        },
+        "af67a912-c7e6-4f79-bc70-3fd37f85888e": {
+            "settings": {
+                "type": "cohSection",
+                "title": "Article",
+                "hideRowHeading": 0,
+                "removePadding": 0,
+                "columnCount": "1",
+                "breakpointIcon": "",
+                "breakpoints": false,
+                "propertiesMenu": false,
+                "disableScrollbar": true,
+                "disableEllipsisMenu": true,
+                "isOpen": true,
+                "showCondition": "[field.9b447a9e-ad77-439f-8329-acd762b00737] == 'article'"
             }
         },
         "caf4603c-1068-409b-a627-4fe58fd872c8": {
@@ -1490,11 +1731,11 @@
                 "value": ""
             }
         },
-        "48e713d3-7713-4442-b152-77532f9f620c": {
+        "ee270d68-7017-4d9c-8f91-a33b78f30d32": {
             "settings": {
                 "type": "cohSection",
                 "title": "Event",
-                "hideRowHeading": 1,
+                "hideRowHeading": 0,
                 "removePadding": 0,
                 "columnCount": "1",
                 "breakpointIcon": "",
@@ -1503,37 +1744,7 @@
                 "disableScrollbar": true,
                 "disableEllipsisMenu": true,
                 "isOpen": true,
-                "showCondition": "[field.9b447a9e-ad77-439f-8329-acd762b00737] === 'event'"
-            }
-        },
-        "a95dc140-053a-4067-9357-09efbde300d4": {
-            "settings": {
-                "type": "cohSection",
-                "title": "Field group",
-                "hideRowHeading": 1,
-                "removePadding": 1,
-                "columnCount": "2",
-                "breakpointIcon": "",
-                "breakpoints": false,
-                "propertiesMenu": false,
-                "disableScrollbar": true,
-                "disableEllipsisMenu": true,
-                "isOpen": true
-            }
-        },
-        "1bb1ba8f-685d-487b-a619-27949da07ed4": {
-            "settings": {
-                "type": "cohTextBox",
-                "title": "Image",
-                "schema": {
-                    "type": "string",
-                    "escape": true
-                },
-                "machineName": "eventimage",
-                "tooltipPlacement": "auto right"
-            },
-            "model": {
-                "value": "field_event_image"
+                "showCondition": "[field.9b447a9e-ad77-439f-8329-acd762b00737] == 'event'"
             }
         },
         "c1168dad-7f55-4c90-828b-a969adb46592": {
@@ -1659,11 +1870,11 @@
                 "value": ""
             }
         },
-        "8dc455ae-ba39-4d19-8cfa-049536ac465a": {
+        "5ea11657-997e-4b91-af83-3afc319d26c0": {
             "settings": {
                 "type": "cohSection",
                 "title": "Person",
-                "hideRowHeading": 1,
+                "hideRowHeading": 0,
                 "removePadding": 0,
                 "columnCount": "1",
                 "breakpointIcon": "",
@@ -1672,37 +1883,7 @@
                 "disableScrollbar": true,
                 "disableEllipsisMenu": true,
                 "isOpen": true,
-                "showCondition": "[field.9b447a9e-ad77-439f-8329-acd762b00737] === 'person'"
-            }
-        },
-        "d1f2a3f2-b6c1-4ee8-b4bb-495477b8c39d": {
-            "settings": {
-                "type": "cohSection",
-                "title": "Field group",
-                "hideRowHeading": 1,
-                "removePadding": 1,
-                "columnCount": "2",
-                "breakpointIcon": "",
-                "breakpoints": false,
-                "propertiesMenu": false,
-                "disableScrollbar": true,
-                "disableEllipsisMenu": true,
-                "isOpen": true
-            }
-        },
-        "3bc7b840-e621-4932-b25d-a48cc218a10e": {
-            "settings": {
-                "type": "cohTextBox",
-                "title": "Image",
-                "schema": {
-                    "type": "string",
-                    "escape": true
-                },
-                "machineName": "personimage",
-                "tooltipPlacement": "auto right"
-            },
-            "model": {
-                "value": "field_person_image"
+                "showCondition": "[field.9b447a9e-ad77-439f-8329-acd762b00737] == 'person'"
             }
         },
         "417d1f20-39c2-4bc6-a3c7-9d04d82ef450": {
@@ -1813,11 +1994,11 @@
                 "value": ""
             }
         },
-        "e614ee0b-0bb7-4389-abd6-aba805d661b7": {
+        "15604f9f-9e8e-4f28-b53d-dea7d1d0a400": {
             "settings": {
                 "type": "cohSection",
                 "title": "Place",
-                "hideRowHeading": 1,
+                "hideRowHeading": 0,
                 "removePadding": 0,
                 "columnCount": "1",
                 "breakpointIcon": "",
@@ -1826,37 +2007,7 @@
                 "disableScrollbar": true,
                 "disableEllipsisMenu": true,
                 "isOpen": true,
-                "showCondition": "[field.9b447a9e-ad77-439f-8329-acd762b00737] === 'place'"
-            }
-        },
-        "bd608290-7289-4731-86f7-1388f8f98fec": {
-            "settings": {
-                "type": "cohSection",
-                "title": "Field group",
-                "hideRowHeading": 1,
-                "removePadding": 1,
-                "columnCount": "2",
-                "breakpointIcon": "",
-                "breakpoints": false,
-                "propertiesMenu": false,
-                "disableScrollbar": true,
-                "disableEllipsisMenu": true,
-                "isOpen": true
-            }
-        },
-        "d45390f2-5ad5-439b-9464-a1e006c2581e": {
-            "settings": {
-                "type": "cohTextBox",
-                "title": "Image field",
-                "schema": {
-                    "type": "string",
-                    "escape": true
-                },
-                "machineName": "placeimage",
-                "tooltipPlacement": "auto right"
-            },
-            "model": {
-                "value": "field_place_image"
+                "showCondition": "[field.9b447a9e-ad77-439f-8329-acd762b00737] == 'place'"
             }
         },
         "c02dcfd1-027e-481f-9ded-f2ce54c5efbe": {
@@ -1967,11 +2118,11 @@
                 "value": ""
             }
         },
-        "d0b80cab-933c-4e48-87ff-8d982303d92a": {
+        "10c27932-6dad-4ab1-9502-4583b3eb4db3": {
             "settings": {
                 "type": "cohSection",
                 "title": "Product",
-                "hideRowHeading": 1,
+                "hideRowHeading": 0,
                 "removePadding": 0,
                 "columnCount": "1",
                 "breakpointIcon": "",
@@ -1980,37 +2131,7 @@
                 "disableScrollbar": true,
                 "disableEllipsisMenu": true,
                 "isOpen": true,
-                "showCondition": "[field.9b447a9e-ad77-439f-8329-acd762b00737] === 'product'"
-            }
-        },
-        "013f35fe-dd80-45a2-8ab0-09121395111d": {
-            "settings": {
-                "type": "cohSection",
-                "title": "Field group",
-                "hideRowHeading": 1,
-                "removePadding": 1,
-                "columnCount": "2",
-                "breakpointIcon": "",
-                "breakpoints": false,
-                "propertiesMenu": false,
-                "disableScrollbar": true,
-                "disableEllipsisMenu": true,
-                "isOpen": true
-            }
-        },
-        "a241994f-8c9b-4b7f-a378-f4af07070644": {
-            "settings": {
-                "type": "cohTextBox",
-                "title": "Image field",
-                "schema": {
-                    "type": "string",
-                    "escape": true
-                },
-                "machineName": "productimage",
-                "tooltipPlacement": "auto right"
-            },
-            "model": {
-                "value": "field_product_image"
+                "showCondition": "[field.9b447a9e-ad77-439f-8329-acd762b00737] == 'product'"
             }
         },
         "d8a8f469-5b12-441f-b8bd-0de95b306ba1": {
@@ -2121,11 +2242,11 @@
                 "value": ""
             }
         },
-        "eaeb4419-0daf-4e7d-bcec-c129d81c62c2": {
+        "c894c309-b5b2-4b03-abaf-121d4088c83a": {
             "settings": {
                 "type": "cohSection",
-                "title": "Custom",
-                "hideRowHeading": 1,
+                "title": "Custom type",
+                "hideRowHeading": 0,
                 "removePadding": 0,
                 "columnCount": "1",
                 "breakpointIcon": "",
@@ -2134,52 +2255,7 @@
                 "disableScrollbar": true,
                 "disableEllipsisMenu": true,
                 "isOpen": true,
-                "showCondition": "[field.9b447a9e-ad77-439f-8329-acd762b00737] === 'custom'"
-            }
-        },
-        "ea2e17f9-1ca8-41c8-a092-26f1b9e45c6c": {
-            "settings": {
-                "type": "cohSection",
-                "title": "Field group",
-                "hideRowHeading": 1,
-                "removePadding": 1,
-                "columnCount": "2",
-                "breakpointIcon": "",
-                "breakpoints": false,
-                "propertiesMenu": false,
-                "disableScrollbar": true,
-                "disableEllipsisMenu": true,
-                "isOpen": true
-            }
-        },
-        "2bafe46f-e667-4110-b3cd-7c8b012c37e1": {
-            "settings": {
-                "type": "cohTextBox",
-                "title": "Content Type",
-                "schema": {
-                    "type": "string",
-                    "escape": true
-                },
-                "machineName": "customtype",
-                "tooltipPlacement": "auto right"
-            },
-            "model": {
-                "value": "content_type"
-            }
-        },
-        "297e78a9-209a-469a-8fef-fc192c6a790b": {
-            "settings": {
-                "type": "cohTextBox",
-                "title": "Image",
-                "schema": {
-                    "type": "string",
-                    "escape": true
-                },
-                "machineName": "customimage",
-                "tooltipPlacement": "auto right"
-            },
-            "model": {
-                "value": "field_custom_image"
+                "showCondition": "[field.9b447a9e-ad77-439f-8329-acd762b00737] == 'custom'"
             }
         },
         "03fd2732-4628-489b-9eb8-a619d2a88262": {
@@ -2287,6 +2363,28 @@
             },
             "model": {
                 "value": "Custom Term"
+            }
+        },
+        "83e244cf-9e50-4e19-b606-84de4eb14d1f": {
+            "settings": {
+                "type": "cohTabItem",
+                "title": "Style",
+                "breakpointIcon": ""
+            }
+        },
+        "73a1b8b6-31cc-4a09-88ae-26b5785c821c": {
+            "settings": {
+                "type": "cohSection",
+                "title": "Field group",
+                "hideRowHeading": 1,
+                "removePadding": 0,
+                "columnCount": "2",
+                "breakpointIcon": "",
+                "breakpoints": false,
+                "propertiesMenu": false,
+                "disableScrollbar": true,
+                "disableEllipsisMenu": true,
+                "isOpen": true
             }
         },
         "bd066498-0114-434d-90ac-202bb31d5538": {
@@ -2818,146 +2916,6 @@
             "model": {
                 "value": "coh-style-remote-content"
             }
-        },
-        "9d86f8c0-d573-44a1-a867-0dfc625f2b2c": {
-            "settings": {
-                "type": "cohTabItem",
-                "title": "Filter",
-                "breakpointIcon": ""
-            }
-        },
-        "83e244cf-9e50-4e19-b606-84de4eb14d1f": {
-            "settings": {
-                "type": "cohTabItem",
-                "title": "Style",
-                "breakpointIcon": ""
-            }
-        },
-        "73a1b8b6-31cc-4a09-88ae-26b5785c821c": {
-            "settings": {
-                "type": "cohSection",
-                "title": "Field group",
-                "hideRowHeading": 1,
-                "removePadding": 0,
-                "columnCount": "2",
-                "breakpointIcon": "",
-                "breakpoints": false,
-                "propertiesMenu": false,
-                "disableScrollbar": true,
-                "disableEllipsisMenu": true,
-                "isOpen": true
-            }
-        },
-        "24388249-3d96-4374-8fa2-9b2c4521ecda": {
-            "settings": {
-                "type": "cohSection",
-                "title": "Field group",
-                "hideRowHeading": 1,
-                "removePadding": 1,
-                "columnCount": "2",
-                "breakpointIcon": "",
-                "breakpoints": false,
-                "propertiesMenu": false,
-                "disableScrollbar": true,
-                "disableEllipsisMenu": true,
-                "isOpen": true
-            }
-        },
-        "af67a912-c7e6-4f79-bc70-3fd37f85888e": {
-            "settings": {
-                "type": "cohSection",
-                "title": "Article",
-                "hideRowHeading": 0,
-                "removePadding": 0,
-                "columnCount": "1",
-                "breakpointIcon": "",
-                "breakpoints": false,
-                "propertiesMenu": false,
-                "disableScrollbar": true,
-                "disableEllipsisMenu": true,
-                "isOpen": true,
-                "showCondition": "[field.9b447a9e-ad77-439f-8329-acd762b00737] == 'article'"
-            }
-        },
-        "ee270d68-7017-4d9c-8f91-a33b78f30d32": {
-            "settings": {
-                "type": "cohSection",
-                "title": "Event",
-                "hideRowHeading": 0,
-                "removePadding": 0,
-                "columnCount": "1",
-                "breakpointIcon": "",
-                "breakpoints": false,
-                "propertiesMenu": false,
-                "disableScrollbar": true,
-                "disableEllipsisMenu": true,
-                "isOpen": true,
-                "showCondition": "[field.9b447a9e-ad77-439f-8329-acd762b00737] == 'event'"
-            }
-        },
-        "5ea11657-997e-4b91-af83-3afc319d26c0": {
-            "settings": {
-                "type": "cohSection",
-                "title": "Person",
-                "hideRowHeading": 0,
-                "removePadding": 0,
-                "columnCount": "1",
-                "breakpointIcon": "",
-                "breakpoints": false,
-                "propertiesMenu": false,
-                "disableScrollbar": true,
-                "disableEllipsisMenu": true,
-                "isOpen": true,
-                "showCondition": "[field.9b447a9e-ad77-439f-8329-acd762b00737] == 'person'"
-            }
-        },
-        "15604f9f-9e8e-4f28-b53d-dea7d1d0a400": {
-            "settings": {
-                "type": "cohSection",
-                "title": "Place",
-                "hideRowHeading": 0,
-                "removePadding": 0,
-                "columnCount": "1",
-                "breakpointIcon": "",
-                "breakpoints": false,
-                "propertiesMenu": false,
-                "disableScrollbar": true,
-                "disableEllipsisMenu": true,
-                "isOpen": true,
-                "showCondition": "[field.9b447a9e-ad77-439f-8329-acd762b00737] == 'place'"
-            }
-        },
-        "10c27932-6dad-4ab1-9502-4583b3eb4db3": {
-            "settings": {
-                "type": "cohSection",
-                "title": "Product",
-                "hideRowHeading": 0,
-                "removePadding": 0,
-                "columnCount": "1",
-                "breakpointIcon": "",
-                "breakpoints": false,
-                "propertiesMenu": false,
-                "disableScrollbar": true,
-                "disableEllipsisMenu": true,
-                "isOpen": true,
-                "showCondition": "[field.9b447a9e-ad77-439f-8329-acd762b00737] == 'product'"
-            }
-        },
-        "c894c309-b5b2-4b03-abaf-121d4088c83a": {
-            "settings": {
-                "type": "cohSection",
-                "title": "Custom type",
-                "hideRowHeading": 0,
-                "removePadding": 0,
-                "columnCount": "1",
-                "breakpointIcon": "",
-                "breakpoints": false,
-                "propertiesMenu": false,
-                "disableScrollbar": true,
-                "disableEllipsisMenu": true,
-                "isOpen": true,
-                "showCondition": "[field.9b447a9e-ad77-439f-8329-acd762b00737] == 'custom'"
-            }
         }
     },
     "mapper": {
@@ -2967,12 +2925,9 @@
         "bd066498-0114-434d-90ac-202bb31d5538": {},
         "9ec5fef5-5ec5-42ff-8831-c3f9ba8aa5a8": {},
         "9b447a9e-ad77-439f-8329-acd762b00737": {},
-        "db42380d-1832-4563-b26f-730c1a38896b": {},
         "395566af-5f4e-4854-810e-9e7f85f003c0": {},
         "1bb1ba8f-685d-487b-a619-27949da07ed4": {},
-        "48e713d3-7713-4442-b152-77532f9f620c": {},
         "3bc7b840-e621-4932-b25d-a48cc218a10e": {},
-        "8dc455ae-ba39-4d19-8cfa-049536ac465a": {},
         "297e78a9-209a-469a-8fef-fc192c6a790b": {},
         "2bafe46f-e667-4110-b3cd-7c8b012c37e1": {},
         "caf4603c-1068-409b-a627-4fe58fd872c8": {},
@@ -3009,7 +2964,6 @@
         "df834c95-19b1-4127-8734-d5ec1052d413": {},
         "41827903-2f6f-46a7-a125-c49035253555": {},
         "d0cb1b21-0e66-4f5f-918d-0b299fbd4ef5": {},
-        "e614ee0b-0bb7-4389-abd6-aba805d661b7": {},
         "ea2e17f9-1ca8-41c8-a092-26f1b9e45c6c": {},
         "03fd2732-4628-489b-9eb8-a619d2a88262": {},
         "3d0d7e9e-60b8-499e-bf85-f9f69f79ee48": {},
@@ -3018,7 +2972,6 @@
         "fa8f0f89-c011-4ff8-86db-1afe2bacadd2": {},
         "183c4740-d686-4d02-9b64-8a3653043d01": {},
         "a2580eed-a71d-4369-8796-7d69d473ff83": {},
-        "eaeb4419-0daf-4e7d-bcec-c129d81c62c2": {},
         "a241994f-8c9b-4b7f-a378-f4af07070644": {},
         "013f35fe-dd80-45a2-8ab0-09121395111d": {},
         "d8a8f469-5b12-441f-b8bd-0de95b306ba1": {},
@@ -3028,7 +2981,6 @@
         "4907a7e0-ce97-48c6-b24c-cf231d3f7dc5": {},
         "f4856ca9-53e4-4d52-8392-a1fe81a67896": {},
         "17e8679d-493a-428b-a294-4eb07a4e5764": {},
-        "d0b80cab-933c-4e48-87ff-8d982303d92a": {},
         "dad96b67-059d-4da9-b30c-fdc4883fef04": {},
         "25d726a6-a4c6-45ed-822b-38e7367a2ecc": {},
         "75908255-5da9-47d0-9e6c-fddbc91dffdb": {},
@@ -3041,7 +2993,13 @@
         "5ea11657-997e-4b91-af83-3afc319d26c0": {},
         "15604f9f-9e8e-4f28-b53d-dea7d1d0a400": {},
         "10c27932-6dad-4ab1-9502-4583b3eb4db3": {},
-        "c894c309-b5b2-4b03-abaf-121d4088c83a": {}
+        "c894c309-b5b2-4b03-abaf-121d4088c83a": {},
+        "259d25af-aac3-4048-8a29-07df09e8f602": {},
+        "bca96e79-7e7d-4c21-a465-b1819a81ce15": {},
+        "58f23f9e-2712-47d2-a20e-a3f89c74f62f": {},
+        "0ee3cf64-44ae-4534-bca6-9786a37408d7": {},
+        "876aef84-eef0-4893-a8d2-c645a6ef9183": {},
+        "d0398a2c-74a9-4660-b430-0bc8ab09db08": {}
     },
     "previewModel": {
         "7efaaa21-f700-48eb-80c3-1a5799b3cec5": {},
@@ -3050,12 +3008,9 @@
         "bd066498-0114-434d-90ac-202bb31d5538": {},
         "9ec5fef5-5ec5-42ff-8831-c3f9ba8aa5a8": {},
         "9b447a9e-ad77-439f-8329-acd762b00737": {},
-        "db42380d-1832-4563-b26f-730c1a38896b": {},
         "395566af-5f4e-4854-810e-9e7f85f003c0": {},
         "1bb1ba8f-685d-487b-a619-27949da07ed4": {},
-        "48e713d3-7713-4442-b152-77532f9f620c": {},
         "3bc7b840-e621-4932-b25d-a48cc218a10e": {},
-        "8dc455ae-ba39-4d19-8cfa-049536ac465a": {},
         "297e78a9-209a-469a-8fef-fc192c6a790b": {},
         "2bafe46f-e667-4110-b3cd-7c8b012c37e1": {},
         "caf4603c-1068-409b-a627-4fe58fd872c8": {},
@@ -3092,7 +3047,6 @@
         "df834c95-19b1-4127-8734-d5ec1052d413": {},
         "41827903-2f6f-46a7-a125-c49035253555": {},
         "d0cb1b21-0e66-4f5f-918d-0b299fbd4ef5": {},
-        "e614ee0b-0bb7-4389-abd6-aba805d661b7": {},
         "ea2e17f9-1ca8-41c8-a092-26f1b9e45c6c": {},
         "03fd2732-4628-489b-9eb8-a619d2a88262": {},
         "3d0d7e9e-60b8-499e-bf85-f9f69f79ee48": {},
@@ -3101,7 +3055,6 @@
         "fa8f0f89-c011-4ff8-86db-1afe2bacadd2": {},
         "183c4740-d686-4d02-9b64-8a3653043d01": {},
         "a2580eed-a71d-4369-8796-7d69d473ff83": {},
-        "eaeb4419-0daf-4e7d-bcec-c129d81c62c2": {},
         "a241994f-8c9b-4b7f-a378-f4af07070644": {},
         "013f35fe-dd80-45a2-8ab0-09121395111d": {},
         "d8a8f469-5b12-441f-b8bd-0de95b306ba1": {},
@@ -3111,7 +3064,6 @@
         "4907a7e0-ce97-48c6-b24c-cf231d3f7dc5": {},
         "f4856ca9-53e4-4d52-8392-a1fe81a67896": {},
         "17e8679d-493a-428b-a294-4eb07a4e5764": {},
-        "d0b80cab-933c-4e48-87ff-8d982303d92a": {},
         "dad96b67-059d-4da9-b30c-fdc4883fef04": {},
         "25d726a6-a4c6-45ed-822b-38e7367a2ecc": {},
         "75908255-5da9-47d0-9e6c-fddbc91dffdb": {},
@@ -3124,7 +3076,13 @@
         "5ea11657-997e-4b91-af83-3afc319d26c0": {},
         "15604f9f-9e8e-4f28-b53d-dea7d1d0a400": {},
         "10c27932-6dad-4ab1-9502-4583b3eb4db3": {},
-        "c894c309-b5b2-4b03-abaf-121d4088c83a": {}
+        "c894c309-b5b2-4b03-abaf-121d4088c83a": {},
+        "259d25af-aac3-4048-8a29-07df09e8f602": {},
+        "bca96e79-7e7d-4c21-a465-b1819a81ce15": {},
+        "58f23f9e-2712-47d2-a20e-a3f89c74f62f": {},
+        "0ee3cf64-44ae-4534-bca6-9786a37408d7": {},
+        "876aef84-eef0-4893-a8d2-c645a6ef9183": {},
+        "d0398a2c-74a9-4660-b430-0bc8ab09db08": {}
     },
     "variableFields": {
         "7efaaa21-f700-48eb-80c3-1a5799b3cec5": [],
@@ -3133,12 +3091,9 @@
         "bd066498-0114-434d-90ac-202bb31d5538": [],
         "9ec5fef5-5ec5-42ff-8831-c3f9ba8aa5a8": [],
         "9b447a9e-ad77-439f-8329-acd762b00737": [],
-        "db42380d-1832-4563-b26f-730c1a38896b": [],
         "395566af-5f4e-4854-810e-9e7f85f003c0": [],
         "1bb1ba8f-685d-487b-a619-27949da07ed4": [],
-        "48e713d3-7713-4442-b152-77532f9f620c": [],
         "3bc7b840-e621-4932-b25d-a48cc218a10e": [],
-        "8dc455ae-ba39-4d19-8cfa-049536ac465a": [],
         "297e78a9-209a-469a-8fef-fc192c6a790b": [],
         "2bafe46f-e667-4110-b3cd-7c8b012c37e1": [],
         "caf4603c-1068-409b-a627-4fe58fd872c8": [],
@@ -3175,7 +3130,6 @@
         "df834c95-19b1-4127-8734-d5ec1052d413": [],
         "41827903-2f6f-46a7-a125-c49035253555": [],
         "d0cb1b21-0e66-4f5f-918d-0b299fbd4ef5": [],
-        "e614ee0b-0bb7-4389-abd6-aba805d661b7": [],
         "ea2e17f9-1ca8-41c8-a092-26f1b9e45c6c": [],
         "03fd2732-4628-489b-9eb8-a619d2a88262": [],
         "3d0d7e9e-60b8-499e-bf85-f9f69f79ee48": [],
@@ -3184,7 +3138,6 @@
         "fa8f0f89-c011-4ff8-86db-1afe2bacadd2": [],
         "183c4740-d686-4d02-9b64-8a3653043d01": [],
         "a2580eed-a71d-4369-8796-7d69d473ff83": [],
-        "eaeb4419-0daf-4e7d-bcec-c129d81c62c2": [],
         "a241994f-8c9b-4b7f-a378-f4af07070644": [],
         "013f35fe-dd80-45a2-8ab0-09121395111d": [],
         "d8a8f469-5b12-441f-b8bd-0de95b306ba1": [],
@@ -3194,7 +3147,6 @@
         "4907a7e0-ce97-48c6-b24c-cf231d3f7dc5": [],
         "f4856ca9-53e4-4d52-8392-a1fe81a67896": [],
         "17e8679d-493a-428b-a294-4eb07a4e5764": [],
-        "d0b80cab-933c-4e48-87ff-8d982303d92a": [],
         "dad96b67-059d-4da9-b30c-fdc4883fef04": [],
         "25d726a6-a4c6-45ed-822b-38e7367a2ecc": [],
         "75908255-5da9-47d0-9e6c-fddbc91dffdb": [],
@@ -3207,7 +3159,13 @@
         "5ea11657-997e-4b91-af83-3afc319d26c0": [],
         "15604f9f-9e8e-4f28-b53d-dea7d1d0a400": [],
         "10c27932-6dad-4ab1-9502-4583b3eb4db3": [],
-        "c894c309-b5b2-4b03-abaf-121d4088c83a": []
+        "c894c309-b5b2-4b03-abaf-121d4088c83a": [],
+        "259d25af-aac3-4048-8a29-07df09e8f602": [],
+        "bca96e79-7e7d-4c21-a465-b1819a81ce15": [],
+        "58f23f9e-2712-47d2-a20e-a3f89c74f62f": [],
+        "0ee3cf64-44ae-4534-bca6-9786a37408d7": [],
+        "876aef84-eef0-4893-a8d2-c645a6ef9183": [],
+        "d0398a2c-74a9-4660-b430-0bc8ab09db08": []
     },
     "meta": {}
 }

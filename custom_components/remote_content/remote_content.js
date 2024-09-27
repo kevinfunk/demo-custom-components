@@ -18,6 +18,7 @@ class RemoteContent extends HTMLElement {
             this.language = '/' + this.customlanguagecode;
         }
 
+        this.filterNumber = this.config.numberofresults;
         this.imageStyle = this.config.imagestyle;
         this.layoutStyle = this.config.layoutstyle;
 
@@ -42,43 +43,37 @@ class RemoteContent extends HTMLElement {
 
         const typeMapping = {
             article: {
-                image: this.config.articleimage,
-                filterNumber: this.config.filternumberarticle,
+                image: 'field_article_image',
                 taxonomyField: this.config.taxonomyfieldarticle,
                 taxonomyType: this.config.taxonomytypearticle,
                 taxonomyTerm: this.config.taxonomytermarticle
             },
             event: {
-                image: this.config.eventimage,
-                filterNumber: this.config.filternumberevent,
+                image: 'field_event_image',
                 taxonomyField: this.config.taxonomyfieldevent,
                 taxonomyType: this.config.taxonomytypeevent,
                 taxonomyTerm: this.config.taxonomytermevent
             },
             person: {
-                image: this.config.personimage,
-                filterNumber: this.config.filternumberperson,
+                image: 'field_person_image',
                 taxonomyField: this.config.taxonomyfieldperson,
                 taxonomyType: this.config.taxonomytypeperson,
                 taxonomyTerm: this.config.taxonomytermperson
             },
             place: {
-                image: this.config.placeimage,
-                filterNumber: this.config.filternumberplace,
+                image: 'field_place_image',
                 taxonomyField: this.config.taxonomyfieldplace,
                 taxonomyType: this.config.taxonomytypeplace,
                 taxonomyTerm: this.config.taxonomytermplace
             },
             product: {
-                image: this.config.productimage,
-                filterNumber: this.config.filternumberproduct,
+                image: 'field_product_image',
                 taxonomyField: this.config.taxonomyfieldproduct,
                 taxonomyType: this.config.taxonomytypeproduct,
                 taxonomyTerm: this.config.taxonomytermproduct
             },
             custom: {
                 image: this.config.customimage,
-                filterNumber: this.config.filternumbercustom,
                 taxonomyField: this.config.taxonomyfieldcustom,
                 taxonomyType: this.config.taxonomytypecustom,
                 taxonomyTerm: this.config.taxonomytermcustom,
@@ -88,7 +83,6 @@ class RemoteContent extends HTMLElement {
 
         const selectedType = typeMapping[this.remoteType] || {};
         this.remoteImage = selectedType.image;
-        this.filterNumber = selectedType.filterNumber;
         this.remoteTaxonomyField = selectedType.taxonomyField;
         this.remoteTaxonomyType = selectedType.taxonomyType;
         this.remoteTaxonomyTerm = selectedType.taxonomyTerm;

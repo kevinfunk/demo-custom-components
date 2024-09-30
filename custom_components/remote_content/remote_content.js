@@ -244,7 +244,7 @@ class RemoteContent extends HTMLElement {
         try {
             let contentUrl = `${this.baseUrl}${this.language}/jsonapi/node/${this.remoteType}`;
             if (this.showQueries) {
-                this.queryLog += `Content query: ${contentUrl}<br />`;
+                this.queryLog += `Remote type query: ${contentUrl}<br />`;
             }
             let queryOutput = '';
 

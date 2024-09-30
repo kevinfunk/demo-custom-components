@@ -240,6 +240,18 @@
                                     "uuid": "e591cc88-a89b-439d-8c13-89bf918ab410",
                                     "parentUid": "form-section",
                                     "children": []
+                                },
+                                {
+                                    "type": "form-field",
+                                    "uid": "form-checkbox-toggle",
+                                    "title": "Toggle",
+                                    "translate": true,
+                                    "status": {
+                                        "collapsed": false
+                                    },
+                                    "iconColor": "formField",
+                                    "uuid": "7443fd92-1878-471e-b1c9-9f73f37d4f53",
+                                    "parentUid": "form-section"
                                 }
                             ],
                             "iconColor": "formLayoutAlt",
@@ -261,31 +273,17 @@
                             "parentUid": "form-tab-item",
                             "children": [
                                 {
-                                    "type": "form-field",
-                                    "uid": "form-input",
-                                    "title": "Input",
-                                    "translate": true,
+                                    "type": "form-field-container",
+                                    "uid": "form-field-repeater",
+                                    "title": "Field repeater",
+                                    "selected": false,
                                     "status": {
-                                        "collapsed": false
-                                    },
-                                    "iconColor": "formField",
-                                    "uuid": "85b81111-ecec-4979-b55c-e206eef77080",
-                                    "parentUid": "form-section",
-                                    "children": []
-                                },
-                                {
-                                    "type": "form-container",
-                                    "uid": "form-section",
-                                    "title": "Field group",
-                                    "status": {
-                                        "collapsed": false
+                                        "collapsed": false,
+                                        "isopen": false
                                     },
                                     "options": {
                                         "formBuilder": true
                                     },
-                                    "iconColor": "formLayoutAlt",
-                                    "uuid": "2235652a-0cec-4d80-9454-e7cd5078a5f0",
-                                    "parentUid": "form-section",
                                     "children": [
                                         {
                                             "type": "form-field",
@@ -296,24 +294,56 @@
                                                 "collapsed": false
                                             },
                                             "iconColor": "formField",
-                                            "uuid": "40ce4bdd-d878-429e-8877-5cf5a718da7e",
-                                            "parentUid": "form-section",
+                                            "uuid": "85b81111-ecec-4979-b55c-e206eef77080",
+                                            "parentUid": "form-field-repeater",
                                             "children": []
                                         },
                                         {
-                                            "type": "form-field",
-                                            "uid": "form-input",
-                                            "title": "Input",
-                                            "translate": true,
+                                            "type": "form-container",
+                                            "uid": "form-section",
+                                            "title": "Field group",
                                             "status": {
                                                 "collapsed": false
                                             },
-                                            "iconColor": "formField",
-                                            "uuid": "df1e5783-603a-405c-b027-723fb06c684a",
-                                            "parentUid": "form-section",
-                                            "children": []
+                                            "options": {
+                                                "formBuilder": true
+                                            },
+                                            "iconColor": "formLayoutAlt",
+                                            "uuid": "2235652a-0cec-4d80-9454-e7cd5078a5f0",
+                                            "parentUid": "form-field-repeater",
+                                            "children": [
+                                                {
+                                                    "type": "form-field",
+                                                    "uid": "form-input",
+                                                    "title": "Input",
+                                                    "translate": true,
+                                                    "status": {
+                                                        "collapsed": false
+                                                    },
+                                                    "iconColor": "formField",
+                                                    "uuid": "40ce4bdd-d878-429e-8877-5cf5a718da7e",
+                                                    "parentUid": "form-section",
+                                                    "children": []
+                                                },
+                                                {
+                                                    "type": "form-field",
+                                                    "uid": "form-input",
+                                                    "title": "Input",
+                                                    "translate": true,
+                                                    "status": {
+                                                        "collapsed": false
+                                                    },
+                                                    "iconColor": "formField",
+                                                    "uuid": "df1e5783-603a-405c-b027-723fb06c684a",
+                                                    "parentUid": "form-section",
+                                                    "children": []
+                                                }
+                                            ]
                                         }
-                                    ]
+                                    ],
+                                    "iconColor": "formLayoutAlt",
+                                    "uuid": "f885112e-1f87-4123-b231-22bd664e38cb",
+                                    "parentUid": "form-section"
                                 }
                             ]
                         },
@@ -332,31 +362,17 @@
                             "parentUid": "form-tab-item",
                             "children": [
                                 {
-                                    "type": "form-field",
-                                    "uid": "form-input",
-                                    "title": "Input",
-                                    "translate": true,
+                                    "type": "form-field-container",
+                                    "uid": "form-field-repeater",
+                                    "title": "Field repeater",
+                                    "selected": false,
                                     "status": {
-                                        "collapsed": false
-                                    },
-                                    "iconColor": "formField",
-                                    "uuid": "3919d345-266b-4e23-ae5a-953693883ba1",
-                                    "parentUid": "form-section",
-                                    "children": []
-                                },
-                                {
-                                    "type": "form-container",
-                                    "uid": "form-section",
-                                    "title": "Field group",
-                                    "status": {
-                                        "collapsed": false
+                                        "collapsed": false,
+                                        "isopen": false
                                     },
                                     "options": {
                                         "formBuilder": true
                                     },
-                                    "iconColor": "formLayoutAlt",
-                                    "uuid": "ad856941-32b0-4b77-bd11-54fae15b492f",
-                                    "parentUid": "form-section",
                                     "children": [
                                         {
                                             "type": "form-field",
@@ -367,24 +383,56 @@
                                                 "collapsed": false
                                             },
                                             "iconColor": "formField",
-                                            "uuid": "407809a9-1d9a-4a53-bd84-cff4e66bf1fb",
-                                            "parentUid": "form-section",
+                                            "uuid": "3919d345-266b-4e23-ae5a-953693883ba1",
+                                            "parentUid": "form-field-repeater",
                                             "children": []
                                         },
                                         {
-                                            "type": "form-field",
-                                            "uid": "form-input",
-                                            "title": "Input",
-                                            "translate": true,
+                                            "type": "form-container",
+                                            "uid": "form-section",
+                                            "title": "Field group",
                                             "status": {
                                                 "collapsed": false
                                             },
-                                            "iconColor": "formField",
-                                            "uuid": "14799f05-f671-4338-a7cc-5c412b4f82b2",
-                                            "parentUid": "form-section",
-                                            "children": []
+                                            "options": {
+                                                "formBuilder": true
+                                            },
+                                            "iconColor": "formLayoutAlt",
+                                            "uuid": "ad856941-32b0-4b77-bd11-54fae15b492f",
+                                            "parentUid": "form-field-repeater",
+                                            "children": [
+                                                {
+                                                    "type": "form-field",
+                                                    "uid": "form-input",
+                                                    "title": "Input",
+                                                    "translate": true,
+                                                    "status": {
+                                                        "collapsed": false
+                                                    },
+                                                    "iconColor": "formField",
+                                                    "uuid": "407809a9-1d9a-4a53-bd84-cff4e66bf1fb",
+                                                    "parentUid": "form-section",
+                                                    "children": []
+                                                },
+                                                {
+                                                    "type": "form-field",
+                                                    "uid": "form-input",
+                                                    "title": "Input",
+                                                    "translate": true,
+                                                    "status": {
+                                                        "collapsed": false
+                                                    },
+                                                    "iconColor": "formField",
+                                                    "uuid": "14799f05-f671-4338-a7cc-5c412b4f82b2",
+                                                    "parentUid": "form-section",
+                                                    "children": []
+                                                }
+                                            ]
                                         }
-                                    ]
+                                    ],
+                                    "iconColor": "formLayoutAlt",
+                                    "uuid": "ce53293a-e560-4bcd-953a-6ff2425f35b1",
+                                    "parentUid": "form-section"
                                 }
                             ]
                         },
@@ -403,31 +451,17 @@
                             "parentUid": "form-tab-item",
                             "children": [
                                 {
-                                    "type": "form-field",
-                                    "uid": "form-input",
-                                    "title": "Input",
-                                    "translate": true,
+                                    "type": "form-field-container",
+                                    "uid": "form-field-repeater",
+                                    "title": "Field repeater",
+                                    "selected": false,
                                     "status": {
-                                        "collapsed": false
-                                    },
-                                    "iconColor": "formField",
-                                    "uuid": "959b414d-32bf-4ad4-91e5-1a90915b9ed9",
-                                    "parentUid": "form-section",
-                                    "children": []
-                                },
-                                {
-                                    "type": "form-container",
-                                    "uid": "form-section",
-                                    "title": "Field group",
-                                    "status": {
-                                        "collapsed": false
+                                        "collapsed": false,
+                                        "isopen": false
                                     },
                                     "options": {
                                         "formBuilder": true
                                     },
-                                    "iconColor": "formLayoutAlt",
-                                    "uuid": "b406c30f-3be9-4dbe-b383-55eb3313f764",
-                                    "parentUid": "form-section",
                                     "children": [
                                         {
                                             "type": "form-field",
@@ -438,24 +472,56 @@
                                                 "collapsed": false
                                             },
                                             "iconColor": "formField",
-                                            "uuid": "11a624a3-1cf4-42be-84ce-07d68c04ee05",
-                                            "parentUid": "form-section",
+                                            "uuid": "959b414d-32bf-4ad4-91e5-1a90915b9ed9",
+                                            "parentUid": "form-field-repeater",
                                             "children": []
                                         },
                                         {
-                                            "type": "form-field",
-                                            "uid": "form-input",
-                                            "title": "Input",
-                                            "translate": true,
+                                            "type": "form-container",
+                                            "uid": "form-section",
+                                            "title": "Field group",
                                             "status": {
                                                 "collapsed": false
                                             },
-                                            "iconColor": "formField",
-                                            "uuid": "a8f50d59-d460-4704-82f0-1308b0b2c375",
-                                            "parentUid": "form-section",
-                                            "children": []
+                                            "options": {
+                                                "formBuilder": true
+                                            },
+                                            "iconColor": "formLayoutAlt",
+                                            "uuid": "b406c30f-3be9-4dbe-b383-55eb3313f764",
+                                            "parentUid": "form-field-repeater",
+                                            "children": [
+                                                {
+                                                    "type": "form-field",
+                                                    "uid": "form-input",
+                                                    "title": "Input",
+                                                    "translate": true,
+                                                    "status": {
+                                                        "collapsed": false
+                                                    },
+                                                    "iconColor": "formField",
+                                                    "uuid": "11a624a3-1cf4-42be-84ce-07d68c04ee05",
+                                                    "parentUid": "form-section",
+                                                    "children": []
+                                                },
+                                                {
+                                                    "type": "form-field",
+                                                    "uid": "form-input",
+                                                    "title": "Input",
+                                                    "translate": true,
+                                                    "status": {
+                                                        "collapsed": false
+                                                    },
+                                                    "iconColor": "formField",
+                                                    "uuid": "a8f50d59-d460-4704-82f0-1308b0b2c375",
+                                                    "parentUid": "form-section",
+                                                    "children": []
+                                                }
+                                            ]
                                         }
-                                    ]
+                                    ],
+                                    "iconColor": "formLayoutAlt",
+                                    "uuid": "d64ed99d-84b4-4da3-90a6-b82dbadbdf4b",
+                                    "parentUid": "form-section"
                                 }
                             ]
                         },
@@ -474,31 +540,17 @@
                             "parentUid": "form-tab-item",
                             "children": [
                                 {
-                                    "type": "form-field",
-                                    "uid": "form-input",
-                                    "title": "Input",
-                                    "translate": true,
+                                    "type": "form-field-container",
+                                    "uid": "form-field-repeater",
+                                    "title": "Field repeater",
+                                    "selected": false,
                                     "status": {
-                                        "collapsed": false
-                                    },
-                                    "iconColor": "formField",
-                                    "uuid": "9e3f8651-8c18-45bb-b7a0-1dc7fee1f2f5",
-                                    "parentUid": "form-section",
-                                    "children": []
-                                },
-                                {
-                                    "type": "form-container",
-                                    "uid": "form-section",
-                                    "title": "Field group",
-                                    "status": {
-                                        "collapsed": false
+                                        "collapsed": false,
+                                        "isopen": false
                                     },
                                     "options": {
                                         "formBuilder": true
                                     },
-                                    "iconColor": "formLayoutAlt",
-                                    "uuid": "41827903-2f6f-46a7-a125-c49035253555",
-                                    "parentUid": "form-section",
                                     "children": [
                                         {
                                             "type": "form-field",
@@ -509,24 +561,56 @@
                                                 "collapsed": false
                                             },
                                             "iconColor": "formField",
-                                            "uuid": "dbd53624-d85a-4af1-8834-611f935fc840",
-                                            "parentUid": "form-section",
+                                            "uuid": "9e3f8651-8c18-45bb-b7a0-1dc7fee1f2f5",
+                                            "parentUid": "form-field-repeater",
                                             "children": []
                                         },
                                         {
-                                            "type": "form-field",
-                                            "uid": "form-input",
-                                            "title": "Input",
-                                            "translate": true,
+                                            "type": "form-container",
+                                            "uid": "form-section",
+                                            "title": "Field group",
                                             "status": {
                                                 "collapsed": false
                                             },
-                                            "iconColor": "formField",
-                                            "uuid": "df834c95-19b1-4127-8734-d5ec1052d413",
-                                            "parentUid": "form-section",
-                                            "children": []
+                                            "options": {
+                                                "formBuilder": true
+                                            },
+                                            "iconColor": "formLayoutAlt",
+                                            "uuid": "41827903-2f6f-46a7-a125-c49035253555",
+                                            "parentUid": "form-field-repeater",
+                                            "children": [
+                                                {
+                                                    "type": "form-field",
+                                                    "uid": "form-input",
+                                                    "title": "Input",
+                                                    "translate": true,
+                                                    "status": {
+                                                        "collapsed": false
+                                                    },
+                                                    "iconColor": "formField",
+                                                    "uuid": "dbd53624-d85a-4af1-8834-611f935fc840",
+                                                    "parentUid": "form-section",
+                                                    "children": []
+                                                },
+                                                {
+                                                    "type": "form-field",
+                                                    "uid": "form-input",
+                                                    "title": "Input",
+                                                    "translate": true,
+                                                    "status": {
+                                                        "collapsed": false
+                                                    },
+                                                    "iconColor": "formField",
+                                                    "uuid": "df834c95-19b1-4127-8734-d5ec1052d413",
+                                                    "parentUid": "form-section",
+                                                    "children": []
+                                                }
+                                            ]
                                         }
-                                    ]
+                                    ],
+                                    "iconColor": "formLayoutAlt",
+                                    "uuid": "67acd735-12be-4816-aa94-88d142cbe55d",
+                                    "parentUid": "form-section"
                                 }
                             ]
                         },
@@ -545,31 +629,17 @@
                             "parentUid": "form-tab-item",
                             "children": [
                                 {
-                                    "type": "form-field",
-                                    "uid": "form-input",
-                                    "title": "Input",
-                                    "translate": true,
+                                    "type": "form-field-container",
+                                    "uid": "form-field-repeater",
+                                    "title": "Field repeater",
+                                    "selected": false,
                                     "status": {
-                                        "collapsed": false
-                                    },
-                                    "iconColor": "formField",
-                                    "uuid": "62626e1e-a80f-4aaf-9771-37616e324eb0",
-                                    "parentUid": "form-section",
-                                    "children": []
-                                },
-                                {
-                                    "type": "form-container",
-                                    "uid": "form-section",
-                                    "title": "Field group",
-                                    "status": {
-                                        "collapsed": false
+                                        "collapsed": false,
+                                        "isopen": false
                                     },
                                     "options": {
                                         "formBuilder": true
                                     },
-                                    "iconColor": "formLayoutAlt",
-                                    "uuid": "f4856ca9-53e4-4d52-8392-a1fe81a67896",
-                                    "parentUid": "form-section",
                                     "children": [
                                         {
                                             "type": "form-field",
@@ -580,24 +650,56 @@
                                                 "collapsed": false
                                             },
                                             "iconColor": "formField",
-                                            "uuid": "f0b6c92b-9ad0-4d84-b9bd-f6c53e68d61f",
-                                            "parentUid": "form-section",
+                                            "uuid": "62626e1e-a80f-4aaf-9771-37616e324eb0",
+                                            "parentUid": "form-field-repeater",
                                             "children": []
                                         },
                                         {
-                                            "type": "form-field",
-                                            "uid": "form-input",
-                                            "title": "Input",
-                                            "translate": true,
+                                            "type": "form-container",
+                                            "uid": "form-section",
+                                            "title": "Field group",
                                             "status": {
                                                 "collapsed": false
                                             },
-                                            "iconColor": "formField",
-                                            "uuid": "4907a7e0-ce97-48c6-b24c-cf231d3f7dc5",
-                                            "parentUid": "form-section",
-                                            "children": []
+                                            "options": {
+                                                "formBuilder": true
+                                            },
+                                            "iconColor": "formLayoutAlt",
+                                            "uuid": "f4856ca9-53e4-4d52-8392-a1fe81a67896",
+                                            "parentUid": "form-field-repeater",
+                                            "children": [
+                                                {
+                                                    "type": "form-field",
+                                                    "uid": "form-input",
+                                                    "title": "Input",
+                                                    "translate": true,
+                                                    "status": {
+                                                        "collapsed": false
+                                                    },
+                                                    "iconColor": "formField",
+                                                    "uuid": "f0b6c92b-9ad0-4d84-b9bd-f6c53e68d61f",
+                                                    "parentUid": "form-section",
+                                                    "children": []
+                                                },
+                                                {
+                                                    "type": "form-field",
+                                                    "uid": "form-input",
+                                                    "title": "Input",
+                                                    "translate": true,
+                                                    "status": {
+                                                        "collapsed": false
+                                                    },
+                                                    "iconColor": "formField",
+                                                    "uuid": "4907a7e0-ce97-48c6-b24c-cf231d3f7dc5",
+                                                    "parentUid": "form-section",
+                                                    "children": []
+                                                }
+                                            ]
                                         }
-                                    ]
+                                    ],
+                                    "iconColor": "formLayoutAlt",
+                                    "uuid": "530c7d83-dde9-4fb1-8884-8e9b322eb7ee",
+                                    "parentUid": "form-section"
                                 }
                             ]
                         },
@@ -616,31 +718,17 @@
                             "parentUid": "form-tab-item",
                             "children": [
                                 {
-                                    "type": "form-field",
-                                    "uid": "form-input",
-                                    "title": "Input",
-                                    "translate": true,
+                                    "type": "form-field-container",
+                                    "uid": "form-field-repeater",
+                                    "title": "Field repeater",
+                                    "selected": false,
                                     "status": {
-                                        "collapsed": false
-                                    },
-                                    "iconColor": "formField",
-                                    "uuid": "7351407b-c518-4164-90dc-e78809ab0e76",
-                                    "parentUid": "form-section",
-                                    "children": []
-                                },
-                                {
-                                    "type": "form-container",
-                                    "uid": "form-section",
-                                    "title": "Field group",
-                                    "status": {
-                                        "collapsed": false
+                                        "collapsed": false,
+                                        "isopen": false
                                     },
                                     "options": {
                                         "formBuilder": true
                                     },
-                                    "iconColor": "formLayoutAlt",
-                                    "uuid": "183c4740-d686-4d02-9b64-8a3653043d01",
-                                    "parentUid": "form-section",
                                     "children": [
                                         {
                                             "type": "form-field",
@@ -651,24 +739,56 @@
                                                 "collapsed": false
                                             },
                                             "iconColor": "formField",
-                                            "uuid": "3ea2d88c-c371-4dbb-97a7-6b1c2172166d",
-                                            "parentUid": "form-section",
+                                            "uuid": "7351407b-c518-4164-90dc-e78809ab0e76",
+                                            "parentUid": "form-field-repeater",
                                             "children": []
                                         },
                                         {
-                                            "type": "form-field",
-                                            "uid": "form-input",
-                                            "title": "Input",
-                                            "translate": true,
+                                            "type": "form-container",
+                                            "uid": "form-section",
+                                            "title": "Field group",
                                             "status": {
                                                 "collapsed": false
                                             },
-                                            "iconColor": "formField",
-                                            "uuid": "fa8f0f89-c011-4ff8-86db-1afe2bacadd2",
-                                            "parentUid": "form-section",
-                                            "children": []
+                                            "options": {
+                                                "formBuilder": true
+                                            },
+                                            "iconColor": "formLayoutAlt",
+                                            "uuid": "183c4740-d686-4d02-9b64-8a3653043d01",
+                                            "parentUid": "form-field-repeater",
+                                            "children": [
+                                                {
+                                                    "type": "form-field",
+                                                    "uid": "form-input",
+                                                    "title": "Input",
+                                                    "translate": true,
+                                                    "status": {
+                                                        "collapsed": false
+                                                    },
+                                                    "iconColor": "formField",
+                                                    "uuid": "3ea2d88c-c371-4dbb-97a7-6b1c2172166d",
+                                                    "parentUid": "form-section",
+                                                    "children": []
+                                                },
+                                                {
+                                                    "type": "form-field",
+                                                    "uid": "form-input",
+                                                    "title": "Input",
+                                                    "translate": true,
+                                                    "status": {
+                                                        "collapsed": false
+                                                    },
+                                                    "iconColor": "formField",
+                                                    "uuid": "fa8f0f89-c011-4ff8-86db-1afe2bacadd2",
+                                                    "parentUid": "form-section",
+                                                    "children": []
+                                                }
+                                            ]
                                         }
-                                    ]
+                                    ],
+                                    "iconColor": "formLayoutAlt",
+                                    "uuid": "f0427f4b-70d4-4593-aad0-fd6f4aaceb68",
+                                    "parentUid": "form-section"
                                 }
                             ]
                         }
@@ -974,7 +1094,7 @@
                 "disableScrollbar": true,
                 "disableEllipsisMenu": true,
                 "isOpen": true,
-                "showCondition": "[field.9b447a9e-ad77-439f-8329-acd762b00737] == 'article' && [field.11238c6c-ba72-409f-9bcd-e19c026eed3b]"
+                "showCondition": "[field.9b447a9e-ad77-439f-8329-acd762b00737] == 'article' && [field.11238c6c-ba72-409f-9bcd-e19c026eed3b] && [field.7443fd92-1878-471e-b1c9-9f73f37d4f53]"
             }
         },
         "85b81111-ecec-4979-b55c-e206eef77080": {
@@ -1033,10 +1153,10 @@
                 },
                 "machineName": "taxonomytermarticle",
                 "tooltipPlacement": "auto right",
-                "placeholder": "News"
+                "placeholder": ""
             },
             "model": {
-                "value": ""
+                "value": "News"
             }
         },
         "ec539356-565b-4502-bcf3-325518e3adfe": {
@@ -1052,7 +1172,7 @@
                 "disableScrollbar": true,
                 "disableEllipsisMenu": true,
                 "isOpen": true,
-                "showCondition": "[field.9b447a9e-ad77-439f-8329-acd762b00737] == 'event' && [field.11238c6c-ba72-409f-9bcd-e19c026eed3b]"
+                "showCondition": "[field.9b447a9e-ad77-439f-8329-acd762b00737] == 'event' && [field.11238c6c-ba72-409f-9bcd-e19c026eed3b] && [field.7443fd92-1878-471e-b1c9-9f73f37d4f53]"
             }
         },
         "3919d345-266b-4e23-ae5a-953693883ba1": {
@@ -1111,10 +1231,10 @@
                 },
                 "machineName": "taxonomytermevent",
                 "tooltipPlacement": "auto right",
-                "placeholder": "Meet-up"
+                "placeholder": ""
             },
             "model": {
-                "value": ""
+                "value": "Meet-up"
             }
         },
         "861538eb-14f1-4065-a25f-e68d9431286f": {
@@ -1130,7 +1250,7 @@
                 "disableScrollbar": true,
                 "disableEllipsisMenu": true,
                 "isOpen": true,
-                "showCondition": "[field.9b447a9e-ad77-439f-8329-acd762b00737] == 'person' && [field.11238c6c-ba72-409f-9bcd-e19c026eed3b]"
+                "showCondition": "[field.9b447a9e-ad77-439f-8329-acd762b00737] == 'person' && [field.11238c6c-ba72-409f-9bcd-e19c026eed3b] && [field.7443fd92-1878-471e-b1c9-9f73f37d4f53]"
             }
         },
         "959b414d-32bf-4ad4-91e5-1a90915b9ed9": {
@@ -1189,10 +1309,10 @@
                 },
                 "machineName": "taxonomytermperson",
                 "tooltipPlacement": "auto right",
-                "placeholder": "Sales"
+                "placeholder": ""
             },
             "model": {
-                "value": ""
+                "value": "Sales"
             }
         },
         "d0cb1b21-0e66-4f5f-918d-0b299fbd4ef5": {
@@ -1208,7 +1328,7 @@
                 "disableScrollbar": true,
                 "disableEllipsisMenu": true,
                 "isOpen": true,
-                "showCondition": "[field.9b447a9e-ad77-439f-8329-acd762b00737] == 'place' && [field.11238c6c-ba72-409f-9bcd-e19c026eed3b]"
+                "showCondition": "[field.9b447a9e-ad77-439f-8329-acd762b00737] == 'place' && [field.11238c6c-ba72-409f-9bcd-e19c026eed3b] && [field.7443fd92-1878-471e-b1c9-9f73f37d4f53]"
             }
         },
         "9e3f8651-8c18-45bb-b7a0-1dc7fee1f2f5": {
@@ -1267,10 +1387,10 @@
                 },
                 "machineName": "taxonomytermplace",
                 "tooltipPlacement": "auto right",
-                "placeholder": "Bike Tours"
+                "placeholder": ""
             },
             "model": {
-                "value": ""
+                "value": "Bike Tours"
             }
         },
         "17e8679d-493a-428b-a294-4eb07a4e5764": {
@@ -1286,7 +1406,7 @@
                 "disableScrollbar": true,
                 "disableEllipsisMenu": true,
                 "isOpen": true,
-                "showCondition": "[field.9b447a9e-ad77-439f-8329-acd762b00737] == 'product' && [field.11238c6c-ba72-409f-9bcd-e19c026eed3b]"
+                "showCondition": "[field.9b447a9e-ad77-439f-8329-acd762b00737] == 'product' && [field.11238c6c-ba72-409f-9bcd-e19c026eed3b] && [field.7443fd92-1878-471e-b1c9-9f73f37d4f53]"
             }
         },
         "62626e1e-a80f-4aaf-9771-37616e324eb0": {
@@ -1345,10 +1465,10 @@
                 },
                 "machineName": "taxonomytermproduct",
                 "tooltipPlacement": "auto right",
-                "placeholder": "Bikes"
+                "placeholder": ""
             },
             "model": {
-                "value": ""
+                "value": "Bikes"
             }
         },
         "a2580eed-a71d-4369-8796-7d69d473ff83": {
@@ -1364,7 +1484,7 @@
                 "disableScrollbar": true,
                 "disableEllipsisMenu": true,
                 "isOpen": true,
-                "showCondition": "[field.9b447a9e-ad77-439f-8329-acd762b00737] == 'custom' && [field.11238c6c-ba72-409f-9bcd-e19c026eed3b]"
+                "showCondition": "[field.9b447a9e-ad77-439f-8329-acd762b00737] == 'custom' && [field.11238c6c-ba72-409f-9bcd-e19c026eed3b] && [field.7443fd92-1878-471e-b1c9-9f73f37d4f53]"
             }
         },
         "7351407b-c518-4164-90dc-e78809ab0e76": {
@@ -2025,6 +2145,166 @@
                 "disableEllipsisMenu": true,
                 "isOpen": true
             }
+        },
+        "f885112e-1f87-4123-b231-22bd664e38cb": {
+            "settings": {
+                "type": "cohArray",
+                "title": "repeatertaxonomyarticle",
+                "componentField": true,
+                "noTitle": true,
+                "disableScrollbar": true,
+                "addText": "Add another filter",
+                "key": "field-repeater",
+                "sortable": true,
+                "sortableOptions": {
+                    "axis": "y",
+                    "handle": true
+                },
+                "schema": {
+                    "type": "array"
+                },
+                "machineName": "repeatertaxonomyarticle",
+                "min": 1,
+                "max": 100,
+                "increment": 1,
+                "tooltipPlacement": "auto right"
+            }
+        },
+        "ce53293a-e560-4bcd-953a-6ff2425f35b1": {
+            "settings": {
+                "type": "cohArray",
+                "title": "repeatertaxonomyevent",
+                "componentField": true,
+                "noTitle": true,
+                "disableScrollbar": true,
+                "addText": "Add another filter",
+                "key": "field-repeater",
+                "sortable": true,
+                "sortableOptions": {
+                    "axis": "y",
+                    "handle": true
+                },
+                "schema": {
+                    "type": "array"
+                },
+                "machineName": "repeatertaxonomyevent",
+                "min": 1,
+                "max": 100,
+                "increment": 1,
+                "tooltipPlacement": "auto right"
+            }
+        },
+        "d64ed99d-84b4-4da3-90a6-b82dbadbdf4b": {
+            "settings": {
+                "type": "cohArray",
+                "title": "repeatertaxonomyperson",
+                "componentField": true,
+                "noTitle": true,
+                "disableScrollbar": true,
+                "addText": "Add another filter",
+                "key": "field-repeater",
+                "sortable": true,
+                "sortableOptions": {
+                    "axis": "y",
+                    "handle": true
+                },
+                "schema": {
+                    "type": "array"
+                },
+                "machineName": "repeatertaxonomyperson",
+                "min": 1,
+                "max": 100,
+                "increment": 1,
+                "tooltipPlacement": "auto right"
+            }
+        },
+        "67acd735-12be-4816-aa94-88d142cbe55d": {
+            "settings": {
+                "type": "cohArray",
+                "title": "repeatertaxonomyplace",
+                "componentField": true,
+                "noTitle": true,
+                "disableScrollbar": true,
+                "addText": "Add another filter",
+                "key": "field-repeater",
+                "sortable": true,
+                "sortableOptions": {
+                    "axis": "y",
+                    "handle": true
+                },
+                "schema": {
+                    "type": "array"
+                },
+                "machineName": "repeatertaxonomyplace",
+                "min": 1,
+                "max": 100,
+                "increment": 1,
+                "tooltipPlacement": "auto right"
+            }
+        },
+        "530c7d83-dde9-4fb1-8884-8e9b322eb7ee": {
+            "settings": {
+                "type": "cohArray",
+                "title": "repeatertaxonomyproduct",
+                "componentField": true,
+                "noTitle": true,
+                "disableScrollbar": true,
+                "addText": "Add another filter",
+                "key": "field-repeater",
+                "sortable": true,
+                "sortableOptions": {
+                    "axis": "y",
+                    "handle": true
+                },
+                "schema": {
+                    "type": "array"
+                },
+                "machineName": "repeatertaxonomyproduct",
+                "min": 1,
+                "max": 100,
+                "increment": 1,
+                "tooltipPlacement": "auto right"
+            }
+        },
+        "f0427f4b-70d4-4593-aad0-fd6f4aaceb68": {
+            "settings": {
+                "type": "cohArray",
+                "title": "repeatertaxonomycustom",
+                "componentField": true,
+                "noTitle": true,
+                "disableScrollbar": true,
+                "addText": "Add another filter",
+                "key": "field-repeater",
+                "sortable": true,
+                "sortableOptions": {
+                    "axis": "y",
+                    "handle": true
+                },
+                "schema": {
+                    "type": "array"
+                },
+                "machineName": "repeatertaxonomycustom",
+                "min": 1,
+                "max": 100,
+                "increment": 1,
+                "tooltipPlacement": "auto right"
+            }
+        },
+        "7443fd92-1878-471e-b1c9-9f73f37d4f53": {
+            "settings": {
+                "type": "checkboxToggle",
+                "title": "Filter by Taxonomy",
+                "schema": {
+                    "type": "string"
+                },
+                "machineName": "filtertaxonomy",
+                "toggleType": "boolean",
+                "tooltipPlacement": "auto right",
+                "showCondition": "[field.11238c6c-ba72-409f-9bcd-e19c026eed3b]"
+            },
+            "model": {
+                "value": false
+            }
         }
     },
     "mapper": {
@@ -2077,7 +2357,14 @@
         "d0398a2c-74a9-4660-b430-0bc8ab09db08": {},
         "11238c6c-ba72-409f-9bcd-e19c026eed3b": {},
         "e591cc88-a89b-439d-8c13-89bf918ab410": {},
-        "b198648c-8851-4e74-b1fb-fba042c2f8b6": {}
+        "b198648c-8851-4e74-b1fb-fba042c2f8b6": {},
+        "f885112e-1f87-4123-b231-22bd664e38cb": {},
+        "ce53293a-e560-4bcd-953a-6ff2425f35b1": {},
+        "d64ed99d-84b4-4da3-90a6-b82dbadbdf4b": {},
+        "67acd735-12be-4816-aa94-88d142cbe55d": {},
+        "530c7d83-dde9-4fb1-8884-8e9b322eb7ee": {},
+        "f0427f4b-70d4-4593-aad0-fd6f4aaceb68": {},
+        "7443fd92-1878-471e-b1c9-9f73f37d4f53": {}
     },
     "previewModel": {
         "7efaaa21-f700-48eb-80c3-1a5799b3cec5": {},
@@ -2129,7 +2416,14 @@
         "d0398a2c-74a9-4660-b430-0bc8ab09db08": {},
         "11238c6c-ba72-409f-9bcd-e19c026eed3b": {},
         "e591cc88-a89b-439d-8c13-89bf918ab410": {},
-        "b198648c-8851-4e74-b1fb-fba042c2f8b6": {}
+        "b198648c-8851-4e74-b1fb-fba042c2f8b6": {},
+        "f885112e-1f87-4123-b231-22bd664e38cb": {},
+        "ce53293a-e560-4bcd-953a-6ff2425f35b1": {},
+        "d64ed99d-84b4-4da3-90a6-b82dbadbdf4b": {},
+        "67acd735-12be-4816-aa94-88d142cbe55d": {},
+        "530c7d83-dde9-4fb1-8884-8e9b322eb7ee": {},
+        "f0427f4b-70d4-4593-aad0-fd6f4aaceb68": {},
+        "7443fd92-1878-471e-b1c9-9f73f37d4f53": {}
     },
     "variableFields": {
         "7efaaa21-f700-48eb-80c3-1a5799b3cec5": [],
@@ -2181,7 +2475,14 @@
         "d0398a2c-74a9-4660-b430-0bc8ab09db08": [],
         "11238c6c-ba72-409f-9bcd-e19c026eed3b": [],
         "e591cc88-a89b-439d-8c13-89bf918ab410": [],
-        "b198648c-8851-4e74-b1fb-fba042c2f8b6": []
+        "b198648c-8851-4e74-b1fb-fba042c2f8b6": [],
+        "f885112e-1f87-4123-b231-22bd664e38cb": [],
+        "ce53293a-e560-4bcd-953a-6ff2425f35b1": [],
+        "d64ed99d-84b4-4da3-90a6-b82dbadbdf4b": [],
+        "67acd735-12be-4816-aa94-88d142cbe55d": [],
+        "530c7d83-dde9-4fb1-8884-8e9b322eb7ee": [],
+        "f0427f4b-70d4-4593-aad0-fd6f4aaceb68": [],
+        "7443fd92-1878-471e-b1c9-9f73f37d4f53": []
     },
     "meta": {}
 }

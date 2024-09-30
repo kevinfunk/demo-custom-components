@@ -22,6 +22,13 @@ class RemoteContent extends HTMLElement {
         this.imageStyle = this.config.imagestyle;
         this.layoutStyle = this.config.layoutstyle;
 
+        this.repeatertaxonomyarticle = this.config.repeatertaxonomyarticle || [];
+        this.repeatertaxonomyevent = this.config.repeatertaxonomyevent || [];
+        this.repeatertaxonomyperson = this.config.repeatertaxonomyperson || [];
+        this.repeatertaxonomyplace = this.config.repeatertaxonomyplace || [];
+        this.repeatertaxonomyproduct = this.config.repeatertaxonomyproduct || [];
+        this.repeatertaxonomycustom = this.config.repeatertaxonomycustom || [];
+
         // Set the remote content type and related properties
         this.setRemoteType();
 
@@ -44,53 +51,57 @@ class RemoteContent extends HTMLElement {
         const typeMapping = {
             article: {
                 image: 'field_article_image',
-                taxonomyField: this.config.taxonomyfieldarticle,
-                taxonomyType: this.config.taxonomytypearticle,
-                taxonomyTerm: this.config.taxonomytermarticle
+                taxonomyRepeater: this.repeatertaxonomyarticle
             },
             event: {
                 image: 'field_event_image',
-                taxonomyField: this.config.taxonomyfieldevent,
-                taxonomyType: this.config.taxonomytypeevent,
-                taxonomyTerm: this.config.taxonomytermevent
+                taxonomyRepeater: this.repeatertaxonomyevent
             },
             person: {
                 image: 'field_person_image',
-                taxonomyField: this.config.taxonomyfieldperson,
-                taxonomyType: this.config.taxonomytypeperson,
-                taxonomyTerm: this.config.taxonomytermperson
+                taxonomyRepeater: this.repeatertaxonomyperson
             },
             place: {
                 image: 'field_place_image',
-                taxonomyField: this.config.taxonomyfieldplace,
-                taxonomyType: this.config.taxonomytypeplace,
-                taxonomyTerm: this.config.taxonomytermplace
+                taxonomyRepeater: this.repeatertaxonomyplace
             },
             product: {
                 image: 'field_product_image',
-                taxonomyField: this.config.taxonomyfieldproduct,
-                taxonomyType: this.config.taxonomytypeproduct,
-                taxonomyTerm: this.config.taxonomytermproduct
+                taxonomyRepeater: this.repeatertaxonomyproduct
             },
             custom: {
                 image: this.config.customimage,
-                taxonomyField: this.config.taxonomyfieldcustom,
-                taxonomyType: this.config.taxonomytypecustom,
-                taxonomyTerm: this.config.taxonomytermcustom,
-                customType: this.config.customtype
+                customType: this.config.customtype,
+                taxonomyRepeater: this.repeatertaxonomycustom
             }
         };
 
         const selectedType = typeMapping[this.remoteType] || {};
         this.remoteImage = selectedType.image;
-        this.remoteTaxonomyField = selectedType.taxonomyField;
-        this.remoteTaxonomyType = selectedType.taxonomyType;
-        this.remoteTaxonomyTerm = selectedType.taxonomyTerm;
+        this.remoteRepeaterTaxonomy = selectedType.taxonomyRepeater || [];
 
         // For custom type, override the remoteType
         if (this.remoteType === 'custom') {
             this.remoteType = selectedType.customType;
         }
+
+        // Helper function to transform taxonomy filter object
+        const transformTaxonomyFilter = (filterObj) => {
+            const transformed = {};
+            const keys = Object.keys(filterObj);
+
+            // Assuming the order: [taxonomyField, taxonomyType, taxonomyTerm]
+            transformed.taxonomyField = filterObj[keys[0]];
+            transformed.taxonomyType = filterObj[keys[1]];
+            transformed.taxonomyTerm = filterObj[keys[2]];
+
+            return transformed;
+        };
+
+        // Transform repeatertaxonomy to have expected keys
+        this.repeatertaxonomy = Object.values(this.remoteRepeaterTaxonomy || {})
+            .map(filterObj => transformTaxonomyFilter(filterObj))
+            .filter(filter => filter !== null);
     }
 
     connectedCallback() {
@@ -101,6 +112,13 @@ class RemoteContent extends HTMLElement {
     async fetchData(url) {
         try {
             const response = await fetch(url);
+            if (response.status === 404) {
+                // If a 404 error is encountered, reset the language to empty
+                this.language = '';
+                // Retry fetching data with the updated language
+                const updatedUrl = url.replace(/\/[a-z]{2}(\/|$)/, '/');
+                return await this.fetchData(updatedUrl);
+            }
             if (!response.ok) {
                 throw new Error(`Fetch error: ${response.status} ${response.statusText}`);
             }
@@ -160,11 +178,18 @@ class RemoteContent extends HTMLElement {
         }
     }
 
-    // Fetch taxonomy terms for filtering
-    async fetchTaxonomyTerms() {
-        const taxonomyTermsUrl = `${this.baseUrl}${this.language}/jsonapi/taxonomy_term/${this.remoteTaxonomyType}`;
-        const termsData = await this.fetchData(taxonomyTermsUrl);
-        return termsData.data;
+    // Fetch taxonomy term ID by taxonomy type and term name
+    async getTaxonomyTermId(taxonomyType, termName) {
+        const taxonomyUrl = `${this.baseUrl}${this.language}/jsonapi/taxonomy_term/${taxonomyType}?filter[name]=${encodeURIComponent(termName)}&page[limit]=1`;
+
+        try {
+            const data = await this.fetchData(taxonomyUrl);
+            const term = data.data[0];
+            return term || null;
+        } catch (error) {
+            console.error(`Error fetching taxonomy term "${termName}" for type "${taxonomyType}": ${error.message}`);
+            return null;
+        }
     }
 
     // Main render function for fetching and displaying content
@@ -175,28 +200,51 @@ class RemoteContent extends HTMLElement {
         this.appendChild(resultDiv);
 
         if (!this.baseUrl) {
-            resultDiv.innerHTML = '<div class="notice">The website address is not set. Please add it to the component.</div>';
+            resultDiv.innerHTML = '<div class="notice">The website address is not set. Please check the component settings.</div>';
             return;
         }
 
         try {
             let contentUrl;
 
-            // If taxonomy term is empty, fetch all content
-            if (!this.remoteTaxonomyTerm) {
+            if (this.repeatertaxonomy.length === 0) {
+                // No taxonomy filters applied, fetch all content
                 contentUrl = `${this.baseUrl}${this.language}/jsonapi/node/${this.remoteType}`;
             } else {
-                // Fetch and filter by taxonomy terms
-                const allTerms = await this.fetchTaxonomyTerms();
-                const termData = allTerms.find(term => term.attributes.name === this.remoteTaxonomyTerm);
-                const termId = termData?.id;
+                // Initialize filters array
+                const filters = [];
 
-                if (!termId) {
-                    resultDiv.innerHTML = '<p>No taxonomy term found.</p>';
-                    return;
-                }
+                // Create an array of promises to fetch all taxonomy term IDs in parallel
+                const termPromises = this.repeatertaxonomy.map(taxonomy => {
+                    const { taxonomyType, taxonomyTerm } = taxonomy;
+                    if (taxonomyType && taxonomyTerm) {
+                        return this.getTaxonomyTermId(taxonomyType, taxonomyTerm);
+                    } else {
+                        console.warn('Incomplete taxonomy filter configuration:', taxonomy);
+                        return Promise.resolve(null);
+                    }
+                });
 
-                contentUrl = `${this.baseUrl}${this.language}/jsonapi/node/${this.remoteType}?filter[${this.remoteTaxonomyField}.id]=${termId}`;
+                const termResults = await Promise.all(termPromises);
+
+                termResults.forEach((termData, index) => {
+                    if (termData && termData.id) {
+                        const { taxonomyField } = this.repeatertaxonomy[index];
+                        const filterString = `filter[${taxonomyField}.id]=${termData.id}`;
+                        filters.push(filterString);
+                    } else {
+                        const { taxonomyType, taxonomyTerm } = this.repeatertaxonomy[index];
+                        if (!taxonomyTerm) {
+                            console.warn(`Taxonomy term is empty for type "${taxonomyType}". Skipping filter.`);
+                        } else {
+                            console.warn(`Taxonomy term "${taxonomyTerm}" not found in type "${taxonomyType}".`);
+                        }
+                    }
+                });
+
+                // Combine all filters using '&' for AND logic
+                const filterQuery = filters.join('&');
+                contentUrl = `${this.baseUrl}${this.language}/jsonapi/node/${this.remoteType}?${filterQuery}`;
             }
 
             const remoteContentData = await this.fetchData(contentUrl);
@@ -241,6 +289,7 @@ class RemoteContent extends HTMLElement {
             resultDiv.innerHTML = `<p>Error fetching content: ${error.message}</p>`;
         }
     }
+
 }
 
 customElements.define('remote-content', RemoteContent);

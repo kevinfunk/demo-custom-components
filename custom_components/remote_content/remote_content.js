@@ -35,6 +35,12 @@ class RemoteContent extends HTMLElement {
 
         // Cache to store image and data fetch results
         this.imageCache = new Map();
+
+        // Flag to display query output
+        this.showQueries = this.config.showqueries;
+
+        // Initialize a variable to store queries
+        this.queryLog = '';
     }
 
     // Helper method to initialize the language
@@ -135,12 +141,18 @@ class RemoteContent extends HTMLElement {
     // Fetch resource by its type and ID with caching
     async fetchById(type, id) {
         const url = `${this.baseUrl}${this.language}/jsonapi/${type}/${id}`;
+
+        // Return the URL for logging if queries are shown
+        if (this.showQueries) {
+            return { data: this.imageCache.has(url) ? this.imageCache.get(url) : await this.fetchData(url).then(d => d.data), url };
+        }
+
         if (this.imageCache.has(url)) {
-            return this.imageCache.get(url);
+            return { data: this.imageCache.get(url), url };
         }
         const data = await this.fetchData(url);
         this.imageCache.set(url, data.data);
-        return data.data;
+        return { data: data.data, url };
     }
 
     // Generate the URL for the image style
@@ -159,20 +171,29 @@ class RemoteContent extends HTMLElement {
 
     // Fetch file URL for a media file
     async getFileUrl(fileId) {
-        const file = await this.fetchById('file/file', fileId);
+        const { data: file, url: fileUrl } = await this.fetchById('file/file', fileId);
+        if (this.showQueries) {
+            this.queryLog += `Image file query: ${fileUrl}<br />`;
+        }
         return this.getImageStyleUrl(file);
     }
 
     // Fetch image URL and alt text based on media type and ID
     async getImageUrl(mediaId, mediaType) {
         if (mediaType === 'media--acquia_dam_image_asset') {
-            const mediaAsset = await this.fetchById('media/acquia_dam_image_asset', mediaId);
+            const { data: mediaAsset, url: mediaAssetUrl } = await this.fetchById('media/acquia_dam_image_asset', mediaId);
+            if (this.showQueries) {
+                this.queryLog += `Image query (DAM): ${mediaAssetUrl}<br />`;
+            }
             const imageUrl = mediaAsset?.attributes?.acquia_dam_embed_codes?.[this.imageStyle]?.href ||
                              mediaAsset?.attributes?.acquia_dam_embed_codes?.original?.href || '';
             const altText = mediaAsset?.attributes?.acquia_dam_alt_text || mediaAsset?.attributes?.name;
             return { imageUrl, altText };
         } else {
-            const mediaImage = await this.fetchById('media/image', mediaId);
+            const { data: mediaImage, url: mediaImageUrl } = await this.fetchById('media/image', mediaId);
+            if (this.showQueries) {
+                this.queryLog += `Image query: ${mediaImageUrl}<br />`;
+            }
             const fileId = mediaImage?.relationships?.image?.data?.id;
             const file = fileId ? await this.fetchById('file/file', fileId) : null;
             const imageUrl = file ? await this.getFileUrl(fileId) : '';
@@ -183,43 +204,56 @@ class RemoteContent extends HTMLElement {
 
     // Fetch taxonomy term ID by taxonomy type and term name
     async getTaxonomyTermId(taxonomyType, termName) {
-        const taxonomyUrl = `${this.baseUrl}${this.language}/jsonapi/taxonomy_term/${taxonomyType}?filter[name]=${encodeURIComponent(termName)}&page[limit]=1`;
-
+        const taxonomyUrl = `${this.baseUrl}${this.language}/jsonapi/taxonomy_term/${taxonomyType}?filter[name]=${termName}`;
         try {
-            const data = await this.fetchData(taxonomyUrl);
-            const term = data.data[0];
-            return term || null;
+            const taxonomyData = await this.fetchData(taxonomyUrl);
+            if (this.showQueries) {
+                this.queryLog += `Taxonomy query: ${taxonomyUrl}<br />`;
+            }
+
+            return taxonomyData?.data?.[0] || null;
         } catch (error) {
-            console.error(`Error fetching taxonomy term "${termName}" for type "${taxonomyType}": ${error.message}`);
+            console.error(`Error fetching taxonomy term ID: ${error.message}`);
             return null;
         }
+
     }
 
-    // Main render function for fetching and displaying content
+    // Main render method
     async render() {
+        // Ensure result and query divs are present in the DOM
         const resultDiv = document.createElement('div');
         resultDiv.id = 'result';
         resultDiv.className = this.layoutStyle;
         this.appendChild(resultDiv);
 
-        if (!this.baseUrl) {
-            resultDiv.innerHTML = '<div class="notice">The website address is not set. Please check the component settings.</div>';
+        const queryDiv = document.createElement('div');
+        queryDiv.id = 'query';
+        this.appendChild(queryDiv);
+
+        if (!resultDiv || !queryDiv) {
+            console.error('Result or query div not found in the DOM.');
+            return;
+        }
+
+        if (!this.baseUrl || !this.remoteType) {
+            resultDiv.innerHTML = '<p>The website address not set. Please add it to the component.</p>';
             return;
         }
 
         try {
-            let contentUrl;
+            let contentUrl = `${this.baseUrl}${this.language}/jsonapi/node/${this.remoteType}`;
+            if (this.showQueries) {
+                this.queryLog += `Content query: ${contentUrl}<br />`;
+            }
+            let queryOutput = '';
 
-            if (this.repeatertaxonomy.length === 0) {
-                // No taxonomy filters applied, fetch all content
-                contentUrl = `${this.baseUrl}${this.language}/jsonapi/node/${this.remoteType}`;
-            } else {
-                // Initialize filters array
-                const filters = [];
+            const filters = [];
 
-                // Create an array of promises to fetch all taxonomy term IDs in parallel
+            // Handle taxonomy filtering
+            if (this.repeatertaxonomy && this.repeatertaxonomy.length > 0) {
                 const termPromises = this.repeatertaxonomy.map(taxonomy => {
-                    const { taxonomyType, taxonomyTerm } = taxonomy;
+                    const { taxonomyField, taxonomyType, taxonomyTerm } = taxonomy;
                     if (taxonomyType && taxonomyTerm) {
                         return this.getTaxonomyTermId(taxonomyType, taxonomyTerm);
                     } else {
@@ -248,6 +282,10 @@ class RemoteContent extends HTMLElement {
                 // Combine all filters using '&' for AND logic
                 const filterQuery = filters.join('&');
                 contentUrl = `${this.baseUrl}${this.language}/jsonapi/node/${this.remoteType}?${filterQuery}`;
+
+                if (this.showQueries) {
+                    this.queryLog += `Filtered content query: ${contentUrl}<br />`;
+                }
             }
 
             const remoteContentData = await this.fetchData(contentUrl);
@@ -274,6 +312,12 @@ class RemoteContent extends HTMLElement {
                 const { imageUrl, altText } = mediaData;
                 const pathAlias = item.attributes.path?.alias || '#';
 
+                // Log the query for each item
+                if (this.showQueries) {
+                    this.queryLog += `Node query: ${this.baseUrl}${this.language}/jsonapi/node/${this.remoteType}/${item.id}<br />`;
+                    this.queryLog += `Image query: ${imageUrl}<br />`;
+                }
+
                 return `
                     <div class="remote-content-card">
                         <a href="${this.baseUrl}${this.language}${pathAlias}" target="_blank">
@@ -288,6 +332,20 @@ class RemoteContent extends HTMLElement {
 
             resultDiv.innerHTML = resultsHtml.join('');
 
+            // Show the final query log as an unordered list
+            if (this.showQueries) {
+                const queryListItems = this.queryLog.split('<br />').map(query => {
+                    return query ? `<li>${query}</li>` : ''; // Create list items for each query
+                }).join('');
+
+                queryDiv.innerHTML = `
+                    <div = class="results">
+                        <p><strong>Query Log:</strong></p>
+                        <ul>${queryListItems}</ul>
+                    </div>
+                `;
+            }
+
         } catch (error) {
             resultDiv.innerHTML = `<p>Error fetching content: ${error.message}</p>`;
         }
@@ -295,4 +353,5 @@ class RemoteContent extends HTMLElement {
 
 }
 
+// Define the custom element
 customElements.define('remote-content', RemoteContent);

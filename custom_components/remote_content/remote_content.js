@@ -5,18 +5,11 @@ class RemoteContent extends HTMLElement {
         // Parse and initialize the configuration data
         this.config = JSON.parse(this.parentNode.getAttribute('data-ssa-custom-component'));
 
-        if (this.config.baseurl) {
-            this.baseUrl = this.config.baseurl.replace(/\/+$/, '');
-        }
+        // Initialize baseUrl
+        this.baseUrl = this.config.baseurl ? this.config.baseurl.replace(/\/+$/, '') : `${window.location.protocol}//${window.location.hostname}${window.location.port ? ':' + window.location.port : ''}`;
 
-        this.language = this.config.language;
-        this.customlanguagecode = this.config.customlanguagecode;
-
-        if (this.language && this.language !== 'custom') {
-            this.language = '/' + this.language;
-        } else if (this.language === 'custom') {
-            this.language = '/' + this.customlanguagecode;
-        }
+        // Initialize language settings
+        this.language = this.initializeLanguage(this.config.language, this.config.customlanguagecode);
 
         this.filterNumber = this.config.numberofresults;
         this.imageStyle = this.config.imagestyle;
@@ -42,6 +35,16 @@ class RemoteContent extends HTMLElement {
 
         // Cache to store image and data fetch results
         this.imageCache = new Map();
+    }
+
+    // Helper method to initialize the language
+    initializeLanguage(language, customLanguageCode) {
+        if (language && language !== 'custom') {
+            return '/' + language;
+        } else if (language === 'custom') {
+            return '/' + customLanguageCode;
+        }
+        return '';
     }
 
     // Sets the type and configuration fields for the content type

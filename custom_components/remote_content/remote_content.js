@@ -39,8 +39,8 @@ class RemoteContent extends HTMLElement {
         // Flag to display query output
         this.showQueries = this.config.showqueries;
 
-        // Initialize a variable to store queries
-        this.queryLog = '';
+        // Initialize a hierarchical query log
+        this.queryLog = [];
     }
 
     // Helper method to initialize the language
@@ -142,7 +142,6 @@ class RemoteContent extends HTMLElement {
     async fetchById(type, id) {
         const url = `${this.baseUrl}${this.language}/jsonapi/${type}/${id}`;
 
-        // Return the URL for logging if queries are shown
         if (this.showQueries) {
             return { data: this.imageCache.has(url) ? this.imageCache.get(url) : await this.fetchData(url).then(d => d.data), url };
         }
@@ -157,6 +156,11 @@ class RemoteContent extends HTMLElement {
 
     // Generate the URL for the image style
     async getImageStyleUrl(file) {
+        if (!file || !file.attributes || !file.attributes.uri) {
+            console.error('File data is missing or incomplete');
+            return '';
+        }
+
         const filePath = file.attributes.uri.value.split('public://')[1];
         const basePath = file.attributes.uri.url.replace('/' + filePath, '');
         const imageUrl = `${this.baseUrl}${basePath}/styles/${this.imageStyle}/public/${filePath}`;
@@ -173,32 +177,39 @@ class RemoteContent extends HTMLElement {
     async getFileUrl(fileId) {
         const { data: file, url: fileUrl } = await this.fetchById('file/file', fileId);
         if (this.showQueries) {
-            this.queryLog += `Image file query: ${fileUrl}<br />`;
+            this.queryLog.push({ query: `Image file: ${fileUrl}` });
         }
         return this.getImageStyleUrl(file);
     }
 
     // Fetch image URL and alt text based on media type and ID
     async getImageUrl(mediaId, mediaType) {
+        const imageQueries = [];
+
         if (mediaType === 'media--acquia_dam_image_asset') {
             const { data: mediaAsset, url: mediaAssetUrl } = await this.fetchById('media/acquia_dam_image_asset', mediaId);
             if (this.showQueries) {
-                this.queryLog += `Image query (DAM): ${mediaAssetUrl}<br />`;
+                imageQueries.push(`<strong>Image (DAM)</strong>: <a href="${mediaAssetUrl}" target="_blank" rel="noopener noreferrer">${mediaAssetUrl}</a>`);
             }
             const imageUrl = mediaAsset?.attributes?.acquia_dam_embed_codes?.[this.imageStyle]?.href ||
-                             mediaAsset?.attributes?.acquia_dam_embed_codes?.original?.href || '';
+                mediaAsset?.attributes?.acquia_dam_embed_codes?.original?.href || '';
             const altText = mediaAsset?.attributes?.acquia_dam_alt_text || mediaAsset?.attributes?.name;
-            return { imageUrl, altText };
+            return { imageUrl, altText, imageQueries, mediaType };
         } else {
             const { data: mediaImage, url: mediaImageUrl } = await this.fetchById('media/image', mediaId);
             if (this.showQueries) {
-                this.queryLog += `Image query: ${mediaImageUrl}<br />`;
+                imageQueries.push(`<strong>Image</strong>: <a href="${mediaImageUrl}" target="_blank" rel="noopener noreferrer">${mediaImageUrl}</a>`);
             }
             const fileId = mediaImage?.relationships?.image?.data?.id;
-            const file = fileId ? await this.fetchById('file/file', fileId) : null;
-            const imageUrl = file ? await this.getFileUrl(fileId) : '';
-            const altText = mediaImage?.relationships?.image?.data?.meta?.alt || 'Image'; // Default alt text if none is provided
-            return { imageUrl, altText };
+            const { data: fileData, url: fileUrl } = fileId ? await this.fetchById('file/file', fileId) : { data: null, url: null };
+
+            if (this.showQueries) {
+                imageQueries.push(`<strong>File</strong>: <a href="${fileUrl}" target="_blank" rel="noopener noreferrer">${fileUrl}</a>`);
+            }
+
+            const imageUrl = fileData ? await this.getImageStyleUrl(fileData) : '';
+            const altText = mediaImage?.relationships?.image?.data?.meta?.alt || 'Image';
+            return { imageUrl, altText, imageQueries, mediaType };
         }
     }
 
@@ -208,22 +219,41 @@ class RemoteContent extends HTMLElement {
         try {
             const taxonomyData = await this.fetchData(taxonomyUrl);
             if (this.showQueries) {
-                this.queryLog += `Taxonomy query: ${taxonomyUrl}<br />`;
+                this.queryLog.push({ query: `<strong>Taxonomy</strong>: <a href="${taxonomyUrl}" target="_blank" rel="noopener noreferrer">${taxonomyUrl}</a>` });
             }
-
-            return taxonomyData?.data?.[0] || null;
+            return taxonomyData.data.length > 0 ? taxonomyData.data[0] : null;
         } catch (error) {
-            console.error(`Error fetching taxonomy term ID: ${error.message}`);
+            console.error(`Error fetching taxonomy term: ${error.message}`);
             return null;
         }
+    }
 
+    // Recursive function to render the query log as nested lists
+    renderQueryLog(log, parentElement) {
+        const ul = document.createElement('ul');
+
+        log.forEach(item => {
+            if (typeof item === 'string') {
+                const li = document.createElement('li');
+                li.innerHTML = item;
+                ul.appendChild(li);
+            } else if (typeof item === 'object' && item.query) {
+                const li = document.createElement('li');
+                li.innerHTML = item.query;
+                ul.appendChild(li);
+                if (item.children) {
+                    this.renderQueryLog(item.children, li);
+                }
+            }
+        });
+
+        parentElement.appendChild(ul);
     }
 
     // Main render method
     async render() {
-        // Ensure result and query divs are present in the DOM
+        // Ensure result and query divs exist in the DOM
         const resultDiv = document.createElement('div');
-        resultDiv.id = 'result';
         resultDiv.className = this.layoutStyle;
         this.appendChild(resultDiv);
 
@@ -244,7 +274,7 @@ class RemoteContent extends HTMLElement {
         try {
             let contentUrl = `${this.baseUrl}${this.language}/jsonapi/node/${this.remoteType}`;
             if (this.showQueries) {
-                this.queryLog += `Remote type query: ${contentUrl}<br />`;
+                this.queryLog.push({ query: `<strong>Remote type</strong>: <a href="${contentUrl}" target="_blank" rel="noopener noreferrer">${contentUrl}</a>` });
             }
             let queryOutput = '';
 
@@ -284,7 +314,7 @@ class RemoteContent extends HTMLElement {
                 contentUrl = `${this.baseUrl}${this.language}/jsonapi/node/${this.remoteType}?${filterQuery}`;
 
                 if (this.showQueries) {
-                    this.queryLog += `Filtered content query: ${contentUrl}<br />`;
+                    this.queryLog.push({ query: `<strong>Filtered content</strong>: <a href="${contentUrl}" target="_blank" rel="noopener noreferrer">${contentUrl}</a>` });
                 }
             }
 
@@ -307,15 +337,23 @@ class RemoteContent extends HTMLElement {
                 const title = item.attributes.title;
                 const mediaData = item.relationships?.[this.remoteImage]?.data
                     ? await this.getImageUrl(item.relationships[this.remoteImage].data.id, item.relationships[this.remoteImage].data.type)
-                    : { imageUrl: this.svgPlaceholderBase64, altText: 'No Image' };
+                    : { imageUrl: this.svgPlaceholderBase64, altText: 'No Image', imageQueries: [], mediaType: null };
 
-                const { imageUrl, altText } = mediaData;
+                const { imageUrl, altText, imageQueries, mediaType } = mediaData;
                 const pathAlias = item.attributes.path?.alias || '#';
 
-                // Log the query for each item
+                // Prepare a node query entry
+                let nodeQueryEntry = null;
                 if (this.showQueries) {
-                    this.queryLog += `Node query: ${this.baseUrl}${this.language}/jsonapi/node/${this.remoteType}/${item.id}<br />`;
-                    this.queryLog += `Image query: ${imageUrl}<br />`;
+                    const nodeQueryUrl = `${this.baseUrl}${this.language}/jsonapi/node/${this.remoteType}/${item.id}`;
+                    nodeQueryEntry = { query: `<strong>Node</strong>: <a href="${nodeQueryUrl}" target="_blank" rel="noopener noreferrer">${nodeQueryUrl}</a>`, children: [] };
+
+                    // Add image queries as children
+                    imageQueries.forEach(imageQuery => {
+                        nodeQueryEntry.children.push(imageQuery);
+                    });
+
+                    this.queryLog.push(nodeQueryEntry);
                 }
 
                 return `
@@ -332,18 +370,15 @@ class RemoteContent extends HTMLElement {
 
             resultDiv.innerHTML = resultsHtml.join('');
 
-            // Show the final query log as an unordered list
-            if (this.showQueries) {
-                const queryListItems = this.queryLog.split('<br />').map(query => {
-                    return query ? `<li>${query}</li>` : ''; // Create list items for each query
-                }).join('');
-
-                queryDiv.innerHTML = `
-                    <div = class="results">
-                        <p><strong>Query Log:</strong></p>
-                        <ul>${queryListItems}</ul>
-                    </div>
-                `;
+            // Display the query log if enabled
+            if (this.showQueries && this.queryLog.length > 0) {
+                if (this.showQueries) {
+                    const queryListContainer = document.createElement('div');
+                    queryListContainer.classList.add('results');
+                    queryListContainer.innerHTML = `<p><strong>Query Log:</strong></p>`;
+                    this.renderQueryLog(this.queryLog, queryListContainer);
+                    queryDiv.appendChild(queryListContainer);
+                }
             }
 
         } catch (error) {
